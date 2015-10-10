@@ -1,3 +1,5 @@
 # unit-2-final-project
 
-In progress
+#Job Journal
+
+Job Journal - An interactive database journal 

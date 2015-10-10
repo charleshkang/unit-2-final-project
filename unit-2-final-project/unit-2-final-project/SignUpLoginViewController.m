@@ -22,6 +22,9 @@
     // Do any additional setup after loading the view.
     
     
+    NSLog(@"TESTING TESTING 123 4:39PM OCTOBER 10");
+    
+    
     [[self.signUpButtonTapped layer] setBorderWidth:2.0f];
     [[self.signUpButtonTapped layer] setBorderColor:[UIColor whiteColor].CGColor];
     

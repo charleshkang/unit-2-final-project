@@ -13,6 +13,7 @@
 		4248D9AF1BC95DA40031CA2D /* unit_2_final_project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4248D9AD1BC95DA40031CA2D /* unit_2_final_project.xcdatamodeld */; };
 		4248D9B11BC95DA40031CA2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4248D9B01BC95DA40031CA2D /* Assets.xcassets */; };
 		4248D9B41BC95DA40031CA2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4248D9B21BC95DA40031CA2D /* LaunchScreen.storyboard */; };
+		450D853C1BC9811E00C0D55F /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 450D853B1BC9811E00C0D55F /* APIManager.m */; settings = {ASSET_TAGS = (); }; };
 		894A116B1BC961360040C318 /* SignUpLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 894A116A1BC961360040C318 /* SignUpLoginViewController.m */; settings = {ASSET_TAGS = (); }; };
 		894A116E1BC965260040C318 /* EntriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 894A116D1BC965260040C318 /* EntriesTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		ECB6CECF0CC869A32667E5B5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFDE320A725FD4D18AE3FC2 /* libPods.a */; };
@@ -30,6 +31,8 @@
 		4248D9B01BC95DA40031CA2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4248D9B31BC95DA40031CA2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4248D9B51BC95DA40031CA2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		450D853A1BC9811E00C0D55F /* APIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
+		450D853B1BC9811E00C0D55F /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
 		894A11691BC961360040C318 /* SignUpLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpLoginViewController.h; sourceTree = "<group>"; };
 		894A116A1BC961360040C318 /* SignUpLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpLoginViewController.m; sourceTree = "<group>"; };
 		894A116C1BC965260040C318 /* EntriesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntriesTableViewController.h; sourceTree = "<group>"; };
@@ -72,6 +75,7 @@
 			children = (
 				4248D9A41BC95DA30031CA2D /* AppDelegate.h */,
 				4248D9A51BC95DA30031CA2D /* AppDelegate.m */,
+				450D853D1BC9813F00C0D55F /* API Manager */,
 				4248D9AA1BC95DA30031CA2D /* Main.storyboard */,
 				894A116C1BC965260040C318 /* EntriesTableViewController.h */,
 				894A116D1BC965260040C318 /* EntriesTableViewController.m */,
@@ -92,6 +96,15 @@
 				4248D9A21BC95DA30031CA2D /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		450D853D1BC9813F00C0D55F /* API Manager */ = {
+			isa = PBXGroup;
+			children = (
+				450D853A1BC9811E00C0D55F /* APIManager.h */,
+				450D853B1BC9811E00C0D55F /* APIManager.m */,
+			);
+			name = "API Manager";
 			sourceTree = "<group>";
 		};
 		9F133739FFDAB28576D63B42 /* Pods */ = {
@@ -219,6 +232,7 @@
 			files = (
 				894A116B1BC961360040C318 /* SignUpLoginViewController.m in Sources */,
 				4248D9A61BC95DA30031CA2D /* AppDelegate.m in Sources */,
+				450D853C1BC9811E00C0D55F /* APIManager.m in Sources */,
 				894A116E1BC965260040C318 /* EntriesTableViewController.m in Sources */,
 				4248D9A31BC95DA30031CA2D /* main.m in Sources */,
 				4248D9AF1BC95DA40031CA2D /* unit_2_final_project.xcdatamodeld in Sources */,

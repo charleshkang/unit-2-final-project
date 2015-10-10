@@ -176,7 +176,7 @@
         <!--Journal Entries View Controller-->
         <scene sceneID="GhJ-hM-96B">
             <objects>
-                <tableViewController id="QOE-RR-hv2" customClass="EntriesTableViewController" sceneMemberID="viewController">
+                <tableViewController id="QOE-RR-hv2" customClass="JournalEntriesTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="BAq-LT-0yN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -221,6 +221,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Journal Entries View Controller" id="kwF-p1-xm3">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="z49-7r-TKt">
+                            <connections>
+                                <action selector="backButton:" destination="QOE-RR-hv2" id="Mwh-1R-AXD"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="wIY-0E-aSA">
                             <connections>
                                 <segue destination="MB0-eU-eKh" kind="show" id="5eg-dO-SRw"/>
@@ -232,10 +237,10 @@
             </objects>
             <point key="canvasLocation" x="1114" y="464"/>
         </scene>
-        <!--Entry Detail Table View Controller-->
+        <!--Entry Details Table View Controller-->
         <scene sceneID="Z64-tM-kw3">
             <objects>
-                <tableViewController id="ShO-fy-duJ" sceneMemberID="viewController">
+                <tableViewController id="ShO-fy-duJ" customClass="EntryDetailsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="hGX-Tw-q0m">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -258,7 +263,13 @@
                             <outlet property="delegate" destination="ShO-fy-duJ" id="k7e-Ll-xOY"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Entry Detail Table View Controller" id="HdO-b7-xYH"/>
+                    <navigationItem key="navigationItem" title="Entry Details Table View Controller" id="HdO-b7-xYH">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="FOO-dj-FoT">
+                            <connections>
+                                <action selector="backButton:" destination="ShO-fy-duJ" id="Hj2-yR-Uqi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HZh-J7-iCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -301,7 +312,7 @@
         <!--Entry Creation Table View Controller-->
         <scene sceneID="1eN-Cz-5Zb">
             <objects>
-                <tableViewController id="Pc1-mA-eb9" sceneMemberID="viewController">
+                <tableViewController id="Pc1-mA-eb9" customClass="EntryCreationTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="NCi-W5-nb7">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -324,7 +335,13 @@
                             <outlet property="delegate" destination="Pc1-mA-eb9" id="gDp-C8-QVL"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Entry Creation Table View Controller" id="mTl-DX-aBc"/>
+                    <navigationItem key="navigationItem" title="Entry Creation Table View Controller" id="mTl-DX-aBc">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="qqr-ii-aPr">
+                            <connections>
+                                <action selector="backButton:" destination="Pc1-mA-eb9" id="wAp-3L-OIn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tTZ-qK-n9P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

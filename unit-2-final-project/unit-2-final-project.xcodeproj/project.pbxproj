@@ -90,6 +90,7 @@
 			children = (
 				4248D9A41BC95DA30031CA2D /* AppDelegate.h */,
 				4248D9A51BC95DA30031CA2D /* AppDelegate.m */,
+				450D85421BC9BEE800C0D55F /* LinkedIn */,
 				42FCE8DE1BC99C24008627B6 /* Parse */,
 				450D853D1BC9813F00C0D55F /* API Manager */,
 				4248D9AA1BC95DA30031CA2D /* Main.storyboard */,
@@ -138,6 +139,13 @@
 				450D853B1BC9811E00C0D55F /* APIManager.m */,
 			);
 			name = "API Manager";
+			sourceTree = "<group>";
+		};
+		450D85421BC9BEE800C0D55F /* LinkedIn */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = LinkedIn;
 			sourceTree = "<group>";
 		};
 		9F133739FFDAB28576D63B42 /* Pods */ = {

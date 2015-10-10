@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		4248D9A31BC95DA30031CA2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4248D9A21BC95DA30031CA2D /* main.m */; };
 		4248D9A61BC95DA30031CA2D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4248D9A51BC95DA30031CA2D /* AppDelegate.m */; };
-		4248D9A91BC95DA30031CA2D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4248D9A81BC95DA30031CA2D /* ViewController.m */; };
 		4248D9AC1BC95DA30031CA2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4248D9AA1BC95DA30031CA2D /* Main.storyboard */; };
 		4248D9AF1BC95DA40031CA2D /* unit_2_final_project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4248D9AD1BC95DA40031CA2D /* unit_2_final_project.xcdatamodeld */; };
 		4248D9B11BC95DA40031CA2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4248D9B01BC95DA40031CA2D /* Assets.xcassets */; };
 		4248D9B41BC95DA40031CA2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4248D9B21BC95DA40031CA2D /* LaunchScreen.storyboard */; };
+		894A116B1BC961360040C318 /* SignUpLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 894A116A1BC961360040C318 /* SignUpLoginViewController.m */; settings = {ASSET_TAGS = (); }; };
+		894A116E1BC965260040C318 /* EntriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 894A116D1BC965260040C318 /* EntriesTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +22,15 @@
 		4248D9A21BC95DA30031CA2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4248D9A41BC95DA30031CA2D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4248D9A51BC95DA30031CA2D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4248D9A71BC95DA30031CA2D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4248D9A81BC95DA30031CA2D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4248D9AB1BC95DA30031CA2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4248D9AE1BC95DA40031CA2D /* unit_2_final_project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = unit_2_final_project.xcdatamodel; sourceTree = "<group>"; };
 		4248D9B01BC95DA40031CA2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4248D9B31BC95DA40031CA2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4248D9B51BC95DA40031CA2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		894A11691BC961360040C318 /* SignUpLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpLoginViewController.h; sourceTree = "<group>"; };
+		894A116A1BC961360040C318 /* SignUpLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpLoginViewController.m; sourceTree = "<group>"; };
+		894A116C1BC965260040C318 /* EntriesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntriesTableViewController.h; sourceTree = "<group>"; };
+		894A116D1BC965260040C318 /* EntriesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntriesTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +65,11 @@
 			children = (
 				4248D9A41BC95DA30031CA2D /* AppDelegate.h */,
 				4248D9A51BC95DA30031CA2D /* AppDelegate.m */,
-				4248D9A71BC95DA30031CA2D /* ViewController.h */,
-				4248D9A81BC95DA30031CA2D /* ViewController.m */,
 				4248D9AA1BC95DA30031CA2D /* Main.storyboard */,
+				894A116C1BC965260040C318 /* EntriesTableViewController.h */,
+				894A116D1BC965260040C318 /* EntriesTableViewController.m */,
+				894A11691BC961360040C318 /* SignUpLoginViewController.h */,
+				894A116A1BC961360040C318 /* SignUpLoginViewController.m */,
 				4248D9B01BC95DA40031CA2D /* Assets.xcassets */,
 				4248D9B21BC95DA40031CA2D /* LaunchScreen.storyboard */,
 				4248D9B51BC95DA40031CA2D /* Info.plist */,
@@ -153,8 +158,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4248D9A91BC95DA30031CA2D /* ViewController.m in Sources */,
+				894A116B1BC961360040C318 /* SignUpLoginViewController.m in Sources */,
 				4248D9A61BC95DA30031CA2D /* AppDelegate.m in Sources */,
+				894A116E1BC965260040C318 /* EntriesTableViewController.m in Sources */,
 				4248D9A31BC95DA30031CA2D /* main.m in Sources */,
 				4248D9AF1BC95DA40031CA2D /* unit_2_final_project.xcdatamodeld in Sources */,
 			);
@@ -303,6 +309,7 @@
 				4248D9BA1BC95DA40031CA2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

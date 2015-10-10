@@ -58,6 +58,7 @@ install_resource()
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "GoogleMaps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle"
   install_resource "Parse/Parse/Resources/en.lproj"
   install_resource "TwilioSDK/Resources/disconnect.wav"
   install_resource "TwilioSDK/Resources/dtmf_0.wav"
@@ -76,6 +77,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "TwilioSDK/Resources/outgoing.wav"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "GoogleMaps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle"
   install_resource "Parse/Parse/Resources/en.lproj"
   install_resource "TwilioSDK/Resources/disconnect.wav"
   install_resource "TwilioSDK/Resources/dtmf_0.wav"

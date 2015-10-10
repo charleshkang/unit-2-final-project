@@ -7,8 +7,18 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
+#import "User.h"
+
 
 @interface AppDelegate ()
+
+// application id
+// d4QBKnNptgpeFwOvuSOqPu6DKpd7mo9bmk2WvtYV
+
+// client key
+// aEplV1YL2sWEtlHKAjx8t4ERBubrXGWCYZGpkCuq
+
 
 @end
 
@@ -16,7 +26,21 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [Parse
+     setApplicationId:@"d4QBKnNptgpeFwOvuSOqPu6DKpd7mo9bmk2WvtYV" clientKey:@"aEplV1YL2sWEtlHKAjx8t4ERBubrXGWCYZGpkCuq"];
+    
+    // register classes with parse
+    [User registerSubclass];
+    
+    // create a query
+    PFQuery *query =[PFQuery queryWithClassName:@"_User"];
+    
+    // execute the query
+    [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
+        NSLog(@"%@", objects);
+    }];
+    
     return YES;
 }
 

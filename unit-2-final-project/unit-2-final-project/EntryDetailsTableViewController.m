@@ -1,18 +1,23 @@
 //
-//  EntriesTableViewController.m
+//  EntryDetailsTableViewController.m
 //  unit-2-final-project
 //
-//  Created by Lauren Caponong on 10/10/15.
+//  Created by Charles Kang on 10/10/15.
 //  Copyright © 2015 Charles Kang. All rights reserved.
 //
 
-#import "EntriesTableViewController.h"
+#import "EntryDetailsTableViewController.h"
 
-@interface EntriesTableViewController ()
+@interface EntryDetailsTableViewController ()
 
 @end
 
-@implementation EntriesTableViewController
+@implementation EntryDetailsTableViewController
+
+- (IBAction)backButton:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+    NSLog(@"back tapped");
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -22,12 +22,10 @@
 		450D853C1BC9811E00C0D55F /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 450D853B1BC9811E00C0D55F /* APIManager.m */; settings = {ASSET_TAGS = (); }; };
 		45FEA2481BCACDB90073E5AE /* LinkedInConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FEA2471BCACDB90073E5AE /* LinkedInConnect.m */; settings = {ASSET_TAGS = (); }; };
 		894A116B1BC961360040C318 /* SignUpLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 894A116A1BC961360040C318 /* SignUpLoginViewController.m */; settings = {ASSET_TAGS = (); }; };
-		ECB6CECF0CC869A32667E5B5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFDE320A725FD4D18AE3FC2 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		099DBD6AD45FDC37F9CBE312 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		0EFDE320A725FD4D18AE3FC2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4248D99E1BC95DA30031CA2D /* unit-2-final-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "unit-2-final-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4248D9A21BC95DA30031CA2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4248D9A41BC95DA30031CA2D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,7 +61,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECB6CECF0CC869A32667E5B5 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +73,6 @@
 				4248D9A01BC95DA30031CA2D /* unit-2-final-project */,
 				4248D99F1BC95DA30031CA2D /* Products */,
 				9F133739FFDAB28576D63B42 /* Pods */,
-				FFE7AEC57324BF3946F43066 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,14 +156,6 @@
 				B6A744D1F17F548EF8E4A7EB /* Pods.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		FFE7AEC57324BF3946F43066 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0EFDE320A725FD4D18AE3FC2 /* libPods.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

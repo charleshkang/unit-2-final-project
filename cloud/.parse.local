@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "_default": {
+      "link": "jobJournal"
+    },
+    "jobJournal": {
+      "applicationId": "d4QBKnNptgpeFwOvuSOqPu6DKpd7mo9bmk2WvtYV"
+    }
+  }
+}

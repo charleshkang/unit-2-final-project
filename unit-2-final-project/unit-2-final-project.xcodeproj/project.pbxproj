@@ -21,6 +21,19 @@
 		42FCE8F31BC9A710008627B6 /* EntryDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FCE8F21BC9A710008627B6 /* EntryDetailsTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		450D853C1BC9811E00C0D55F /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 450D853B1BC9811E00C0D55F /* APIManager.m */; settings = {ASSET_TAGS = (); }; };
 		45FEA2481BCACDB90073E5AE /* LinkedInConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FEA2471BCACDB90073E5AE /* LinkedInConnect.m */; settings = {ASSET_TAGS = (); }; };
+		862B72D77ED97BE1EEAAD7A6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75199BEAB21FAD7AFA7E126F /* libPods.a */; };
+		89009B911BCAE10300541A5A /* CompanyMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89009B901BCAE10300541A5A /* CompanyMapViewController.m */; settings = {ASSET_TAGS = (); }; };
+		89009B931BCAE26700541A5A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89009B921BCAE26700541A5A /* AVFoundation.framework */; };
+		89009B951BCAE26F00541A5A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89009B941BCAE26F00541A5A /* CoreData.framework */; };
+		89009B971BCAE27500541A5A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89009B961BCAE27500541A5A /* CoreLocation.framework */; };
+		89009B991BCAE27A00541A5A /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89009B981BCAE27A00541A5A /* CoreText.framework */; };
+		89009B9B1BCAE28400541A5A /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89009B9A1BCAE28400541A5A /* GLKit.framework */; };
+		89009B9D1BCAE28A00541A5A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89009B9C1BCAE28A00541A5A /* ImageIO.framework */; };
+		89009BA11BCAE2BB00541A5A /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 89009BA01BCAE2BB00541A5A /* libicucore.tbd */; };
+		89009BA31BCAE2C700541A5A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 89009BA21BCAE2C700541A5A /* libz.tbd */; };
+		89009BA51BCAE2CD00541A5A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89009BA41BCAE2CD00541A5A /* OpenGLES.framework */; };
+		89009BA71BCAE2D200541A5A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89009BA61BCAE2D200541A5A /* QuartzCore.framework */; };
+		89009BA91BCAE2D900541A5A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89009BA81BCAE2D900541A5A /* SystemConfiguration.framework */; };
 		894A116B1BC961360040C318 /* SignUpLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 894A116A1BC961360040C318 /* SignUpLoginViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -51,6 +64,20 @@
 		450D853B1BC9811E00C0D55F /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
 		45FEA2461BCACDB90073E5AE /* LinkedInConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedInConnect.h; sourceTree = "<group>"; };
 		45FEA2471BCACDB90073E5AE /* LinkedInConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedInConnect.m; sourceTree = "<group>"; };
+		75199BEAB21FAD7AFA7E126F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		89009B8F1BCAE10300541A5A /* CompanyMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyMapViewController.h; sourceTree = "<group>"; };
+		89009B901BCAE10300541A5A /* CompanyMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyMapViewController.m; sourceTree = "<group>"; };
+		89009B921BCAE26700541A5A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		89009B941BCAE26F00541A5A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		89009B961BCAE27500541A5A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		89009B981BCAE27A00541A5A /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		89009B9A1BCAE28400541A5A /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		89009B9C1BCAE28A00541A5A /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		89009BA01BCAE2BB00541A5A /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		89009BA21BCAE2C700541A5A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		89009BA41BCAE2CD00541A5A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		89009BA61BCAE2D200541A5A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		89009BA81BCAE2D900541A5A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		894A11691BC961360040C318 /* SignUpLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpLoginViewController.h; sourceTree = "<group>"; };
 		894A116A1BC961360040C318 /* SignUpLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpLoginViewController.m; sourceTree = "<group>"; };
 		B6A744D1F17F548EF8E4A7EB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -61,6 +88,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89009BA91BCAE2D900541A5A /* SystemConfiguration.framework in Frameworks */,
+				89009BA71BCAE2D200541A5A /* QuartzCore.framework in Frameworks */,
+				89009BA51BCAE2CD00541A5A /* OpenGLES.framework in Frameworks */,
+				89009BA31BCAE2C700541A5A /* libz.tbd in Frameworks */,
+				89009BA11BCAE2BB00541A5A /* libicucore.tbd in Frameworks */,
+				89009B9D1BCAE28A00541A5A /* ImageIO.framework in Frameworks */,
+				89009B9B1BCAE28400541A5A /* GLKit.framework in Frameworks */,
+				89009B991BCAE27A00541A5A /* CoreText.framework in Frameworks */,
+				89009B971BCAE27500541A5A /* CoreLocation.framework in Frameworks */,
+				89009B951BCAE26F00541A5A /* CoreData.framework in Frameworks */,
+				89009B931BCAE26700541A5A /* AVFoundation.framework in Frameworks */,
+				862B72D77ED97BE1EEAAD7A6 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +109,7 @@
 		4248D9951BC95DA30031CA2D = {
 			isa = PBXGroup;
 			children = (
+				89009BAA1BCAE36900541A5A /* Frameworks */,
 				4248D9A01BC95DA30031CA2D /* unit-2-final-project */,
 				4248D99F1BC95DA30031CA2D /* Products */,
 				9F133739FFDAB28576D63B42 /* Pods */,
@@ -93,6 +133,8 @@
 				42FCE8DE1BC99C24008627B6 /* Parse */,
 				450D853D1BC9813F00C0D55F /* API Manager */,
 				4248D9AA1BC95DA30031CA2D /* Main.storyboard */,
+				89009B8F1BCAE10300541A5A /* CompanyMapViewController.h */,
+				89009B901BCAE10300541A5A /* CompanyMapViewController.m */,
 				42FCE8EB1BC9A6A0008627B6 /* JournalEntriesTableViewController.h */,
 				42FCE8EC1BC9A6A0008627B6 /* JournalEntriesTableViewController.m */,
 				894A11691BC961360040C318 /* SignUpLoginViewController.h */,
@@ -147,6 +189,25 @@
 				45FEA2471BCACDB90073E5AE /* LinkedInConnect.m */,
 			);
 			name = LinkedIn;
+			sourceTree = "<group>";
+		};
+		89009BAA1BCAE36900541A5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89009BA81BCAE2D900541A5A /* SystemConfiguration.framework */,
+				89009BA61BCAE2D200541A5A /* QuartzCore.framework */,
+				89009BA41BCAE2CD00541A5A /* OpenGLES.framework */,
+				89009BA21BCAE2C700541A5A /* libz.tbd */,
+				89009BA01BCAE2BB00541A5A /* libicucore.tbd */,
+				89009B9C1BCAE28A00541A5A /* ImageIO.framework */,
+				89009B9A1BCAE28400541A5A /* GLKit.framework */,
+				89009B981BCAE27A00541A5A /* CoreText.framework */,
+				89009B961BCAE27500541A5A /* CoreLocation.framework */,
+				89009B941BCAE26F00541A5A /* CoreData.framework */,
+				89009B921BCAE26700541A5A /* AVFoundation.framework */,
+				75199BEAB21FAD7AFA7E126F /* libPods.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		9F133739FFDAB28576D63B42 /* Pods */ = {
@@ -275,6 +336,7 @@
 				450D853C1BC9811E00C0D55F /* APIManager.m in Sources */,
 				42FCE8F01BC9A6EA008627B6 /* EntryCreationTableViewController.m in Sources */,
 				4248D9A31BC95DA30031CA2D /* main.m in Sources */,
+				89009B911BCAE10300541A5A /* CompanyMapViewController.m in Sources */,
 				4248D9AF1BC95DA40031CA2D /* unit_2_final_project.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +402,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;

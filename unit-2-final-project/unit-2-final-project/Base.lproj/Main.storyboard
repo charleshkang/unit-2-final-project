@@ -453,43 +453,84 @@
             </objects>
             <point key="canvasLocation" x="458" y="464"/>
         </scene>
-        <!--Entry Creation Table View Controller-->
-        <scene sceneID="1eN-Cz-5Zb">
+        <!--Entry Creation View Controller-->
+        <scene sceneID="diF-Iv-yEc">
             <objects>
-                <tableViewController id="Pc1-mA-eb9" customClass="EntryCreationTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="NCi-W5-nb7">
+                <viewController id="bhn-jd-IJt" customClass="EntryCreationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yd9-bJ-9of"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZeW-aK-hmx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9nu-sG-exS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Entry Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sU5-Yv-mh0">
+                                <rect key="frame" x="10" y="74" width="580" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Entry Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rDR-hD-HWS">
+                                <rect key="frame" x="10" y="112" width="580" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="coa-Tw-Q9R">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <navigationItem title="Title" id="IZc-yM-sqF">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="0xz-d3-Umh">
+                                            <connections>
+                                                <action selector="backButtonTapped:" destination="bhn-jd-IJt" id="xcq-wi-EDz"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Save" id="LdW-92-JTY">
+                                            <connections>
+                                                <action selector="saveButtonTapped:" destination="bhn-jd-IJt" id="6r3-8D-uBS"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="pQi-do-hVA">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pQi-do-hVA" id="OKm-SU-EJK">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <animations/>
-                                </tableViewCellContentView>
-                                <animations/>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Pc1-mA-eb9" id="H4i-Td-wIu"/>
-                            <outlet property="delegate" destination="Pc1-mA-eb9" id="gDp-C8-QVL"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Entry Creation Table View Controller" id="mTl-DX-aBc">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="qqr-ii-aPr">
+                        <constraints>
+                            <constraint firstItem="rDR-hD-HWS" firstAttribute="top" secondItem="sU5-Yv-mh0" secondAttribute="bottom" constant="10" id="B5E-7u-Yc9"/>
+                            <constraint firstItem="rDR-hD-HWS" firstAttribute="top" secondItem="sU5-Yv-mh0" secondAttribute="bottom" constant="10" id="JRH-wZ-zje"/>
+                            <constraint firstItem="sU5-Yv-mh0" firstAttribute="top" secondItem="Yd9-bJ-9of" secondAttribute="bottom" constant="10" id="Otl-IF-Das"/>
+                            <constraint firstAttribute="trailing" secondItem="sU5-Yv-mh0" secondAttribute="trailing" constant="10" id="QQF-ua-m9k"/>
+                            <constraint firstItem="ZeW-aK-hmx" firstAttribute="top" secondItem="rDR-hD-HWS" secondAttribute="bottom" constant="10" id="URk-gz-UIK"/>
+                            <constraint firstAttribute="trailing" secondItem="rDR-hD-HWS" secondAttribute="trailing" constant="10" id="UxY-dK-H2B"/>
+                            <constraint firstItem="sU5-Yv-mh0" firstAttribute="leading" secondItem="9nu-sG-exS" secondAttribute="leading" constant="10" id="ky8-E6-Yh5"/>
+                            <constraint firstItem="rDR-hD-HWS" firstAttribute="leading" secondItem="9nu-sG-exS" secondAttribute="leading" constant="10" id="y8Y-zJ-BpX"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="B5E-7u-Yc9"/>
+                                <exclude reference="URk-gz-UIK"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="3HT-uV-9D9">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="WlG-gT-XWY">
                             <connections>
-                                <action selector="backButton:" destination="Pc1-mA-eb9" id="wAp-3L-OIn"/>
+                                <action selector="backButtonTapped:" destination="bhn-jd-IJt" id="b5R-CM-3Ll"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="5Am-98-7Jd"/>
                     </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tTZ-qK-n9P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    <connections>
+                        <outlet property="descriptionTextField" destination="rDR-hD-HWS" id="thJ-2t-ibP"/>
+                        <outlet property="titleTextField" destination="sU5-Yv-mh0" id="y0m-bX-hlv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cOv-SJ-4vn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2473" y="244"/>
+            <point key="canvasLocation" x="2517" y="244"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r9i-Ld-WQo">
@@ -501,7 +542,7 @@
                         <animations/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Pc1-mA-eb9" kind="relationship" relationship="rootViewController" id="ccN-0M-ZXy"/>
+                        <segue destination="bhn-jd-IJt" kind="relationship" relationship="rootViewController" id="ESz-4M-Wfc"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MtT-nI-YCq" userLabel="First Responder" sceneMemberID="firstResponder"/>

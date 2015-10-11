@@ -9,9 +9,9 @@ Parse.Cloud.define("send_twilio_message", function(request, response) {
   query.find({
     success: function(results) {
       twilio.sms.messages.create({
-          to: "+19494916672",
+          to: "+19177534949",
           from: "+12016907828",
-          body: "sup, dude " + results[0].get('userId')
+          body: "what's up lauren" + results[0].get('userId')
         }, function(error, msg) {
           if (error) {
             response.error(error);

@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
 #import "User.h"
+#import <GoogleMaps/GoogleMaps.h>
 
 
 @interface AppDelegate ()
@@ -26,6 +27,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    //setting API key for google maps
+    [GMSServices provideAPIKey:@"AIzaSyAl4iC_ci94VdrvK9GpqleO9WpwFmqNtJg"];
+    
     
     [Parse
      setApplicationId:@"d4QBKnNptgpeFwOvuSOqPu6DKpd7mo9bmk2WvtYV" clientKey:@"aEplV1YL2sWEtlHKAjx8t4ERBubrXGWCYZGpkCuq"];

@@ -20,6 +20,7 @@
 		42FCE8F01BC9A6EA008627B6 /* EntryCreationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FCE8EF1BC9A6EA008627B6 /* EntryCreationTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		42FCE8F31BC9A710008627B6 /* EntryDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FCE8F21BC9A710008627B6 /* EntryDetailsTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		450D853C1BC9811E00C0D55F /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 450D853B1BC9811E00C0D55F /* APIManager.m */; settings = {ASSET_TAGS = (); }; };
+		45FEA2481BCACDB90073E5AE /* LinkedInConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FEA2471BCACDB90073E5AE /* LinkedInConnect.m */; settings = {ASSET_TAGS = (); }; };
 		894A116B1BC961360040C318 /* SignUpLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 894A116A1BC961360040C318 /* SignUpLoginViewController.m */; settings = {ASSET_TAGS = (); }; };
 		ECB6CECF0CC869A32667E5B5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFDE320A725FD4D18AE3FC2 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -50,6 +51,8 @@
 		42FCE8F21BC9A710008627B6 /* EntryDetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryDetailsTableViewController.m; sourceTree = "<group>"; };
 		450D853A1BC9811E00C0D55F /* APIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
 		450D853B1BC9811E00C0D55F /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
+		45FEA2461BCACDB90073E5AE /* LinkedInConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedInConnect.h; sourceTree = "<group>"; };
+		45FEA2471BCACDB90073E5AE /* LinkedInConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedInConnect.m; sourceTree = "<group>"; };
 		894A11691BC961360040C318 /* SignUpLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpLoginViewController.h; sourceTree = "<group>"; };
 		894A116A1BC961360040C318 /* SignUpLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpLoginViewController.m; sourceTree = "<group>"; };
 		B6A744D1F17F548EF8E4A7EB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +147,8 @@
 		450D85421BC9BEE800C0D55F /* LinkedIn */ = {
 			isa = PBXGroup;
 			children = (
+				45FEA2461BCACDB90073E5AE /* LinkedInConnect.h */,
+				45FEA2471BCACDB90073E5AE /* LinkedInConnect.m */,
 			);
 			name = LinkedIn;
 			sourceTree = "<group>";
@@ -275,6 +280,7 @@
 				42FCE8EA1BC99EC5008627B6 /* ViewController.m in Sources */,
 				42FCE8E71BC99C74008627B6 /* Applications.m in Sources */,
 				894A116B1BC961360040C318 /* SignUpLoginViewController.m in Sources */,
+				45FEA2481BCACDB90073E5AE /* LinkedInConnect.m in Sources */,
 				42FCE8E11BC99C47008627B6 /* User.m in Sources */,
 				4248D9A61BC95DA30031CA2D /* AppDelegate.m in Sources */,
 				42FCE8F31BC9A710008627B6 /* EntryDetailsTableViewController.m in Sources */,

@@ -30,7 +30,7 @@ PODS:
 
 DEPENDENCIES:
   - GoogleMaps
-  - IOSLinkedInAPI
+  - IOSLinkedInAPI (~> 2.0)
   - Parse
   - TwilioSDK
 

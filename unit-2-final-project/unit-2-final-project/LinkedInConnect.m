@@ -53,7 +53,7 @@ LIALinkedInHttpClient *_client;
                                                                                     clientId:@"77p7yuwoozuy1k"
                                                                                 clientSecret:@"W7uDaQYAP59LGChk"
                                                                                        state:@"DCEEFWF45453sdffef424"
-                                                                               grantedAccess:@[/*Stuff here*/]];
+                                                                               grantedAccess:@[@"r_basicprofile"]];
     return [LIALinkedInHttpClient clientForApplication:application presentingViewController:nil];
 }
 @end

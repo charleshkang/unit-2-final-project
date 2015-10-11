@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Entry.h"
 
 @interface JournalEntriesTableViewController : UITableViewController
+
+@property (nonatomic) Entry *entry;
 
 @end

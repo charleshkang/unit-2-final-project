@@ -10,7 +10,7 @@
         <attribute name="titleOfEntry" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Entry" positionX="-63" positionY="-18" width="128" height="90"/>
         <element name="EntriesList" positionX="-54" positionY="18" width="128" height="75"/>
+        <element name="Entry" positionX="-63" positionY="-18" width="128" height="90"/>
     </elements>
 </model>

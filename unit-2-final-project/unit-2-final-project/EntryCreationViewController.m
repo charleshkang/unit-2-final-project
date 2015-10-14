@@ -47,7 +47,7 @@
     AppDelegate *delegate = [UIApplication sharedApplication].delegate;
     
     self.entry.titleOfEntry = self.titleTextField.text;
-    self.entry.dateOfEntry = [NSDate date];
+//    self.entry.dateOfEntry = [NSDate date];
     
     [self.tempSet addObject:self.entry];
     

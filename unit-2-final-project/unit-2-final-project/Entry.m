@@ -2,14 +2,20 @@
 //  Entry.m
 //  unit-2-final-project
 //
-//  Created by Lauren Caponong on 10/11/15.
-//  Copyright © 2015 Charles Kang. All rights reserved.
-//
+//  Created by Lauren Caponong on 10/13/15.
+//  Copyright © 2015 Lauren Caponong. All rights reserved.
 
 #import "Entry.h"
 
 @implementation Entry
 
-// Insert code here to add functionality to your managed object subclass
+@dynamic createdAt;
+@dynamic descriptionOfEntry;
+@dynamic titleOfEntry;
+//@dynamic dateOfEntry;
+
++ (NSString *) parseClassName {
+    return @"Entry";
+}
 
 @end

@@ -2,21 +2,20 @@
 //  Entry.h
 //  unit-2-final-project
 //
-//  Created by Lauren Caponong on 10/11/15.
-//  Copyright © 2015 Charles Kang. All rights reserved.
+//  Created by Lauren Caponong on 10/13/15.
+//  Copyright © 2015 Lauren Caponong. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <CoreData/CoreData.h>
+#import "PFObject.h"
+#import <Parse/Parse.h>
 
-NS_ASSUME_NONNULL_BEGIN
 
-@interface Entry : NSManagedObject
+@interface Entry : PFObject <PFSubclassing>
 
-// Insert code here to declare functionality of your managed object subclass
+@property (nonatomic) NSDate *createdAt;
+//@property (nonatomic) NSDate *dateOfEntry;
+@property (nonatomic) NSString *titleOfEntry;
+@property (nonatomic) NSString *descriptionOfEntry;
 
 @end
 
-NS_ASSUME_NONNULL_END
-
-#import "Entry+CoreDataProperties.h"

@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, retain) NSDate *dateOfEntry;
 @property (nullable, nonatomic, retain) NSString *descriptionOfEntry;
 
+
 @end
 
 NS_ASSUME_NONNULL_END

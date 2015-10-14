@@ -4,7 +4,7 @@
         <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="titleOfEntry" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="Entry" representedClassName="Entry" syncable="YES">
+    <entity name="Entry" representedClassName="" syncable="YES">
         <attribute name="dateOfEntry" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="descriptionOfEntry" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="titleOfEntry" optional="YES" attributeType="String" syncable="YES"/>

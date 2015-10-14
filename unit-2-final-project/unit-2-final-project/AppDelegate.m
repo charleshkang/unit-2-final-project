@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
 #import "User.h"
+#import "Entry.h"
 #import <GoogleMaps/GoogleMaps.h>
 
 
@@ -37,6 +38,9 @@
     
     // register classes with parse
     [User registerSubclass];
+    
+    // register another class with parse
+    [Entry registerSubclass];
     
     // create a query
     PFQuery *query =[PFQuery queryWithClassName:@"_User"];

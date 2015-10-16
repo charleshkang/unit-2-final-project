@@ -10,4 +10,7 @@
 
 @interface EntryCreationViewController : ViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *locationTextfield;
+@property (weak, nonatomic) IBOutlet UITextField *priceTextfield;
+
 @end

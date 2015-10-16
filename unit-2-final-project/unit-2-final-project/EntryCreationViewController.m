@@ -34,30 +34,34 @@
     
 }
 
+- (IBAction)saveJournalEntry:(id)sender {
+    
+    NSString *apartmentLocation = _locationTextfield.text;
+    NSString *apartmentPrice = _priceTextfield.text;
+    
+    PFObject *apartment = [PFObject objectWithClassName:@"Entry"];
+    apartment[@"apartmentLocation"] = apartmentLocation;
+    apartment[@"apartmentPrice"] = apartmentPrice;
+    
+    [apartment saveInBackgroundWithBlock:^(BOOL succeeded,  NSError *error) {
+        if (succeeded == YES) {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Success" message:@"Your new entry has been saved" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+            [alert show];
+        } else {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error!" message:@"Your new entry has not been saved" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+            [alert show];
+        }
+    }
+     ];
+};
+
 
 
 - (IBAction)backButtonTapped:(UIBarButtonItem *)sender {
-
-    [self dismissViewControllerAnimated:YES completion:nil];
-
-}
-
-
-- (IBAction)saveButtonTapped:(UIBarButtonItem *)sender {
-    
-    AppDelegate *delegate = [UIApplication sharedApplication].delegate;
-    
-    self.entry.titleOfEntry = self.titleTextField.text;
-//    self.entry.dateOfEntry = [NSDate date];
-    
-    [self.tempSet addObject:self.entry];
-    
-    self.entry = self.tempSet;
-    
-    [delegate.managedObjectContext save:nil];
     
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }
+
 
 @end

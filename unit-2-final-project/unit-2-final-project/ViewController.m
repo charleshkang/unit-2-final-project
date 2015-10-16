@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <Parse/Parse.h>
 
 @interface ViewController ()
 
@@ -17,27 +18,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    User *user = [[User alloc] init];
-    user.username = @"Charles";
-    user.password = @"c4q";
-    user.emailAddress = @"ckangkitchen@gmail.com";
+    PFUser *user = [[PFUser alloc] init];
+    user.username = @"chris";
+    user.password = @"puppy";
+    user.email = @"ckangkitchen@gmail.com";
+    
+    [user signUpInBackground];
+    
+    
+
+//    Entry *entry = [[]
+    
     
     [user saveInBackground];
     
-    // this is code before doing parse stuff
-    
-    //    PFObject *car = [PFObject objectWithClassName:@"Car"];
-    //
-    //    car[@"model"] = @"Tesla";
-    //    car[@"year"] = @1995;
-    //    car[@"numberOfWheels"] = @5;
-    //
-    //    [car saveInBackground];
-    //    
-    //}
+
     
 }
 
+
+- (PFTa)
 
 
 @end

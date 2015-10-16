@@ -12,10 +12,12 @@
 @dynamic createdAt;
 @dynamic descriptionOfEntry;
 @dynamic titleOfEntry;
-//@dynamic dateOfEntry;
+@dynamic dateOfEntry;
 
 + (NSString *) parseClassName {
     return @"Entry";
 }
+
+
 
 @end

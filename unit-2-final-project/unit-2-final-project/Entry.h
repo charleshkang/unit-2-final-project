@@ -13,7 +13,7 @@
 @interface Entry : PFObject <PFSubclassing>
 
 @property (nonatomic) NSDate *createdAt;
-//@property (nonatomic) NSDate *dateOfEntry;
+@property (nonatomic) NSDate *dateOfEntry;
 @property (nonatomic) NSString *titleOfEntry;
 @property (nonatomic) NSString *descriptionOfEntry;
 

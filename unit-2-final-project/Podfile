@@ -1,5 +1,5 @@
 pod 'Parse'
 pod 'TwilioSDK’
 pod 'GoogleMaps’
-pod 'IOSLinkedInAPI', '~> 2.0'
+
 

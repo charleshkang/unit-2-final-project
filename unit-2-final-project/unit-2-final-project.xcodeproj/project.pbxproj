@@ -12,6 +12,7 @@
 		4248D9B11BC95DA40031CA2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4248D9B01BC95DA40031CA2D /* Assets.xcassets */; };
 		4248D9B41BC95DA40031CA2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4248D9B21BC95DA40031CA2D /* LaunchScreen.storyboard */; };
 		42A3B12A1BCED8C100907D15 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A3B1291BCED8C100907D15 /* Entry.m */; settings = {ASSET_TAGS = (); }; };
+		42B466531BD1483D0029FBDA /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B466521BD1483D0029FBDA /* ParseUI.framework */; settings = {ASSET_TAGS = (); }; };
 		42FCE8E11BC99C47008627B6 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FCE8E01BC99C47008627B6 /* User.m */; settings = {ASSET_TAGS = (); }; };
 		42FCE8E71BC99C74008627B6 /* Applications.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FCE8E61BC99C74008627B6 /* Applications.m */; settings = {ASSET_TAGS = (); }; };
 		42FCE8EA1BC99EC5008627B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FCE8E91BC99EC5008627B6 /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -47,6 +48,7 @@
 		4248D9B51BC95DA40031CA2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42A3B1291BCED8C100907D15 /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
 		42A3B12B1BCED8DA00907D15 /* Entry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
+		42B466521BD1483D0029FBDA /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		42FCE8DF1BC99C47008627B6 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		42FCE8E01BC99C47008627B6 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		42FCE8E51BC99C74008627B6 /* Applications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Applications.h; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				89009B951BCAE26F00541A5A /* CoreData.framework in Frameworks */,
 				89009B931BCAE26700541A5A /* AVFoundation.framework in Frameworks */,
 				862B72D77ED97BE1EEAAD7A6 /* libPods.a in Frameworks */,
+				42B466531BD1483D0029FBDA /* ParseUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +194,7 @@
 		89009BAA1BCAE36900541A5A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				42B466521BD1483D0029FBDA /* ParseUI.framework */,
 				89009BA81BCAE2D900541A5A /* SystemConfiguration.framework */,
 				89009BA61BCAE2D200541A5A /* QuartzCore.framework */,
 				89009BA41BCAE2CD00541A5A /* OpenGLES.framework */,
@@ -446,6 +450,10 @@
 			baseConfigurationReference = 099DBD6AD45FDC37F9CBE312 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "unit-2-final-project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.charleshkang.unit-2-final-project";
@@ -458,6 +466,10 @@
 			baseConfigurationReference = B6A744D1F17F548EF8E4A7EB /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "unit-2-final-project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.charleshkang.unit-2-final-project";

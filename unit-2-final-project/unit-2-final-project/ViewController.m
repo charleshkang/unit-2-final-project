@@ -21,7 +21,7 @@
     PFUser *user = [[PFUser alloc] init];
     user.username = @"chris";
     user.password = @"puppy";
-    user.email = @"ckangkitchen@gmail.com";
+    user.email = @"charleskang@gmail.com";
     
     [user signUpInBackground];
     

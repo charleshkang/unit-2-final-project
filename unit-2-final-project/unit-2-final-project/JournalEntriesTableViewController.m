@@ -10,6 +10,7 @@
 #import "JournalEntriesTableViewController.h"
 #import "EntryDetailsTableViewController.h"
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
 
 @interface JournalEntriesTableViewController ()
 
@@ -32,6 +33,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 #pragma mark - Table view data source
 

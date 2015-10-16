@@ -10,7 +10,8 @@
 #import "Entry.h"
 #import "AppDelegate.h"
 
-@interface EntryCreationViewController () <NSFetchedResultsControllerDelegate>
+
+@interface EntryCreationViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *titleTextField;
 @property (weak, nonatomic) IBOutlet UITextField *descriptionTextField;

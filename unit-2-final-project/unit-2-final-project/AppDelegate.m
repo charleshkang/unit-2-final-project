@@ -15,10 +15,10 @@
 
 @interface AppDelegate ()
 
-// application id
+// application id for parse
 // d4QBKnNptgpeFwOvuSOqPu6DKpd7mo9bmk2WvtYV
 
-// client key
+// client key for parse
 // aEplV1YL2sWEtlHKAjx8t4ERBubrXGWCYZGpkCuq
 
 
@@ -34,7 +34,8 @@
     
     
     [Parse
-     setApplicationId:@"d4QBKnNptgpeFwOvuSOqPu6DKpd7mo9bmk2WvtYV" clientKey:@"aEplV1YL2sWEtlHKAjx8t4ERBubrXGWCYZGpkCuq"];
+     setApplicationId:@"d4QBKnNptgpeFwOvuSOqPu6DKpd7mo9bmk2WvtYV"
+     clientKey:@"aEplV1YL2sWEtlHKAjx8t4ERBubrXGWCYZGpkCuq"];
     
     // register classes with parse
     [User registerSubclass];

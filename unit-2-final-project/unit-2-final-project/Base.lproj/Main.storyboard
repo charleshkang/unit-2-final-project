@@ -143,7 +143,7 @@
             </objects>
             <point key="canvasLocation" x="458" y="-279"/>
         </scene>
-        <!--Journal Entries View Controller-->
+        <!--Journal Entries-->
         <scene sceneID="GhJ-hM-96B">
             <objects>
                 <tableViewController id="QOE-RR-hv2" customClass="JournalEntry" sceneMemberID="viewController">
@@ -190,7 +190,7 @@
                             <outlet property="delegate" destination="QOE-RR-hv2" id="1X2-CT-9Yx"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Journal Entries View Controller" id="kwF-p1-xm3">
+                    <navigationItem key="navigationItem" title="Journal Entries" id="kwF-p1-xm3">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="z49-7r-TKt">
                             <connections>
                                 <action selector="backButton:" destination="QOE-RR-hv2" id="ppY-k3-tiE"/>

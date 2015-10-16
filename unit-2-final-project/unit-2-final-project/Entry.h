@@ -9,6 +9,8 @@
 #import "PFObject.h"
 #import <Parse/Parse.h>
 #import "JournalEntry.h"
+#import <UIKit/UIKit.h>
+
 
 
 @interface Entry : PFObject <PFSubclassing>

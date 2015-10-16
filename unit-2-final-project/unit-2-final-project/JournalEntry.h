@@ -20,5 +20,8 @@
 +(NSString *)parseClassName;
 + (void)fetchAll:(void (^)(NSArray *results, NSError *error))completion;
 
+@property (nonatomic) Entry *entry;
+
+
 
 @end

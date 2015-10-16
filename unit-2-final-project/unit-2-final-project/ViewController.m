@@ -24,12 +24,6 @@
     user.email = @"charleskang@gmail.com";
     
     [user signUpInBackground];
-    
-    
-
-//    Entry *entry = [[]
-    
-    
     [user saveInBackground];
     
 

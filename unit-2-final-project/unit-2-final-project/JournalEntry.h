@@ -17,10 +17,11 @@
 @property (nonatomic) NSString *apartmentPrice;
 @property (nonatomic) NSDate *createdAt;
 
+//@property (nonatomic) Entry *entry;
+
+
 +(NSString *)parseClassName;
 + (void)fetchAll:(void (^)(NSArray *results, NSError *error))completion;
-
-@property (nonatomic) Entry *entry;
 
 
 

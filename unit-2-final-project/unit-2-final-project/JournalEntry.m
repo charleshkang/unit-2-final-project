@@ -17,6 +17,23 @@
 @dynamic apartmentPrice;
 @dynamic createdAt;
 
++(NSString *)parseClassName{
+    
+    return @"Entry";
+}
+
++(void)fetchAll:(void (^)(NSArray *, NSError *))completion{
+    
+    //create query
+    PFQuery *query = [PFQuery queryWithClassName:[self parseClassName]];
+    
+    //find all objects and return them in an array
+    [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
+        completion(objects, error);
+    }];
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"Journal Entries";
@@ -58,7 +75,10 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
     //return count of API results array
-    return self.entry.journalEntries.count;
+    // commented this out b/c code is breaking, trying to figure out what's up -charles
+
+//    return self.entry.journalEntries.count;
+    return 1;
 }
 
 
@@ -66,8 +86,10 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"journalCellIdentifier" forIndexPath:indexPath];
     
-    cell.textLabel.text = self.entry.journalEntries[indexPath.row][@"Entry"];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", self.entry.journalEntries[indexPath.row][@"createdAt"]];
+    
+    // commented this out b/c code is breaking, trying to figure out what's up -charles
+//    cell.textLabel.text = self.entry.journalEntries[indexPath.row][@"Entry"];
+//    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", self.apartmentPrice.journalEntries[indexPath.row][@"createdAt"]];
     
     return cell;
 }

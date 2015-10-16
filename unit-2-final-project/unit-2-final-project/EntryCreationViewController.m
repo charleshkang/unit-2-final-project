@@ -15,8 +15,8 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *titleTextField;
 @property (weak, nonatomic) IBOutlet UITextField *descriptionTextField;
-@property (nonatomic) Entry *entry;
-@property (nonatomic) NSMutableOrderedSet *tempSet;
+@property (nonatomic) NSMutableArray *journalEntries;
+
 
 @end
 
@@ -26,11 +26,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.tempSet = [self.entry mutableCopy];
+    // this line is probably incorrect
+    self.journalEntries = [self.journalEntries mutableCopy];
     
     AppDelegate *delegate = [UIApplication sharedApplication].delegate;
-    
-    self.entry = [NSEntityDescription insertNewObjectForEntityForName:@"Entry" inManagedObjectContext:delegate.managedObjectContext];
     
 }
 

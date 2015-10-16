@@ -10,6 +10,7 @@
 #import <Parse/Parse.h>
 #import "JournalEntry.h"
 #import <UIKit/UIKit.h>
+#import "User.h"
 
 
 
@@ -20,10 +21,12 @@
 @property (nonatomic) NSString *titleOfEntry;
 @property (nonatomic) NSString *descriptionOfEntry;
 
+
 @property (nonatomic) NSMutableArray *journalEntries;
 
 
 + (void)fetchAll:(void (^)(NSArray *results, NSError *error))completion;
+
 + (NSString *)parseClassName;
 
 

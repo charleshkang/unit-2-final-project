@@ -136,8 +136,6 @@
 				42C2F7431BD18C6400C9D31F /* JournalEntry.m */,
 				89009BBA1BCAF06B00541A5A /* EntryCreationViewController.h */,
 				89009BBB1BCAF06B00541A5A /* EntryCreationViewController.m */,
-				42FCE8F11BC9A710008627B6 /* EntryDetailsTableViewController.h */,
-				42FCE8F21BC9A710008627B6 /* EntryDetailsTableViewController.m */,
 				89009B8F1BCAE10300541A5A /* CompanyMapViewController.h */,
 				89009B901BCAE10300541A5A /* CompanyMapViewController.m */,
 			);
@@ -170,6 +168,7 @@
 				4248D9A51BC95DA30031CA2D /* AppDelegate.m */,
 				4218BA361BD0871C00F939C8 /* Journal */,
 				42FCE8DE1BC99C24008627B6 /* Parse */,
+				42C2F7461BD1AF6000C9D31F /* Files not currently in use */,
 				450D853D1BC9813F00C0D55F /* API Manager */,
 				4248D9B01BC95DA40031CA2D /* Assets.xcassets */,
 				4248D9B21BC95DA40031CA2D /* LaunchScreen.storyboard */,
@@ -186,6 +185,15 @@
 				4248D9A21BC95DA30031CA2D /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42C2F7461BD1AF6000C9D31F /* Files not currently in use */ = {
+			isa = PBXGroup;
+			children = (
+				42FCE8F11BC9A710008627B6 /* EntryDetailsTableViewController.h */,
+				42FCE8F21BC9A710008627B6 /* EntryDetailsTableViewController.m */,
+			);
+			name = "Files not currently in use";
 			sourceTree = "<group>";
 		};
 		42FCE8DE1BC99C24008627B6 /* Parse */ = {

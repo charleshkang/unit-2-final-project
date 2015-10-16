@@ -153,7 +153,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="journalEntryCell" textLabel="kLH-t6-v1d" detailTextLabel="1LH-d2-heZ" style="IBUITableViewCellStyleSubtitle" id="XQM-cE-16Q">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="journalCellIdentifier" textLabel="kLH-t6-v1d" detailTextLabel="1LH-d2-heZ" style="IBUITableViewCellStyleSubtitle" id="XQM-cE-16Q">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XQM-cE-16Q" id="pK7-v9-WMC">

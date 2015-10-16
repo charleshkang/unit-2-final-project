@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4248D9A31BC95DA30031CA2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4248D9A21BC95DA30031CA2D /* main.m */; };
 		4248D9A61BC95DA30031CA2D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4248D9A51BC95DA30031CA2D /* AppDelegate.m */; };
-		4248D9AF1BC95DA40031CA2D /* unit_2_final_project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4248D9AD1BC95DA40031CA2D /* unit_2_final_project.xcdatamodeld */; };
 		4248D9B11BC95DA40031CA2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4248D9B01BC95DA40031CA2D /* Assets.xcassets */; };
 		4248D9B41BC95DA40031CA2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4248D9B21BC95DA40031CA2D /* LaunchScreen.storyboard */; };
 		42A3B12A1BCED8C100907D15 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A3B1291BCED8C100907D15 /* Entry.m */; settings = {ASSET_TAGS = (); }; };
@@ -33,9 +32,6 @@
 		89009BA71BCAE2D200541A5A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89009BA61BCAE2D200541A5A /* QuartzCore.framework */; };
 		89009BA91BCAE2D900541A5A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89009BA81BCAE2D900541A5A /* SystemConfiguration.framework */; };
 		89009BBC1BCAF06B00541A5A /* EntryCreationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89009BBB1BCAF06B00541A5A /* EntryCreationViewController.m */; settings = {ASSET_TAGS = (); }; };
-		89009BEA1BCAF85C00541A5A /* Entry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 89009BE31BCAF85C00541A5A /* Entry+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
-		89009BEC1BCAF85C00541A5A /* EntriesList+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 89009BE71BCAF85C00541A5A /* EntriesList+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
-		89009BED1BCAF85C00541A5A /* EntriesList.m in Sources */ = {isa = PBXBuildFile; fileRef = 89009BE91BCAF85C00541A5A /* EntriesList.m */; settings = {ASSET_TAGS = (); }; };
 		890AC0711BCAFE0200D61E01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890AC06F1BCAFE0200D61E01 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
 		894A116B1BC961360040C318 /* SignUpLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 894A116A1BC961360040C318 /* SignUpLoginViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -46,7 +42,6 @@
 		4248D9A21BC95DA30031CA2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4248D9A41BC95DA30031CA2D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4248D9A51BC95DA30031CA2D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4248D9AE1BC95DA40031CA2D /* unit_2_final_project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = unit_2_final_project.xcdatamodel; sourceTree = "<group>"; };
 		4248D9B01BC95DA40031CA2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4248D9B31BC95DA40031CA2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4248D9B51BC95DA40031CA2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,12 +75,6 @@
 		89009BA81BCAE2D900541A5A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		89009BBA1BCAF06B00541A5A /* EntryCreationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryCreationViewController.h; sourceTree = "<group>"; };
 		89009BBB1BCAF06B00541A5A /* EntryCreationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryCreationViewController.m; sourceTree = "<group>"; };
-		89009BE21BCAF85C00541A5A /* Entry+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Entry+CoreDataProperties.h"; sourceTree = "<group>"; };
-		89009BE31BCAF85C00541A5A /* Entry+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Entry+CoreDataProperties.m"; sourceTree = "<group>"; };
-		89009BE61BCAF85C00541A5A /* EntriesList+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EntriesList+CoreDataProperties.h"; sourceTree = "<group>"; };
-		89009BE71BCAF85C00541A5A /* EntriesList+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EntriesList+CoreDataProperties.m"; sourceTree = "<group>"; };
-		89009BE81BCAF85C00541A5A /* EntriesList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntriesList.h; sourceTree = "<group>"; };
-		89009BE91BCAF85C00541A5A /* EntriesList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntriesList.m; sourceTree = "<group>"; };
 		890AC0701BCAFE0200D61E01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "unit-2-final-project/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		894A11691BC961360040C318 /* SignUpLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpLoginViewController.h; sourceTree = "<group>"; };
 		894A116A1BC961360040C318 /* SignUpLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpLoginViewController.m; sourceTree = "<group>"; };
@@ -159,11 +148,9 @@
 				4218BA361BD0871C00F939C8 /* Journal */,
 				42FCE8DE1BC99C24008627B6 /* Parse */,
 				450D853D1BC9813F00C0D55F /* API Manager */,
-				89009BEE1BCAF85E00541A5A /* Entries Model */,
 				4248D9B01BC95DA40031CA2D /* Assets.xcassets */,
 				4248D9B21BC95DA40031CA2D /* LaunchScreen.storyboard */,
 				4248D9B51BC95DA40031CA2D /* Info.plist */,
-				4248D9AD1BC95DA40031CA2D /* unit_2_final_project.xcdatamodeld */,
 				4248D9A11BC95DA30031CA2D /* Supporting Files */,
 			);
 			path = "unit-2-final-project";
@@ -218,19 +205,6 @@
 				75199BEAB21FAD7AFA7E126F /* libPods.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		89009BEE1BCAF85E00541A5A /* Entries Model */ = {
-			isa = PBXGroup;
-			children = (
-				89009BE21BCAF85C00541A5A /* Entry+CoreDataProperties.h */,
-				89009BE31BCAF85C00541A5A /* Entry+CoreDataProperties.m */,
-				89009BE61BCAF85C00541A5A /* EntriesList+CoreDataProperties.h */,
-				89009BE71BCAF85C00541A5A /* EntriesList+CoreDataProperties.m */,
-				89009BE81BCAF85C00541A5A /* EntriesList.h */,
-				89009BE91BCAF85C00541A5A /* EntriesList.m */,
-			);
-			name = "Entries Model";
 			sourceTree = "<group>";
 		};
 		9F133739FFDAB28576D63B42 /* Pods */ = {
@@ -348,10 +322,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89009BED1BCAF85C00541A5A /* EntriesList.m in Sources */,
 				42FCE8ED1BC9A6A0008627B6 /* JournalEntriesTableViewController.m in Sources */,
 				42FCE8EA1BC99EC5008627B6 /* ViewController.m in Sources */,
-				89009BEA1BCAF85C00541A5A /* Entry+CoreDataProperties.m in Sources */,
 				42A3B12A1BCED8C100907D15 /* Entry.m in Sources */,
 				42FCE8E71BC99C74008627B6 /* Applications.m in Sources */,
 				894A116B1BC961360040C318 /* SignUpLoginViewController.m in Sources */,
@@ -359,11 +331,9 @@
 				4248D9A61BC95DA30031CA2D /* AppDelegate.m in Sources */,
 				42FCE8F31BC9A710008627B6 /* EntryDetailsTableViewController.m in Sources */,
 				450D853C1BC9811E00C0D55F /* APIManager.m in Sources */,
-				89009BEC1BCAF85C00541A5A /* EntriesList+CoreDataProperties.m in Sources */,
 				89009BBC1BCAF06B00541A5A /* EntryCreationViewController.m in Sources */,
 				4248D9A31BC95DA30031CA2D /* main.m in Sources */,
 				89009B911BCAE10300541A5A /* CompanyMapViewController.m in Sources */,
-				4248D9AF1BC95DA40031CA2D /* unit_2_final_project.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,19 +487,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		4248D9AD1BC95DA40031CA2D /* unit_2_final_project.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				4248D9AE1BC95DA40031CA2D /* unit_2_final_project.xcdatamodel */,
-			);
-			currentVersion = 4248D9AE1BC95DA40031CA2D /* unit_2_final_project.xcdatamodel */;
-			path = unit_2_final_project.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 4248D9961BC95DA30031CA2D /* Project object */;
 }

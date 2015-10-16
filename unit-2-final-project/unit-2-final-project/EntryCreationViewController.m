@@ -36,6 +36,18 @@
 
 - (IBAction)saveJournalEntry:(id)sender {
     
+    if ([self.locationTextfield.text isEqualToString:@"Apartment Location"]) {
+        [self emptyTextField];
+        NSLog(@"apartment error");
+        
+    } if ([self.priceTextfield.text isEqualToString:@"Apartment Price"]) {
+        [self emptyTextField];
+        NSLog(@"price error");
+        
+    }
+    
+    
+    
     NSString *apartmentLocation = _locationTextfield.text;
     NSString *apartmentPrice = _priceTextfield.text;
     
@@ -52,14 +64,21 @@
             [alert show];
         }
     }
+     
      ];
 };
+
+-(void)emptyTextField {
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Please add a location and price" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+    [alert show];
+    
+}
 
 - (IBAction)backButtonTapped:(UIBarButtonItem *)sender {
     
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }
-
 
 @end

@@ -8,6 +8,7 @@
 
 #import "PFObject.h"
 #import <Parse/Parse.h>
+#import "JournalEntry.h"
 
 
 @interface Entry : PFObject <PFSubclassing>
@@ -16,6 +17,13 @@
 @property (nonatomic) NSDate *dateOfEntry;
 @property (nonatomic) NSString *titleOfEntry;
 @property (nonatomic) NSString *descriptionOfEntry;
+
+@property (nonatomic) NSMutableArray *journalEntries;
+
+
++ (void)fetchAll:(void (^)(NSArray *results, NSError *error))completion;
++ (NSString *)parseClassName;
+
 
 @end
 

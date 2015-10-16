@@ -40,7 +40,7 @@
     // register classes with parse
     [User registerSubclass];
     
-    // register another class with parse
+    // register entry class with parse
     [Entry registerSubclass];
     
     // create a query

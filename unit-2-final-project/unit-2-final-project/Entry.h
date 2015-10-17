@@ -8,7 +8,6 @@
 
 #import "PFObject.h"
 #import <Parse/Parse.h>
-#import "JournalEntry.h"
 #import <UIKit/UIKit.h>
 #import "User.h"
 
@@ -20,6 +19,8 @@
 @property (nonatomic) NSDate *dateOfEntry;
 @property (nonatomic) NSString *titleOfEntry;
 @property (nonatomic) NSString *descriptionOfEntry;
+@property (nonatomic) NSString *apartmentLocation;
+@property (nonatomic) NSString *apartmentPrice;
 
 
 @property (nonatomic) NSMutableArray *journalEntries;

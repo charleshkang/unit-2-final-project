@@ -1,25 +1,34 @@
 //
-//  JournalEntry.m
+//  JournalEntryTableViewController.m
 //  unit-2-final-project
 //
 //  Created by Charles Kang on 10/16/15.
 //  Copyright © 2015 Charles Kang. All rights reserved.
 //
 
-#import "JournalEntry.h"
-#import <ParseUI/ParseUI.h>
-#import <Parse/Parse.h>
+#import "JournalEntryTableViewController.h"
 #import "Entry.h"
+#import <Parse/Parse.h>
+#import <ParseUI/ParseUI.h>
 
-@implementation JournalEntry
-
-@dynamic apartmentLocation;
-@dynamic apartmentPrice;
-@dynamic createdAt;
+@implementation JournalEntryTableViewController
 
 +(NSString *)parseClassName{
     
     return @"Entry";
+}
+
+- (void) viewDidLoad {
+    [super viewDidLoad];
+    self.navigationItem.title = @"Journal Entries";
+
+    [Entry fetchAll:^(NSArray *results, NSError *error) {
+        
+        self.entry.journalEntries = [NSMutableArray arrayWithArray:results];
+        
+        [self.tableView reloadData];
+        
+    }];
 }
 
 +(void)fetchAll:(void (^)(NSArray *, NSError *))completion{
@@ -34,40 +43,6 @@
     
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    self.navigationItem.title = @"Journal Entries";
-    
-    [self.tableView reloadData];
-}
-
-- (id)initWithCoder:(NSCoder *)aCoder
-{
-    self = [super initWithCoder:aCoder];
-    if (self) {
-        // The className to query on
-        self.parseClassName = @"Entry";
-        
-        // The key of the PFObject to display in the label of the default cell style
-        self.textKey = @"apartmentLocation";
-        self.textKey = @"apartmentPrice";
-        
-        // Whether the built-in pull-to-refresh is enabled
-        self.pullToRefreshEnabled = YES;
-        
-        // Whether the built-in pagination is enabled
-        self.paginationEnabled = NO;
-    }
-    return self;
-}
-
-- (PFQuery *)queryForTable
-{
-    PFQuery *query = [PFQuery queryWithClassName:self.parseClassName];
-    
-    return query;
-}
-
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     
     return 1;
@@ -76,8 +51,8 @@
     
     //return count of API results array
     // commented this out b/c code is breaking, trying to figure out what's up -charles
-
-//    return self.entry.journalEntries.count;
+    
+    return self.entry.journalEntries.count;
     return 1;
 }
 
@@ -88,8 +63,8 @@
     
     
     // commented this out b/c code is breaking, trying to figure out what's up -charles
-//    cell.textLabel.text = self.entry.journalEntries[indexPath.row][@"Entry"];
-//    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", self.apartmentPrice.journalEntries[indexPath.row][@"createdAt"]];
+    //    cell.textLabel.text = self.entry.journalEntries[indexPath.row][@"Entry"];
+    //    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", self.apartmentPrice.journalEntries[indexPath.row][@"createdAt"]];
     
     return cell;
 }
@@ -100,3 +75,6 @@
     NSLog(@"back tapped");
 }
 @end
+
+
+

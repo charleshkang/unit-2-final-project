@@ -14,6 +14,8 @@
 @dynamic titleOfEntry;
 @dynamic dateOfEntry;
 @dynamic journalEntries;
+@dynamic apartmentLocation;
+@dynamic apartmentPrice;
 
 
 + (NSString *) parseClassName {

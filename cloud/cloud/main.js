@@ -11,9 +11,9 @@ Parse.Cloud.define("send_twilio_message", function(request, response) {
     success: function(results) {
 
       twilio.sms.messages.create({
-          to: "+19494916672",
+          to: "+19177534949",
           from: "+12016907828",
-          body: "hello world! " + results[1].get('apartmentLocation')
+          body: "Hey, Lauren, here's the apartment you were looking at! " + results[0].get('apartmentLocation') + ' '  + "The price range for this apartment is:" + ' ' + results[0].get('apartmentPrice')
         },
         function(error, msg) {
           if (error) {

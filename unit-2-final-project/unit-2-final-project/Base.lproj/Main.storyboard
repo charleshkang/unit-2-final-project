@@ -146,7 +146,7 @@
         <!--Journal Entries-->
         <scene sceneID="GhJ-hM-96B">
             <objects>
-                <tableViewController id="QOE-RR-hv2" customClass="JournalEntry" sceneMemberID="viewController">
+                <tableViewController id="QOE-RR-hv2" customClass="JournalEntryTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="BAq-LT-0yN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -193,7 +193,7 @@
                     <navigationItem key="navigationItem" title="Journal Entries" id="kwF-p1-xm3">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="z49-7r-TKt">
                             <connections>
-                                <action selector="backButton:" destination="QOE-RR-hv2" id="ppY-k3-tiE"/>
+                                <action selector="backButton:" destination="QOE-RR-hv2" id="js5-rR-6aY"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="wIY-0E-aSA">

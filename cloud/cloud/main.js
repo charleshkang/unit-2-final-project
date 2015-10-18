@@ -4,15 +4,18 @@ var twilio = require('twilio')(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN);
 
 Parse.Cloud.define("send_twilio_message", function(request, response) {
 
-  var User = Parse.Object.extend("username");
-  var query = new Parse.Query(User);
+  var Entry = Parse.Object.extend("Entry");
+
+  var query = new Parse.Query(Entry);
   query.find({
     success: function(results) {
+
       twilio.sms.messages.create({
           to: "+19494916672",
           from: "+12016907828",
-          body: "testing 1 more!" + results[1].get('username'),
-        }, function(error, msg) {
+          body: "hello world! " + results[1].get('apartmentLocation')
+        },
+        function(error, msg) {
           if (error) {
             response.error(error);
           } else {

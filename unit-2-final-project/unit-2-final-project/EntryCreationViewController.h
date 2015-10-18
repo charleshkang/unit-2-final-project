@@ -13,5 +13,8 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *locationTextfield;
 @property (weak, nonatomic) IBOutlet UITextField *priceTextfield;
+@property (weak, nonatomic) IBOutlet UIButton *searchButtonTapped;
+
+
 
 @end

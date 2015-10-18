@@ -262,6 +262,7 @@
             </objects>
             <point key="canvasLocation" x="3181" y="464"/>
         </scene>
+<<<<<<< HEAD
         <!--Companies Table View Controller-->
         <scene sceneID="6hy-JP-8Wr">
             <objects>
@@ -304,6 +305,8 @@
             </objects>
             <point key="canvasLocation" x="2565" y="1631"/>
         </scene>
+=======
+>>>>>>> 7fb73307e0051a55da9049b5b6e84593f7ef4006
         <!--Company Map View Controller-->
         <scene sceneID="RNX-kc-OS2">
             <objects>
@@ -338,23 +341,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tbr-wZ-a8i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3853" y="464"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="efC-k6-xLX">
-            <objects>
-                <navigationController id="KKp-Ev-ost" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dSR-MO-uMP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="xsL-nS-Cjh" kind="relationship" relationship="rootViewController" id="7cr-I7-1lX"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yZd-AN-M6b" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1858" y="1631"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="W19-YP-kDp">

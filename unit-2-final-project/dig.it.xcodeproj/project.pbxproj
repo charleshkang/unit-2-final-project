@@ -52,7 +52,7 @@
 /* Begin PBXFileReference section */
 		099DBD6AD45FDC37F9CBE312 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		4227055F1BD15607007430E4 /* DontNeedThis.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DontNeedThis.xcdatamodel; sourceTree = "<group>"; };
-		4248D99E1BC95DA30031CA2D /* unit-2-final-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "unit-2-final-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4248D99E1BC95DA30031CA2D /* dig.it.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dig.it.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4248D9A21BC95DA30031CA2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4248D9A41BC95DA30031CA2D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4248D9A51BC95DA30031CA2D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 		4248D99F1BC95DA30031CA2D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4248D99E1BC95DA30031CA2D /* unit-2-final-project.app */,
+				4248D99E1BC95DA30031CA2D /* dig.it.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -280,9 +280,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4248D99D1BC95DA30031CA2D /* unit-2-final-project */ = {
+		4248D99D1BC95DA30031CA2D /* dig.it */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4248D9B81BC95DA40031CA2D /* Build configuration list for PBXNativeTarget "unit-2-final-project" */;
+			buildConfigurationList = 4248D9B81BC95DA40031CA2D /* Build configuration list for PBXNativeTarget "dig.it" */;
 			buildPhases = (
 				76FF0297662280A6C72A7E3E /* Check Pods Manifest.lock */,
 				4248D99A1BC95DA30031CA2D /* Sources */,
@@ -294,9 +294,9 @@
 			);
 			dependencies = (
 			);
-			name = "unit-2-final-project";
+			name = dig.it;
 			productName = "unit-2-final-project";
-			productReference = 4248D99E1BC95DA30031CA2D /* unit-2-final-project.app */;
+			productReference = 4248D99E1BC95DA30031CA2D /* dig.it.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -314,7 +314,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4248D9991BC95DA30031CA2D /* Build configuration list for PBXProject "unit-2-final-project" */;
+			buildConfigurationList = 4248D9991BC95DA30031CA2D /* Build configuration list for PBXProject "dig.it" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -327,7 +327,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4248D99D1BC95DA30031CA2D /* unit-2-final-project */,
+				4248D99D1BC95DA30031CA2D /* dig.it */,
 			);
 		};
 /* End PBXProject section */
@@ -519,7 +519,7 @@
 				INFOPLIST_FILE = "unit-2-final-project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.charleshkang.unit-2-final-project";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = dig.it;
 			};
 			name = Debug;
 		};
@@ -535,14 +535,14 @@
 				INFOPLIST_FILE = "unit-2-final-project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.charleshkang.unit-2-final-project";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = dig.it;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4248D9991BC95DA30031CA2D /* Build configuration list for PBXProject "unit-2-final-project" */ = {
+		4248D9991BC95DA30031CA2D /* Build configuration list for PBXProject "dig.it" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4248D9B61BC95DA40031CA2D /* Debug */,
@@ -551,7 +551,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4248D9B81BC95DA40031CA2D /* Build configuration list for PBXNativeTarget "unit-2-final-project" */ = {
+		4248D9B81BC95DA40031CA2D /* Build configuration list for PBXNativeTarget "dig.it" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4248D9B91BC95DA40031CA2D /* Debug */,

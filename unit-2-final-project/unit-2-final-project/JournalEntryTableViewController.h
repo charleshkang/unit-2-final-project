@@ -13,7 +13,6 @@
 
 @interface JournalEntryTableViewController : UITableViewController
 
-@property (nonatomic) Entry *entry;
 
 
 @end

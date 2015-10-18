@@ -8,7 +8,7 @@
 
 #import "ApartmentListingsCell.h"
 
-@implementation ApartmentListingsTableViewCell
+@implementation ApartmentListingsCell
 
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

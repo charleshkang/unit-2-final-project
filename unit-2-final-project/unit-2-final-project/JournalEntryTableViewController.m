@@ -10,64 +10,114 @@
 #import "Entry.h"
 #import <Parse/Parse.h>
 #import <ParseUI/ParseUI.h>
+#import "SignUpLoginViewController.h"
+#import  "JournalEntryTableViewController.h"
+#import "APIManager.h"
+#import "ApartmentListingsCell.h"
+#import "StreetEasyDetailViewController.h"
+#import <AFNetworking/AFNetworking.h>
+#import "Apartment.h"
+@interface JournalEntryTableViewController ()
+
+@property (nonatomic) NSString *price;
+@property (nonatomic) NSString *location;
+@property (nonatomic) NSMutableArray *apartments;
+
+@end
 
 @implementation JournalEntryTableViewController
-
-+(NSString *)parseClassName{
-    
-    return @"Entry";
-}
+static NSString * const detailSegue = @"showDetail";
+static NSString * const locationSegue = @"settingsTab";
+static NSString * const apiKey = @"ec69d94dfbb30a7399b00c6a2cc6a544d3cde4ba";
+static NSString * const cellIdentifier = @"ApartmentCell";
 
 - (void) viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"Journal Entries";
+    self.navigationItem.title = @"Dig It";
 
-    [Entry fetchAll:^(NSArray *results, NSError *error) {
+    self.apartments = [[NSMutableArray alloc] init];
+    
+    [self setupSegueCell];
+}
+#pragma Mark - NSUser Defaults (Apartment Filters)
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    self.location = [[NSUserDefaults standardUserDefaults] stringForKey:@"location"];
+    self.price = [[NSUserDefaults standardUserDefaults] stringForKey:@"price"];
+    
+    if (self.location != nil && self.price != nil) {
+        //        [self fetchData];
+    }
+}
+- (void)setupSegueCell {
+    UINib *cellNib = [UINib nibWithNibName:@"ApartmentListingsCell" bundle:nil];
+    [self.tableView registerNib:cellNib forCellReuseIdentifier:cellIdentifier];
+}
+
+
+
+#pragma Mark - API Stuff
+
+
+
+- (void)fetchData {
+    
+    [self.apartments removeAllObjects];
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    
+    NSString *stringURL = [NSString stringWithFormat:@"http://streeteasy.com/nyc/api/rentals/search?criteria=area:%@|price:%@-%%7C&amp;key=%@&amp;format=json", self.location,self.price, apiKey];
+    
+    [manager GET:stringURL parameters:nil success:^(NSURLSessionTask *task, id responseObject) {
         
-        self.entry.journalEntries = [NSMutableArray arrayWithArray:results];
+        NSDictionary *apartmentData = responseObject[@"listings"][@"rental"];
+        NSLog(@"%@", apartmentData);
+        
+        for (NSDictionary *apartment in apartmentData) {
+            
+            Apartment *apartmentForRent = [[Apartment alloc] init];
+            apartmentForRent.address = apartment[@"addr_street"];
+            apartmentForRent.unit = apartment[@"addr_unit"];
+            apartmentForRent.apartmentPrice = [apartment[@"price"] doubleValue];
+            apartmentForRent.iconName = apartment[@"medium_image_uri"];
+            
+            
+            [self.apartments addObject:apartmentData];
+        }
         
         [self.tableView reloadData];
         
+    } failure:^(NSURLSessionTask *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
     }];
 }
+#pragma mark - TableView Data;
 
-+(void)fetchAll:(void (^)(NSArray *, NSError *))completion{
-    
-    //create query
-    PFQuery *query = [PFQuery queryWithClassName:[self parseClassName]];
-    
-    //find all objects and return them in an array
-    [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
-        completion(objects, error);
-    }];
-    
-}
 
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    
-    return 1;
-}
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    
-    //return count of API results array
-    // commented this out b/c code is breaking, trying to figure out what's up -charles
-    
-    return self.entry.journalEntries.count;
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.apartments.count;
+}
 
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    ApartmentListingsCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"journalCellIdentifier" forIndexPath:indexPath];
+    cell.apartmentImage.image = [UIImage imageNamed:[self.apartments[indexPath.row] iconName]];
+    cell.locationLabel.text = [NSString stringWithFormat:@"%@",
+                               [self.apartments[indexPath.row] address]];
     
-    
-    // commented this out b/c code is breaking, trying to figure out what's up -charles
-    //    cell.textLabel.text = self.entry.journalEntries[indexPath.row][@"Entry"];
-    //    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", self.apartmentPrice.journalEntries[indexPath.row][@"createdAt"]];
+    //    cell.priceLabel.text = [NSString stringWithFormat:@"%@",
+    //                              [self.apartments[indexPath.row] apartmentPrice]];
+    //
+    //
     
     return cell;
 }
+
 
 
 - (IBAction)backButton:(id)sender {

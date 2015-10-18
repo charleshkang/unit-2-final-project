@@ -28,7 +28,7 @@
     // this line is probably incorrect
     self.journalEntries = [self.journalEntries mutableCopy];
     
-    AppDelegate *delegate = [UIApplication sharedApplication].delegate;
+    //AppDelegate *delegate = [UIApplication sharedApplication].delegate;
     
     self.locationTextfield.layer.masksToBounds = YES;
     self.locationTextfield.layer.borderColor = [[UIColor whiteColor]CGColor];
@@ -37,6 +37,7 @@
     self.priceTextfield.layer.masksToBounds = YES;
     self.priceTextfield.layer.borderColor = [[UIColor whiteColor]CGColor];
     self.priceTextfield.layer.borderWidth= 2.0f;
+    
     
 }
 
@@ -61,7 +62,6 @@
         [[NSUserDefaults standardUserDefaults] setValue:priceEntry forKey:@"price"];
         [[NSUserDefaults standardUserDefaults] synchronize];
 
-        
     }
     
     

@@ -84,7 +84,7 @@ static NSString * const cellIdentifier = @"ApartmentCell";
             apartmentForRent.address = apartment[@"addr_street"];
             apartmentForRent.unit = apartment[@"addr_unit"];
             apartmentForRent.apartmentPrice = [apartment[@"price"] doubleValue];
-            apartmentForRent.iconName = apartment[@"medium_image_uri"];
+            //apartmentForRent.iconName = apartment[@"medium_image_uri"];
             
             
             [self.apartments addObject:apartmentData];
@@ -111,7 +111,7 @@ static NSString * const cellIdentifier = @"ApartmentCell";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     ApartmentListingsCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
-    cell.apartmentImage.image = [UIImage imageNamed:[self.apartments[indexPath.row] iconName]];
+    //cell.apartmentImage.image = [UIImage imageNamed:[self.apartments[indexPath.row] iconName]];
     cell.locationLabel.text = [NSString stringWithFormat:@"%@",
                                [self.apartments[indexPath.row] address]];
     

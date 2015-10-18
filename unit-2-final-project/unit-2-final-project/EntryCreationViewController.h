@@ -6,9 +6,10 @@
 //  Copyright © 2015 Charles Kang. All rights reserved.
 //
 
-#import "ViewController.h"
+#import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
-@interface EntryCreationViewController : ViewController
+@interface EntryCreationViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITextField *locationTextfield;
 @property (weak, nonatomic) IBOutlet UITextField *priceTextfield;

@@ -28,7 +28,7 @@
     // this line is probably incorrect
     self.journalEntries = [self.journalEntries mutableCopy];
     
-    AppDelegate *delegate = [UIApplication sharedApplication].delegate;
+    //AppDelegate *delegate = [UIApplication sharedApplication].delegate;
     
     self.locationTextfield.layer.masksToBounds = YES;
     self.locationTextfield.layer.borderColor = [[UIColor whiteColor]CGColor];
@@ -37,7 +37,7 @@
     self.priceTextfield.layer.masksToBounds = YES;
     self.priceTextfield.layer.borderColor = [[UIColor whiteColor]CGColor];
     self.priceTextfield.layer.borderWidth= 2.0f;
-    
+
     self.searchButtonTapped.layer.masksToBounds = YES;
     self.searchButtonTapped.layer.borderColor = [[UIColor whiteColor]CGColor];
     self.searchButtonTapped.layer.borderWidth= 2.0f;
@@ -53,6 +53,7 @@
     
 //    //set appearance of status bar
 //    [self setNeedsStatusBarAppearanceUpdate];
+
     
 }
 
@@ -141,7 +142,6 @@
         [[NSUserDefaults standardUserDefaults] setValue:priceEntry forKey:@"price"];
         [[NSUserDefaults standardUserDefaults] synchronize];
 
-        
     }
     
     NSString *apartmentLocation = _locationTextfield.text;

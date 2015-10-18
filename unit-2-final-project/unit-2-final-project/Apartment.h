@@ -11,8 +11,12 @@
 
 @interface Apartment : NSObject
 
-@property (nonatomic) CGFloat apartmentLocation;
-@property (nonatomic) CGFloat apartmentPrice;
+
+@property (nonatomic) NSInteger apartmentPrice;
+
 @property (nonatomic) NSString *iconName;
+@property (nonatomic) NSString *apartmentForRent;
+@property (nonatomic) NSString *address;
+@property (nonatomic) NSString *unit;
 
 @end

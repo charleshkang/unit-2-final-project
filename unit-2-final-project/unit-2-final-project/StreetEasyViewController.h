@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface StreetEasyViewController : UIViewController
+@interface StreetEasyViewController : UITableViewController
 
 @end

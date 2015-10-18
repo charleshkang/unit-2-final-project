@@ -10,12 +10,12 @@
 
 #import "StreetEasyViewController.h"
 #import "SignUpLoginViewController.h"
-#import "EntryCreationViewController.h"
 #import  "JournalEntryTableViewController.h"
 #import "APIManager.h"
 #import "ApartmentListingsCell.h"
 #import "StreetEasyDetailViewController.h"
 #import <AFNetworking/AFNetworking.h>
+#import "Apartment.h"
 
 
 @interface StreetEasyViewController ()
@@ -72,24 +72,23 @@ static NSString * const cellIdentifier = @"ApartmentCell";
     [self.apartments removeAllObjects];
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     
-    NSString *stringURL = [NSString stringWithFormat:@"http://streeteasy.com/nyc/api/rentals/data?criteria=area:%@|price:%@-%%7C&amp;key=%@&amp;format=json", self.location,self.price, apiKey];
+    NSString *stringURL = [NSString stringWithFormat:@"http://streeteasy.com/nyc/api/rentals/search?criteria=area:%@|price:%@-%%7C&amp;key=%@&amp;format=json", self.location,self.price, apiKey];
     
     [manager GET:stringURL parameters:nil success:^(NSURLSessionTask *task, id responseObject) {
         
-        NSDictionary *dailyData = responseObject[@"daily"][@"data"];
-
+        NSDictionary *apartmentData = responseObject[@"listings"][@"rental"];
+        NSLog(@"%@", apartmentData); 
         
-//        for (NSDictionary *day in dailyData) {
-//            
-//            Weather *dayOfWeek = [[Weather alloc] initWithSecondsSince1970:[day[@"time"] doubleValue]];
-//            dayOfWeek.summary = day[@"summary"];
-//            dayOfWeek.tempMax = [day[@"temperatureMax"] doubleValue];
-//            dayOfWeek.tempMin = [day[@"temperatureMin"] doubleValue];
-//            dayOfWeek.iconName = day[@"icon"];
-//            dayOfWeek.humidity = [day[@"humidity"] doubleValue];
-//            dayOfWeek.windSpeed = [day[@"windSpeed"] doubleValue];
-//            
-//            [self.days addObject:dayOfWeek];
+        for (NSDictionary *apartment in apartmentData) {
+            
+            Apartment *apartmentForRent = [[Apartment alloc] init];
+            apartmentForRent.address = apartment[@"addr_street"];
+            apartmentForRent.unit = apartment[@"addr_unit"];
+            apartmentForRent.apartmentPrice = [apartment[@"price"] doubleValue];
+            apartmentForRent.iconName = apartment[@"medium_image_uri"];
+
+            
+            [self.apartments addObject:apartmentData];
         }
         
         [self.tableView reloadData];
@@ -113,13 +112,13 @@ static NSString * const cellIdentifier = @"ApartmentCell";
     ApartmentListingsCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
     cell.apartmentImage.image = [UIImage imageNamed:[self.apartments[indexPath.row] iconName]];
-    cell.locationLabel.text = [NSString stringWithFormat:@"%.2f",
-                               [self.days[indexPath.row] tempMax]];
+    cell.locationLabel.text = [NSString stringWithFormat:@"%@",
+                               [self.apartments[indexPath.row] address]];
     
-    cell.priceLabel.text = [NSString stringWithFormat:@"%.2f",
-                              [self.days[indexPath.row] tempMin]];
-    
-    cell.dayLabel.text = [self.days[indexPath.row] dayOfWeek];
+//    cell.priceLabel.text = [NSString stringWithFormat:@"%@",
+//                              [self.apartments[indexPath.row] apartmentPrice]];
+//    
+//    
     
     return cell;
 }
@@ -136,22 +135,22 @@ static NSString * const cellIdentifier = @"ApartmentCell";
 
 
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
-    if ([segue.identifier isEqualToString:detailSegue]) {
-        
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        StreetEasyDetailViewController*vc = [segue destinationViewController];
-        
-        vc.imageName = [self.days[indexPath.row] iconName];
-        vc.humidity = [self.days[indexPath.row] humidity];
-        vc.windSpeed = [self.days[indexPath.row] windSpeed];
-        vc.summary = [self.days[indexPath.row] summary];
-        
-    } else if ([segue.identifier isEqualToString:locationSegue]) {
-        
-    }
-}
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//    
+//    if ([segue.identifier isEqualToString:detailSegue]) {
+//        
+//        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+//        StreetEasyDetailViewController*vc = [segue destinationViewController];
+//        
+//        vc.imageName = [self.days[indexPath.row] iconName];
+//        vc.humidity = [self.days[indexPath.row] humidity];
+//        vc.windSpeed = [self.days[indexPath.row] windSpeed];
+//        vc.summary = [self.days[indexPath.row] summary];
+//        
+//    } else if ([segue.identifier isEqualToString:locationSegue]) {
+//        
+//    }
+//}
 
 
 @end

@@ -27,6 +27,10 @@
 		42FCE8F31BC9A710008627B6 /* EntryDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FCE8F21BC9A710008627B6 /* EntryDetailsTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		450D853C1BC9811E00C0D55F /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 450D853B1BC9811E00C0D55F /* APIManager.m */; settings = {ASSET_TAGS = (); }; };
 		45A71AE51BD3EF12000A13B7 /* StreetEasyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A71AE41BD3EF12000A13B7 /* StreetEasyViewController.m */; settings = {ASSET_TAGS = (); }; };
+		45A71AE91BD3FE22000A13B7 /* ApartmentListingCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45A71AE81BD3FE22000A13B7 /* ApartmentListingCells.xib */; settings = {ASSET_TAGS = (); }; };
+		45A71AEF1BD40009000A13B7 /* ApartmentListingsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A71AEE1BD40009000A13B7 /* ApartmentListingsCell.m */; settings = {ASSET_TAGS = (); }; };
+		45A71AF21BD4021C000A13B7 /* StreetEasyDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A71AF11BD4021C000A13B7 /* StreetEasyDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		45A71AF51BD404BC000A13B7 /* Apartment.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A71AF41BD404BC000A13B7 /* Apartment.m */; settings = {ASSET_TAGS = (); }; };
 		862B72D77ED97BE1EEAAD7A6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75199BEAB21FAD7AFA7E126F /* libPods.a */; };
 		89009B911BCAE10300541A5A /* CompanyMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89009B901BCAE10300541A5A /* CompanyMapViewController.m */; settings = {ASSET_TAGS = (); }; };
 		89009B931BCAE26700541A5A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89009B921BCAE26700541A5A /* AVFoundation.framework */; };
@@ -77,6 +81,13 @@
 		450D853B1BC9811E00C0D55F /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
 		45A71AE31BD3EF12000A13B7 /* StreetEasyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreetEasyViewController.h; sourceTree = "<group>"; };
 		45A71AE41BD3EF12000A13B7 /* StreetEasyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreetEasyViewController.m; sourceTree = "<group>"; };
+		45A71AE81BD3FE22000A13B7 /* ApartmentListingCells.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApartmentListingCells.xib; sourceTree = "<group>"; };
+		45A71AED1BD40009000A13B7 /* ApartmentListingsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApartmentListingsCell.h; sourceTree = "<group>"; };
+		45A71AEE1BD40009000A13B7 /* ApartmentListingsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApartmentListingsCell.m; sourceTree = "<group>"; };
+		45A71AF01BD4021C000A13B7 /* StreetEasyDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreetEasyDetailViewController.h; sourceTree = "<group>"; };
+		45A71AF11BD4021C000A13B7 /* StreetEasyDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreetEasyDetailViewController.m; sourceTree = "<group>"; };
+		45A71AF31BD404BC000A13B7 /* Apartment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Apartment.h; sourceTree = "<group>"; };
+		45A71AF41BD404BC000A13B7 /* Apartment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Apartment.m; sourceTree = "<group>"; };
 		75199BEAB21FAD7AFA7E126F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		89009B8F1BCAE10300541A5A /* CompanyMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyMapViewController.h; sourceTree = "<group>"; };
 		89009B901BCAE10300541A5A /* CompanyMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyMapViewController.m; sourceTree = "<group>"; };
@@ -139,6 +150,13 @@
 				89009BBB1BCAF06B00541A5A /* EntryCreationViewController.m */,
 				45A71AE31BD3EF12000A13B7 /* StreetEasyViewController.h */,
 				45A71AE41BD3EF12000A13B7 /* StreetEasyViewController.m */,
+				45A71AF01BD4021C000A13B7 /* StreetEasyDetailViewController.h */,
+				45A71AF11BD4021C000A13B7 /* StreetEasyDetailViewController.m */,
+				45A71AF31BD404BC000A13B7 /* Apartment.h */,
+				45A71AF41BD404BC000A13B7 /* Apartment.m */,
+				45A71AED1BD40009000A13B7 /* ApartmentListingsCell.h */,
+				45A71AEE1BD40009000A13B7 /* ApartmentListingsCell.m */,
+				45A71AE81BD3FE22000A13B7 /* ApartmentListingCells.xib */,
 				42C2F7471BD1CFB700C9D31F /* JournalEntryTableViewController.h */,
 				42C2F7481BD1CFB700C9D31F /* JournalEntryTableViewController.m */,
 				89009B8F1BCAE10300541A5A /* CompanyMapViewController.h */,
@@ -322,6 +340,7 @@
 				890AC0711BCAFE0200D61E01 /* Main.storyboard in Resources */,
 				4248D9B41BC95DA40031CA2D /* LaunchScreen.storyboard in Resources */,
 				4248D9B11BC95DA40031CA2D /* Assets.xcassets in Resources */,
+				45A71AE91BD3FE22000A13B7 /* ApartmentListingCells.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,14 +386,17 @@
 			files = (
 				42FCE8EA1BC99EC5008627B6 /* ViewController.m in Sources */,
 				42A3B12A1BCED8C100907D15 /* Entry.m in Sources */,
+				45A71AF51BD404BC000A13B7 /* Apartment.m in Sources */,
 				422705601BD15607007430E4 /* DontNeedThis.xcdatamodeld in Sources */,
 				42C2F7491BD1CFB700C9D31F /* JournalEntryTableViewController.m in Sources */,
+				45A71AEF1BD40009000A13B7 /* ApartmentListingsCell.m in Sources */,
 				894A116B1BC961360040C318 /* SignUpLoginViewController.m in Sources */,
 				42FCE8E11BC99C47008627B6 /* User.m in Sources */,
 				4248D9A61BC95DA30031CA2D /* AppDelegate.m in Sources */,
 				42FCE8F31BC9A710008627B6 /* EntryDetailsTableViewController.m in Sources */,
 				45A71AE51BD3EF12000A13B7 /* StreetEasyViewController.m in Sources */,
 				450D853C1BC9811E00C0D55F /* APIManager.m in Sources */,
+				45A71AF21BD4021C000A13B7 /* StreetEasyDetailViewController.m in Sources */,
 				89009BBC1BCAF06B00541A5A /* EntryCreationViewController.m in Sources */,
 				4248D9A31BC95DA30031CA2D /* main.m in Sources */,
 				89009B911BCAE10300541A5A /* CompanyMapViewController.m in Sources */,

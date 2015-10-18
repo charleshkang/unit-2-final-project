@@ -1,5 +1,5 @@
 pod 'Parse'
 pod 'TwilioSDK’
 pod 'GoogleMaps’
-
+pod 'AFNetworking', '3.0.0-beta.1'
 

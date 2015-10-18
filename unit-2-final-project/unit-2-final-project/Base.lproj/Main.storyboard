@@ -165,11 +165,11 @@
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XQM-cE-16Q" id="pK7-v9-WMC">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kLH-t6-v1d">
-                                            <rect key="frame" x="15" y="6" width="31.5" height="19.5"/>
+                                            <rect key="frame" x="15" y="5" width="32" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -177,7 +177,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1LH-d2-heZ">
-                                            <rect key="frame" x="15" y="25.5" width="40.5" height="13.5"/>
+                                            <rect key="frame" x="15" y="25" width="41" height="14"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
@@ -225,7 +225,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="142"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Uwk-MF-adC" id="XOr-31-CEN">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="141.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="141"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[NSDATE - today probably]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQ0-zP-Xgl">
@@ -245,7 +245,7 @@
                                 <rect key="frame" x="0.0" y="234" width="600" height="283"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d1P-8M-M3a" id="D3t-9e-Nxr">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="282.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="282"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6TZ-TN-lDe">
@@ -280,6 +280,7 @@
             </objects>
             <point key="canvasLocation" x="3181" y="464"/>
         </scene>
+<<<<<<< HEAD
         <!--Companies Table View Controller-->
         <scene sceneID="6hy-JP-8Wr">
             <objects>
@@ -294,11 +295,11 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bCo-2D-X2i" id="jAf-8Q-btW">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UaX-ov-HpO">
-                                            <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -322,6 +323,8 @@
             </objects>
             <point key="canvasLocation" x="2565" y="1631"/>
         </scene>
+=======
+>>>>>>> 7fb73307e0051a55da9049b5b6e84593f7ef4006
         <!--Company Map View Controller-->
         <scene sceneID="RNX-kc-OS2">
             <objects>
@@ -356,23 +359,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tbr-wZ-a8i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3853" y="464"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="efC-k6-xLX">
-            <objects>
-                <navigationController id="KKp-Ev-ost" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dSR-MO-uMP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="xsL-nS-Cjh" kind="relationship" relationship="rootViewController" id="7cr-I7-1lX"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yZd-AN-M6b" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1858" y="1631"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="W19-YP-kDp">
@@ -423,6 +409,7 @@
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PG0-Rl-ptr">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
+<<<<<<< HEAD
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="search-bg" translatesAutoresizingMaskIntoConstraints="NO" id="I1u-2r-DBU">
                                         <rect key="frame" x="-28" y="-39" width="673" height="639"/>
                                         <animations/>
@@ -439,6 +426,10 @@
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" alpha="0.80000000000000004" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="enter location here..." borderStyle="line" placeholder="Enter location here..." textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="sU5-Yv-mh0">
                                         <rect key="frame" x="50" y="210" width="500" height="50"/>
+=======
+                                    <textField opaque="NO" clipsSubviews="YES" alpha="0.80000000000000004" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Apartment Location" borderStyle="line" placeholder="Entry Title" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="sU5-Yv-mh0">
+                                        <rect key="frame" x="50" y="186" width="500" height="50"/>
+>>>>>>> 1fc2db02a03aa1b79d96934b62a81ea4acac3ffa
                                         <animations/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="JCA-wu-Irq"/>
@@ -447,15 +438,25 @@
                                         <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+<<<<<<< HEAD
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="wait! we need some info..." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUl-Go-UNf">
                                         <rect key="frame" x="30" y="124" width="540" height="46.5"/>
+=======
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wait! We need some info..." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUl-Go-UNf">
+                                        <rect key="frame" x="30" y="100" width="540" height="47"/>
+>>>>>>> 1fc2db02a03aa1b79d96934b62a81ea4acac3ffa
                                         <animations/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="34"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+<<<<<<< HEAD
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfc-Rh-iFZ">
                                         <rect key="frame" x="50" y="380" width="500" height="47"/>
+=======
+                                    <textField opaque="NO" clipsSubviews="YES" alpha="0.80000000000000004" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Apartment Price" borderStyle="line" placeholder="Entry Description" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rDR-hD-HWS">
+                                        <rect key="frame" x="50" y="256" width="500" height="50"/>
+>>>>>>> 1fc2db02a03aa1b79d96934b62a81ea4acac3ffa
                                         <animations/>
                                         <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="25"/>
                                         <state key="normal" title="SEARCH">

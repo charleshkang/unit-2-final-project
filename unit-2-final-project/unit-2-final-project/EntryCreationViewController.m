@@ -133,6 +133,15 @@
         [self emptyTextField];
         NSLog(@"price error");
         
+        NSCharacterSet *invalidCharSet = [[NSCharacterSet characterSetWithCharactersInString:@"0123456789."] invertedSet];
+        NSString *locationEntry = [[self.locationTextfield.text componentsSeparatedByCharactersInSet:invalidCharSet] componentsJoinedByString:@""];
+        NSString *priceEntry = [[self.priceTextfield.text componentsSeparatedByCharactersInSet:invalidCharSet] componentsJoinedByString:@""];
+        
+        [[NSUserDefaults standardUserDefaults] setValue:locationEntry forKey:@"location"];
+        [[NSUserDefaults standardUserDefaults] setValue:priceEntry forKey:@"price"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+
+        
     }
     
     NSString *apartmentLocation = _locationTextfield.text;

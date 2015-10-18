@@ -9,12 +9,11 @@
 #import "EntryCreationViewController.h"
 #import "Entry.h"
 #import "AppDelegate.h"
+#import <QuartzCore/QuartzCore.h>
 
 
 @interface EntryCreationViewController ()
 
-@property (weak, nonatomic) IBOutlet UITextField *titleTextField;
-@property (weak, nonatomic) IBOutlet UITextField *descriptionTextField;
 @property (nonatomic) NSMutableArray *journalEntries;
 
 
@@ -31,7 +30,18 @@
     
     AppDelegate *delegate = [UIApplication sharedApplication].delegate;
     
+    self.locationTextfield.layer.masksToBounds = YES;
+    self.locationTextfield.layer.borderColor = [[UIColor whiteColor]CGColor];
+    self.locationTextfield.layer.borderWidth= 2.0f;
+    
+    self.priceTextfield.layer.masksToBounds = YES;
+    self.priceTextfield.layer.borderColor = [[UIColor whiteColor]CGColor];
+    self.priceTextfield.layer.borderWidth= 2.0f;
+    
 }
+
+
+
 
 - (IBAction)saveJournalEntry:(id)sender {
     
@@ -44,7 +54,6 @@
         NSLog(@"price error");
         
     }
-    
     
     
     NSString *apartmentLocation = _locationTextfield.text;

@@ -52,7 +52,7 @@ static NSString * const cellIdentifier = @"ApartmentCell";
 }
 
 - (void)setupSegueCell {
-    UINib *cellNib = [UINib nibWithNibName:@"ApartmentListingsCells" bundle:nil];
+    UINib *cellNib = [UINib nibWithNibName:@"ApartmentListingCells" bundle:nil];
     [self.tableView registerNib:cellNib forCellReuseIdentifier:cellIdentifier];
 }
 

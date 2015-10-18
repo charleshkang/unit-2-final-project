@@ -72,22 +72,22 @@ static NSString * const cellIdentifier = @"ApartmentCell";
     
     [manager GET:stringURL parameters:nil success:^(NSURLSessionTask *task, id responseObject) {
         
-        //NSDictionary *apartmentData = responseObject[@"listings"][@"rental"];
         NSArray *apartmentData = responseObject
         [@"listings"][@"object"];
-
-       NSLog(@"%@", apartmentData);
         
         for (NSDictionary *apartment in apartmentData) {
+            NSDictionary * allApartmentData = apartment[@"rental"];
+          
             
             Apartment *apartmentForRent = [[Apartment alloc] init];
-            apartmentForRent.address = apartment[@"addr_street"];
-            apartmentForRent.unit = apartment[@"addr_unit"];
-            apartmentForRent.apartmentPrice = [apartment[@"price"] doubleValue];
-            //apartmentForRent.iconName = apartment[@"medium_image_uri"];
+            apartmentForRent.address = [allApartmentData objectForKey:@"addr_street"];
+            apartmentForRent.unit = [allApartmentData objectForKey:@"addr_unit"];
+           // apartmentForRent.apartmentPrice = [allApartmentData objectForKey:@"price"] doubleValue];
+            apartmentForRent.iconName = [allApartmentData objectForKey:@"medium_image_uri"];
             
             
-            [self.apartments addObject:apartmentData];
+            
+            [self.apartments addObject:apartmentForRent];
             
         }
         

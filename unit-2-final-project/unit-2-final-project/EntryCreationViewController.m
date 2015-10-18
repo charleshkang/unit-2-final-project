@@ -126,6 +126,17 @@
     
     NSLog(@"user entered: %@, %@", self.locationTextfield.text, self.priceTextfield.text);
     
+    NSCharacterSet *invalidCharSet = [[NSCharacterSet characterSetWithCharactersInString:@"abcdefghijklmnopqrstuvwxyz."] invertedSet];
+    NSCharacterSet *invalidCharSett = [[NSCharacterSet characterSetWithCharactersInString:@"0123456789."] invertedSet];
+    
+    NSString *locationEntry = [[self.locationTextfield.text componentsSeparatedByCharactersInSet:invalidCharSet] componentsJoinedByString:@""];
+    NSString *priceEntry = [[self.priceTextfield.text componentsSeparatedByCharactersInSet:invalidCharSett] componentsJoinedByString:@""];
+    
+    [[NSUserDefaults standardUserDefaults] setValue:locationEntry forKey:@"location"];
+    [[NSUserDefaults standardUserDefaults] setValue:priceEntry forKey:@"price"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    
     if ([self.locationTextfield.text isEqualToString:@"Apartment Location"]) {
         [self emptyTextField];
         NSLog(@"apartment error");
@@ -133,15 +144,7 @@
     } if ([self.priceTextfield.text isEqualToString:@"Apartment Price"]) {
         [self emptyTextField];
         NSLog(@"price error");
-        
-        NSCharacterSet *invalidCharSet = [[NSCharacterSet characterSetWithCharactersInString:@"0123456789."] invertedSet];
-        NSString *locationEntry = [[self.locationTextfield.text componentsSeparatedByCharactersInSet:invalidCharSet] componentsJoinedByString:@""];
-        NSString *priceEntry = [[self.priceTextfield.text componentsSeparatedByCharactersInSet:invalidCharSet] componentsJoinedByString:@""];
-        
-        [[NSUserDefaults standardUserDefaults] setValue:locationEntry forKey:@"location"];
-        [[NSUserDefaults standardUserDefaults] setValue:priceEntry forKey:@"price"];
-        [[NSUserDefaults standardUserDefaults] synchronize];
-
+     
     }
     
     NSString *apartmentLocation = _locationTextfield.text;

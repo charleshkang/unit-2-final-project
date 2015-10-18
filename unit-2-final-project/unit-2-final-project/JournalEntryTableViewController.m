@@ -36,7 +36,6 @@ static NSString * const cellIdentifier = @"ApartmentCell";
     self.navigationItem.title = @"Dig It";
 
     self.apartments = [[NSMutableArray alloc] init];
-    
     [self setupSegueCell];
 }
 #pragma Mark - NSUser Defaults (Apartment Filters)
@@ -48,11 +47,12 @@ static NSString * const cellIdentifier = @"ApartmentCell";
     self.price = [[NSUserDefaults standardUserDefaults] stringForKey:@"price"];
     
     if (self.location != nil && self.price != nil) {
-        //        [self fetchData];
+                [self fetchData];
     }
 }
+
 - (void)setupSegueCell {
-    UINib *cellNib = [UINib nibWithNibName:@"ApartmentListingsCell" bundle:nil];
+    UINib *cellNib = [UINib nibWithNibName:@"ApartmentListingsCells" bundle:nil];
     [self.tableView registerNib:cellNib forCellReuseIdentifier:cellIdentifier];
 }
 
@@ -67,12 +67,16 @@ static NSString * const cellIdentifier = @"ApartmentCell";
     [self.apartments removeAllObjects];
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     
-    NSString *stringURL = [NSString stringWithFormat:@"http://streeteasy.com/nyc/api/rentals/search?criteria=area:%@|price:%@-%%7C&amp;key=%@&amp;format=json", self.location,self.price, apiKey];
+    NSString *stringURL = [NSString stringWithFormat:@"http://streeteasy.com/nyc/api/rentals/search?criteria=area:%@%%7Cprice:%@-%%7C&amp;key=%@&amp;format=json", self.location,self.price, apiKey];
+   
     
     [manager GET:stringURL parameters:nil success:^(NSURLSessionTask *task, id responseObject) {
         
-        NSDictionary *apartmentData = responseObject[@"listings"][@"rental"];
-        NSLog(@"%@", apartmentData);
+        //NSDictionary *apartmentData = responseObject[@"listings"][@"rental"];
+        NSArray *apartmentData = responseObject
+        [@"listings"][@"object"];
+
+       NSLog(@"%@", apartmentData);
         
         for (NSDictionary *apartment in apartmentData) {
             
@@ -84,6 +88,7 @@ static NSString * const cellIdentifier = @"ApartmentCell";
             
             
             [self.apartments addObject:apartmentData];
+            
         }
         
         [self.tableView reloadData];

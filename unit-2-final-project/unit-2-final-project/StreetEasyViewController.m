@@ -50,7 +50,7 @@ static NSString * const cellIdentifier = @"ApartmentCell";
     self.price = [[NSUserDefaults standardUserDefaults] stringForKey:@"price"];
     
     if (self.location != nil && self.price != nil) {
-//        [self fetchData];
+        //        [self fetchData];
     }
 }
 
@@ -75,7 +75,7 @@ static NSString * const cellIdentifier = @"ApartmentCell";
     [manager GET:stringURL parameters:nil success:^(NSURLSessionTask *task, id responseObject) {
         
         NSDictionary *apartmentData = responseObject[@"listings"][@"rental"];
-        NSLog(@"%@", apartmentData); 
+        NSLog(@"%@", apartmentData);
         
         for (NSDictionary *apartment in apartmentData) {
             
@@ -84,9 +84,9 @@ static NSString * const cellIdentifier = @"ApartmentCell";
             apartmentForRent.unit = apartment[@"addr_unit"];
             apartmentForRent.apartmentPrice = [apartment[@"price"] doubleValue];
             apartmentForRent.iconName = apartment[@"medium_image_uri"];
-
             
             [self.apartments addObject:apartmentData];
+               NSLog(@"%@ %ld", apartmentForRent.address, apartmentForRent.apartmentPrice);
         }
         
         [self.tableView reloadData];
@@ -113,10 +113,10 @@ static NSString * const cellIdentifier = @"ApartmentCell";
     cell.locationLabel.text = [NSString stringWithFormat:@"%@",
                                [self.apartments[indexPath.row] address]];
     
-//    cell.priceLabel.text = [NSString stringWithFormat:@"%@",
-//                              [self.apartments[indexPath.row] apartmentPrice]];
-//    
-//    
+    //    cell.priceLabel.text = [NSString stringWithFormat:@"%@",
+    //                              [self.apartments[indexPath.row] apartmentPrice]];
+    //
+    //
     
     return cell;
 }
@@ -134,17 +134,17 @@ static NSString * const cellIdentifier = @"ApartmentCell";
 
 
 //- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//    
+//
 //    if ([segue.identifier isEqualToString:detailSegue]) {
-//        
+//
 //        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
 //        StreetEasyDetailViewController*vc = [segue destinationViewController];
-//        
+//
 //        vc.imageName = [self.days[indexPath.row] iconName];
 //        vc.humidity = [self.days[indexPath.row] humidity];
 //        vc.windSpeed = [self.days[indexPath.row] windSpeed];
 //        vc.summary = [self.days[indexPath.row] summary];
-//        
+//
 //    } else if ([segue.identifier isEqualToString:locationSegue]) {
 //        
 //    }

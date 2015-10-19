@@ -20,7 +20,6 @@
 
 @interface StreetEasyViewController ()
 
-
 @property (nonatomic) NSString *price;
 @property (nonatomic) NSString *location;
 @property (nonatomic) NSMutableArray *apartments;
@@ -28,7 +27,6 @@
 @end
 
 @implementation StreetEasyViewController
-
 
 static NSString * const detailSegue = @"showDetail";
 static NSString * const locationSegue = @"settingsTab";

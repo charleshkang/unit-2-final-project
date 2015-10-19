@@ -7,47 +7,67 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ApartmentCell" rowHeight="117" id="OPK-Wy-rcX" customClass="ApartmentListingsCell">
-            <rect key="frame" x="0.0" y="0.0" width="403" height="117"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ApartmentCell" rowHeight="116" id="OPK-Wy-rcX" customClass="ApartmentListingsCell">
+            <rect key="frame" x="0.0" y="0.0" width="403" height="116"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OPK-Wy-rcX" id="Hsi-3t-3vD">
-                <rect key="frame" x="0.0" y="0.0" width="403" height="116"/>
+                <rect key="frame" x="0.0" y="0.0" width="403" height="115"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apartment Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7n8-9O-nqN">
-                        <rect key="frame" x="244" y="59" width="125" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apartment Price" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7n8-9O-nqN">
+                        <rect key="frame" x="117" y="26" width="258" height="17"/>
                         <animations/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apartment Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXT-yj-KUp">
-                        <rect key="frame" x="223" y="28" width="152" height="21"/>
-                        <animations/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KkG-fb-1SD">
-                        <rect key="frame" x="8" y="8" width="100" height="100"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KkG-fb-1SD">
+                        <rect key="frame" x="9" y="8" width="100" height="100"/>
                         <animations/>
                         <constraints>
                             <constraint firstAttribute="height" constant="100" id="G4n-FQ-zGZ"/>
                             <constraint firstAttribute="width" constant="100" id="gSW-gt-xRc"/>
                         </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apartment Location" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXT-yj-KUp">
+                        <rect key="frame" x="117" y="0.0" width="258" height="18"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <animations/>
                 <constraints>
                     <constraint firstAttribute="trailingMargin" secondItem="JXT-yj-KUp" secondAttribute="trailing" constant="20" id="0Sl-O1-Ncv"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="7n8-9O-nqN" secondAttribute="trailing" constant="26" id="5aR-v3-nRh"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="7n8-9O-nqN" secondAttribute="trailing" constant="20" id="5aR-v3-nRh"/>
                     <constraint firstItem="KkG-fb-1SD" firstAttribute="centerY" secondItem="Hsi-3t-3vD" secondAttribute="centerY" id="EwH-cE-6df"/>
-                    <constraint firstItem="JXT-yj-KUp" firstAttribute="top" secondItem="Hsi-3t-3vD" secondAttribute="topMargin" constant="20" id="lvP-nR-dBf"/>
-                    <constraint firstItem="7n8-9O-nqN" firstAttribute="top" secondItem="JXT-yj-KUp" secondAttribute="bottom" constant="10" id="sBK-Xi-l4C"/>
+                    <constraint firstItem="7n8-9O-nqN" firstAttribute="top" secondItem="JXT-yj-KUp" secondAttribute="bottom" constant="8" id="O2Z-2q-UN6"/>
+                    <constraint firstItem="7n8-9O-nqN" firstAttribute="top" secondItem="JXT-yj-KUp" secondAttribute="bottom" constant="11" id="OnT-pH-7aV"/>
+                    <constraint firstItem="JXT-yj-KUp" firstAttribute="top" secondItem="Hsi-3t-3vD" secondAttribute="top" id="R5N-px-gap"/>
+                    <constraint firstItem="7n8-9O-nqN" firstAttribute="leading" secondItem="KkG-fb-1SD" secondAttribute="trailing" constant="8" id="YT3-F8-wZv"/>
+                    <constraint firstItem="JXT-yj-KUp" firstAttribute="leading" secondItem="KkG-fb-1SD" secondAttribute="trailing" constant="8" id="bQH-xl-LfE"/>
+                    <constraint firstAttribute="trailing" secondItem="7n8-9O-nqN" secondAttribute="trailing" constant="28" id="gHV-DJ-y9q"/>
+                    <constraint firstItem="JXT-yj-KUp" firstAttribute="top" secondItem="Hsi-3t-3vD" secondAttribute="topMargin" id="lvP-nR-dBf"/>
+                    <constraint firstItem="7n8-9O-nqN" firstAttribute="top" secondItem="JXT-yj-KUp" secondAttribute="bottom" constant="11" id="sBK-Xi-l4C"/>
                     <constraint firstItem="KkG-fb-1SD" firstAttribute="leading" secondItem="Hsi-3t-3vD" secondAttribute="leadingMargin" constant="1" id="sUR-Jq-xcV"/>
-                    <constraint firstItem="7n8-9O-nqN" firstAttribute="top" secondItem="JXT-yj-KUp" secondAttribute="bottom" constant="10" id="xIz-YW-FTs"/>
+                    <constraint firstAttribute="bottom" secondItem="7n8-9O-nqN" secondAttribute="bottom" constant="72" id="w0j-bD-7aA"/>
+                    <constraint firstItem="7n8-9O-nqN" firstAttribute="top" secondItem="JXT-yj-KUp" secondAttribute="bottom" constant="11" id="xIz-YW-FTs"/>
+                    <constraint firstAttribute="trailing" secondItem="JXT-yj-KUp" secondAttribute="trailing" constant="28" id="yWg-gf-LSr"/>
                     <constraint firstAttribute="trailingMargin" secondItem="JXT-yj-KUp" secondAttribute="trailing" constant="20" id="z8j-X3-ztY"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="0Sl-O1-Ncv"/>
+                        <exclude reference="lvP-nR-dBf"/>
+                        <exclude reference="z8j-X3-ztY"/>
+                        <exclude reference="5aR-v3-nRh"/>
+                        <exclude reference="OnT-pH-7aV"/>
+                        <exclude reference="sBK-Xi-l4C"/>
+                        <exclude reference="w0j-bD-7aA"/>
+                        <exclude reference="xIz-YW-FTs"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <animations/>
             <connections>
@@ -55,7 +75,7 @@
                 <outlet property="locationLabel" destination="JXT-yj-KUp" id="bib-f2-PwA"/>
                 <outlet property="priceLabel" destination="7n8-9O-nqN" id="8zm-1H-tXh"/>
             </connections>
-            <point key="canvasLocation" x="378.5" y="313.5"/>
+            <point key="canvasLocation" x="378.5" y="314"/>
         </tableViewCell>
     </objects>
 </document>

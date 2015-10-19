@@ -17,6 +17,7 @@
 #import "StreetEasyDetailViewController.h"
 #import <AFNetworking/AFNetworking.h>
 #import "Apartment.h"
+
 @interface JournalEntryTableViewController ()
 
 @property (nonatomic) NSString *price;
@@ -34,7 +35,7 @@ static NSString * const cellIdentifier = @"ApartmentCell";
 - (void) viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"Dig It";
-
+    
     self.apartments = [[NSMutableArray alloc] init];
     [self setupSegueCell];
 }
@@ -47,7 +48,7 @@ static NSString * const cellIdentifier = @"ApartmentCell";
     self.price = [[NSUserDefaults standardUserDefaults] stringForKey:@"price"];
     
     if (self.location != nil && self.price != nil) {
-                [self fetchData];
+        [self fetchData];
     }
 }
 
@@ -68,7 +69,7 @@ static NSString * const cellIdentifier = @"ApartmentCell";
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     
     NSString *stringURL = [NSString stringWithFormat:@"http://streeteasy.com/nyc/api/rentals/search?criteria=area:%@%%7Cprice:%@-%%7C&amp;key=%@&amp;format=json", self.location,self.price, apiKey];
-   
+    
     
     [manager GET:stringURL parameters:nil success:^(NSURLSessionTask *task, id responseObject) {
         
@@ -77,12 +78,12 @@ static NSString * const cellIdentifier = @"ApartmentCell";
         
         for (NSDictionary *apartment in apartmentData) {
             NSDictionary * allApartmentData = apartment[@"rental"];
-          
+            
             
             Apartment *apartmentForRent = [[Apartment alloc] init];
             apartmentForRent.address = [allApartmentData objectForKey:@"addr_street"];
             apartmentForRent.unit = [allApartmentData objectForKey:@"addr_unit"];
-           // apartmentForRent.apartmentPrice = [allApartmentData objectForKey:@"price"] doubleValue];
+            // apartmentForRent.apartmentPrice = [allApartmentData objectForKey:@"price"] doubleValue];
             apartmentForRent.iconName = [allApartmentData objectForKey:@"medium_image_uri"];
             
             
@@ -123,12 +124,10 @@ static NSString * const cellIdentifier = @"ApartmentCell";
     return cell;
 }
 
-
-
 - (IBAction)backButton:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
-    NSLog(@"back tapped");
 }
+
 @end
 
 

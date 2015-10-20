@@ -29,8 +29,8 @@
     
 
     self.apartmentImageView.image = [UIImage imageNamed:self.apartmentImage];
-
-
+    
+    //    self.apartmentLocationMapImage.accessibilityElementsHidden = NO;
+    
 }
-
 @end

@@ -34,9 +34,15 @@
     NSData *data = [NSData dataWithContentsOfURL:url];
     self.apartmentImageView.image = [UIImage imageWithData:data];
     
-//    self.summaryTextLabel.text = self.summary;
-//    self.windSpeedLabel.text = [NSString stringWithFormat:@"%.2f mph", self.windSpeed];
-//    self.humidityLabel.text = [NSString stringWithFormat:@"%.0f%%", (100 * self.humidity)];
+    self.apartmentAddressLabel.text = self.apartmentAddress;
+    self.apartmentUnitLabel.text = self.apartmentUnit;
+  //  self.apartmentPriceLabel.text = self.apartmentCost;
+    
+    //THIS WORKS DO NOT DELETE
+    //self.apartmentDescriptionLabel.text = self.apartmentDescription;
+    
+
+
 
 
 

@@ -93,6 +93,7 @@ static NSString * const cellIdentifier = @"ApartmentCell";
             apartmentForRent.unit = [allApartmentData objectForKey:@"addr_unit"];
             apartmentForRent.iconName = [allApartmentData objectForKey:@"medium_image_uri"];
             apartmentForRent.apartmentPrice = [[allApartmentData objectForKey:@"price"] integerValue];
+            apartmentForRent.apartmentDescription = [allApartmentData objectForKey:@"description"];
 
             [self.apartments addObject:apartmentForRent];
          
@@ -163,12 +164,17 @@ static NSString * const cellIdentifier = @"ApartmentCell";
         
         
     
+    Apartment *apartment = self.apartments[indexPath.row];
         
         
         
-        vc.apartmentImage = [self.apartments[indexPath.row] iconName];
+        vc.apartmentImage = apartment.iconName;
   
-       // vc.apartmentAddress = [self.apartments[indexPath.row] ];
+        vc.apartmentAddress = apartment.address;
+        vc.apartmentUnit = apartment.unit;
+       //vc.apartmentCost = apartment.apartmentPrice;
+     vc.apartmentDescription = apartment.apartmentDescription;
+    
 //        vc.windSpeed = [self.days[indexPath.row] windSpeed];
 //        vc.summary = [self.days[indexPath.row] summary];
         

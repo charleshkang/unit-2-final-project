@@ -79,17 +79,18 @@ static NSString * const cellIdentifier = @"ApartmentCell";
         for (NSDictionary *apartment in apartmentData) {
             NSDictionary * allApartmentData = apartment[@"rental"];
             
-            
             Apartment *apartmentForRent = [[Apartment alloc] init];
+            
             apartmentForRent.address = [allApartmentData objectForKey:@"addr_street"];
             apartmentForRent.unit = [allApartmentData objectForKey:@"addr_unit"];
-            // apartmentForRent.apartmentPrice = [allApartmentData objectForKey:@"price"] doubleValue];
             apartmentForRent.iconName = [allApartmentData objectForKey:@"medium_image_uri"];
             apartmentForRent.apartmentPrice = [[allApartmentData objectForKey:@"price"] integerValue];
             
             
+           
+
             [self.apartments addObject:apartmentForRent];
-            
+         
         }
         
         [self.tableView reloadData];
@@ -112,14 +113,22 @@ static NSString * const cellIdentifier = @"ApartmentCell";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     ApartmentListingsCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
-    cell.apartmentImage.image = [UIImage imageNamed:[self.apartments[indexPath.row] iconName]];
-    cell.locationLabel.text = [NSString stringWithFormat:@"%@",
-                               [self.apartments[indexPath.row] address]];
+    Apartment *apartment = self.apartments[indexPath.row];
     
-//        cell.priceLabel.text = [NSString stringWithFormat:@"%@",
-//                               [self.apartments[indexPath.row] apartmentPrice]];
-    //
-    //
+    NSURL *url = [NSURL URLWithString:apartment.iconName];
+    
+    NSData *data = [NSData dataWithContentsOfURL:url];
+    cell.apartmentImage.image = [UIImage imageWithData:data];
+    
+   
+    
+    cell.locationLabel.text = [NSString stringWithFormat:@"%@",
+                               apartment.address];
+    cell.priceLabel.text = [NSString stringWithFormat:@"%ld", (long)apartment.apartmentPrice];
+    
+    
+    
+    
     
     return cell;
 }

@@ -21,24 +21,26 @@
 
 @end
 
-@implementation StreetEasyDetailViewController
+@implementation StreetEasyDetailViewController {
+    GMSMapView *apartmentMap;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.navigationBar.hidden = NO;
     
-
-
     NSURL *url = [NSURL URLWithString:self.apartmentImage];
-    
     NSData *data = [NSData dataWithContentsOfURL:url];
-    self.apartmentImageView.image = [UIImage imageWithData:data];
     
+    self.apartmentImageView.image = [UIImage imageWithData:data];
     self.apartmentAddressLabel.text = self.apartmentAddress;
     self.apartmentUnitLabel.text = self.apartmentUnit;
-  //  self.apartmentPriceLabel.text = self.apartmentCost;
-  
+//  self.apartmentPriceLabel.text = self.apartmentCost;
     self.apartmentDescriptionTextView.text = self.apartmentDescription;
+    
+    
+//    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:<#(CLLocationDegrees)#> longitude:<#(CLLocationDegrees)#> zoom:<#(float)#>];
+    
     
 
 

@@ -1,16 +1,16 @@
+////
+////  LocationMapViewController.h
+////  unit-2-final-project
+////
+////  Created by Lauren Caponong on 10/11/15.
+////  Copyright © 2015 Charles Kang. All rights reserved.
+////
 //
-//  LocationMapViewController.h
-//  unit-2-final-project
+//#import "ViewController.h"
+//#import <GoogleMaps/GoogleMaps.h>
 //
-//  Created by Lauren Caponong on 10/11/15.
-//  Copyright © 2015 Charles Kang. All rights reserved.
+//@interface LocationMapViewController : ViewController <GMSMapViewDelegate>
 //
-
-#import "ViewController.h"
-#import <GoogleMaps/GoogleMaps.h>
-
-@interface LocationMapViewController : ViewController <GMSMapViewDelegate>
-
-@property (weak, nonatomic) IBOutlet GMSMapView *mapView;
-
-@end
+//@property (weak, nonatomic) IBOutlet GMSMapView *mapView;
+//
+//@end

@@ -93,9 +93,7 @@ static NSString * const cellIdentifier = @"ApartmentCell";
             apartmentForRent.unit = [allApartmentData objectForKey:@"addr_unit"];
             apartmentForRent.iconName = [allApartmentData objectForKey:@"medium_image_uri"];
             apartmentForRent.apartmentPrice = [[allApartmentData objectForKey:@"price"] integerValue];
-            
-            
-           
+            apartmentForRent.apartmentDescription = [allApartmentData objectForKey:@"description"];
 
             [self.apartments addObject:apartmentForRent];
          
@@ -149,9 +147,38 @@ static NSString * const cellIdentifier = @"ApartmentCell";
     
     return cell;
 }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self performSegueWithIdentifier:detailSegue sender:self];
+}
 
 - (IBAction)backButton:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        
+        StreetEasyDetailViewController*vc = [segue destinationViewController];
+        
+        
+    
+    Apartment *apartment = self.apartments[indexPath.row];
+        
+        
+        
+        vc.apartmentImage = apartment.iconName;
+  
+        vc.apartmentAddress = apartment.address;
+        vc.apartmentUnit = apartment.unit;
+       //vc.apartmentCost = apartment.apartmentPrice;
+     vc.apartmentDescription = apartment.apartmentDescription;
+    
+//        vc.windSpeed = [self.days[indexPath.row] windSpeed];
+//        vc.summary = [self.days[indexPath.row] summary];
+        
+    
 }
 
 @end

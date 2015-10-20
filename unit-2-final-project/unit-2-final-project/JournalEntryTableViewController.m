@@ -172,7 +172,7 @@ static NSString * const cellIdentifier = @"ApartmentCell";
   
         vc.apartmentAddress = apartment.address;
         vc.apartmentUnit = apartment.unit;
-       //vc.apartmentCost = apartment.apartmentPrice;
+       vc.apartmentCost = apartment.apartmentPrice;
      vc.apartmentDescription = apartment.apartmentDescription;
     
 //        vc.windSpeed = [self.days[indexPath.row] windSpeed];

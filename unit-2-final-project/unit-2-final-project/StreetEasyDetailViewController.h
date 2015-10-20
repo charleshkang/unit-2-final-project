@@ -16,7 +16,7 @@
 
 @property (nonatomic) NSString *apartmentImage;
 @property (nonatomic) NSString *apartmentAddress;
-@property (nonatomic) NSInteger *apartmentCost;
+@property (nonatomic) NSInteger apartmentCost;
 @property (nonatomic) NSString *apartmentUnit;
 @property (nonatomic) NSString *apartmentDescription;
 

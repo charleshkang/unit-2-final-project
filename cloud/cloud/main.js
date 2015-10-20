@@ -13,7 +13,7 @@ Parse.Cloud.define("send_twilio_message", function(request, response) {
       twilio.sms.messages.create({
           to: "+19494916672",
           from: "+12016907828",
-          body: "Hey Chris, here's the apartment you were looking at! " + results[0].get('apartmentLocation') + ' '  + "Price range for this apartment is:" + ' ' + results[0].get('apartmentPrice')
+          body: "Hey, here's the address and price of the apartment you were looking at! " + results[0].get('apartmentLocation') + ' ' + results[0].get('apartmentPrice')
         },
         function(error, msg) {
           if (error) {
@@ -25,6 +25,7 @@ Parse.Cloud.define("send_twilio_message", function(request, response) {
       }
   });
 });
+
 
 /*
 curl -X POST \

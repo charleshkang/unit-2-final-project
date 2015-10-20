@@ -215,26 +215,8 @@
                                     <constraint firstAttribute="height" constant="120" id="ugR-q5-hfX"/>
                                 </constraints>
                             </imageView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="IMt-1e-yr6">
-                                <rect key="frame" x="0.0" y="451" width="600" height="149"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="FWt-d6-NDS"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="226" id="Zcw-jX-dqU"/>
-                                    <constraint firstAttribute="height" constant="200" id="gYe-lb-LWq"/>
-                                    <constraint firstAttribute="height" constant="200" id="z4J-3E-N0u"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="FWt-d6-NDS"/>
-                                        <exclude reference="Zcw-jX-dqU"/>
-                                        <exclude reference="gYe-lb-LWq"/>
-                                        <exclude reference="z4J-3E-N0u"/>
-                                    </mask>
-                                </variation>
-                            </mapView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Apartment Unit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JqX-iQ-LHf">
-                                <rect key="frame" x="252" y="238" width="97" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apartment Unit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JqX-iQ-LHf">
+                                <rect key="frame" x="252" y="240" width="97" height="20"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -248,76 +230,102 @@
                                     <segue destination="7tM-MD-bvt" kind="show" id="vVL-VN-eeW"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Apartment Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zt5-QK-mZs">
-                                <rect key="frame" x="249" y="263" width="102" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apartment Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zt5-QK-mZs">
+                                <rect key="frame" x="249" y="265" width="102" height="20"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Apartment Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TD-Lo-Xot">
-                                <rect key="frame" x="226" y="209" width="148" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apartment Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TD-Lo-Xot">
+                                <rect key="frame" x="218" y="209" width="165" height="26"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5LY-mh-imO">
-                                <rect key="frame" x="20" y="288" width="560" height="153"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5LY-mh-imO">
+                                <rect key="frame" x="20" y="290" width="560" height="153"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="153" id="MNr-bR-HDi"/>
                                 </constraints>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HMI-gT-zOU" userLabel="Google Map View Main Header" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="453" width="600" height="147"/>
+                                <subviews>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="IMt-1e-yr6">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="147"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="FWt-d6-NDS"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="226" id="Zcw-jX-dqU"/>
+                                            <constraint firstAttribute="height" constant="200" id="gYe-lb-LWq"/>
+                                            <constraint firstAttribute="height" constant="200" id="z4J-3E-N0u"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="FWt-d6-NDS"/>
+                                                <exclude reference="Zcw-jX-dqU"/>
+                                                <exclude reference="gYe-lb-LWq"/>
+                                                <exclude reference="z4J-3E-N0u"/>
+                                            </mask>
+                                        </variation>
+                                    </mapView>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.51911994180928578" green="0.79548519172191323" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="IMt-1e-yr6" firstAttribute="top" secondItem="HMI-gT-zOU" secondAttribute="top" id="ObK-ZS-73l"/>
+                                    <constraint firstItem="IMt-1e-yr6" firstAttribute="leading" secondItem="HMI-gT-zOU" secondAttribute="leading" id="WY6-uF-egc"/>
+                                    <constraint firstAttribute="bottom" secondItem="IMt-1e-yr6" secondAttribute="bottom" id="nx1-74-9hc"/>
+                                    <constraint firstAttribute="trailing" secondItem="IMt-1e-yr6" secondAttribute="trailing" id="zB6-al-6uL"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HMI-gT-zOU" secondAttribute="trailing" id="1wS-MI-zks"/>
+                            <constraint firstItem="HMI-gT-zOU" firstAttribute="top" secondItem="5LY-mh-imO" secondAttribute="bottom" constant="10" id="2f2-fw-eN1"/>
                             <constraint firstItem="5LY-mh-imO" firstAttribute="trailing" secondItem="SuW-GM-FX8" secondAttribute="trailing" id="414-uF-8M0"/>
                             <constraint firstItem="5LY-mh-imO" firstAttribute="top" secondItem="zt5-QK-mZs" secondAttribute="bottom" constant="10" id="4vc-sT-iky"/>
+                            <constraint firstItem="HMI-gT-zOU" firstAttribute="leading" secondItem="6nt-tc-1BT" secondAttribute="leading" id="6Z1-RO-b9x"/>
                             <constraint firstItem="6TD-Lo-Xot" firstAttribute="centerX" secondItem="6nt-tc-1BT" secondAttribute="centerX" id="7y6-ml-ZBz"/>
                             <constraint firstItem="5LY-mh-imO" firstAttribute="leading" secondItem="6nt-tc-1BT" secondAttribute="leading" constant="20" id="BKq-Q6-mkb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5LY-mh-imO" secondAttribute="trailing" id="ERk-18-ets"/>
+                            <constraint firstItem="xDL-QN-zch" firstAttribute="top" secondItem="HMI-gT-zOU" secondAttribute="bottom" id="F3X-II-3Bs"/>
                             <constraint firstItem="5LY-mh-imO" firstAttribute="leading" secondItem="6nt-tc-1BT" secondAttribute="leadingMargin" id="FkP-3Y-1qo"/>
-                            <constraint firstItem="IMt-1e-yr6" firstAttribute="top" secondItem="5LY-mh-imO" secondAttribute="bottom" constant="10" id="Gtc-Aj-pWl"/>
                             <constraint firstAttribute="trailing" secondItem="SuW-GM-FX8" secondAttribute="trailing" constant="20" id="QMU-Ht-JJi"/>
                             <constraint firstItem="zt5-QK-mZs" firstAttribute="top" secondItem="JqX-iQ-LHf" secondAttribute="bottom" constant="5" id="RyZ-RY-Ln7"/>
                             <constraint firstItem="6TD-Lo-Xot" firstAttribute="top" secondItem="VQk-jc-2yd" secondAttribute="bottom" constant="25" id="Vtf-pf-gPP"/>
                             <constraint firstItem="5LY-mh-imO" firstAttribute="centerX" secondItem="6nt-tc-1BT" secondAttribute="centerX" id="VuR-gs-nNC"/>
                             <constraint firstItem="6TD-Lo-Xot" firstAttribute="top" secondItem="VQk-jc-2yd" secondAttribute="bottom" constant="30" id="aJ4-Ng-MPv"/>
                             <constraint firstAttribute="trailing" secondItem="VQk-jc-2yd" secondAttribute="trailing" id="aKW-Ld-30H"/>
-                            <constraint firstItem="5LY-mh-imO" firstAttribute="centerX" secondItem="IMt-1e-yr6" secondAttribute="centerX" id="ahn-GL-x6g"/>
                             <constraint firstItem="6TD-Lo-Xot" firstAttribute="top" secondItem="SuW-GM-FX8" secondAttribute="bottom" constant="20" id="bEK-Ih-gvq"/>
                             <constraint firstItem="zt5-QK-mZs" firstAttribute="centerX" secondItem="6nt-tc-1BT" secondAttribute="centerX" id="c4y-pt-caY"/>
                             <constraint firstItem="JqX-iQ-LHf" firstAttribute="top" secondItem="6TD-Lo-Xot" secondAttribute="bottom" constant="5" id="cql-65-SM7"/>
-                            <constraint firstItem="IMt-1e-yr6" firstAttribute="top" secondItem="5LY-mh-imO" secondAttribute="bottom" constant="8" id="dCI-m3-crC"/>
-                            <constraint firstItem="IMt-1e-yr6" firstAttribute="leading" secondItem="6nt-tc-1BT" secondAttribute="leading" id="daB-VR-2GK"/>
                             <constraint firstAttribute="trailing" secondItem="6TD-Lo-Xot" secondAttribute="trailing" id="ehG-OD-6Ff"/>
                             <constraint firstItem="5LY-mh-imO" firstAttribute="top" secondItem="zt5-QK-mZs" secondAttribute="bottom" constant="5" id="etP-Gg-ANG"/>
                             <constraint firstItem="zt5-QK-mZs" firstAttribute="top" secondItem="JqX-iQ-LHf" secondAttribute="bottom" constant="22" id="f7s-Th-Ik5"/>
                             <constraint firstItem="6TD-Lo-Xot" firstAttribute="leading" secondItem="6nt-tc-1BT" secondAttribute="leading" id="fRr-2T-IIV"/>
-                            <constraint firstItem="xDL-QN-zch" firstAttribute="top" secondItem="IMt-1e-yr6" secondAttribute="bottom" id="ia6-20-7wX"/>
                             <constraint firstItem="VQk-jc-2yd" firstAttribute="top" secondItem="uSt-em-ObJ" secondAttribute="bottom" id="nnp-qa-59q"/>
                             <constraint firstItem="VQk-jc-2yd" firstAttribute="leading" secondItem="6nt-tc-1BT" secondAttribute="leading" id="obS-rb-j9K"/>
-                            <constraint firstItem="IMt-1e-yr6" firstAttribute="top" secondItem="5LY-mh-imO" secondAttribute="bottom" constant="15" id="rJs-BZ-q5c"/>
                             <constraint firstItem="JqX-iQ-LHf" firstAttribute="centerX" secondItem="6nt-tc-1BT" secondAttribute="centerX" id="uJn-bP-PAz"/>
-                            <constraint firstAttribute="trailing" secondItem="IMt-1e-yr6" secondAttribute="trailing" id="vp9-PZ-cY1"/>
                             <constraint firstAttribute="trailing" secondItem="5LY-mh-imO" secondAttribute="trailing" constant="20" id="y38-Dt-Vtr"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="4vc-sT-iky"/>
+                                <exclude reference="ERk-18-ets"/>
+                                <exclude reference="FkP-3Y-1qo"/>
                                 <exclude reference="aJ4-Ng-MPv"/>
                                 <exclude reference="ehG-OD-6Ff"/>
                                 <exclude reference="fRr-2T-IIV"/>
                                 <exclude reference="f7s-Th-Ik5"/>
-                                <exclude reference="4vc-sT-iky"/>
-                                <exclude reference="ERk-18-ets"/>
-                                <exclude reference="FkP-3Y-1qo"/>
-                                <exclude reference="dCI-m3-crC"/>
-                                <exclude reference="rJs-BZ-q5c"/>
                             </mask>
                         </variation>
                     </view>
@@ -331,6 +339,7 @@
                         <outlet property="apartmentLocationMapImage" destination="IMt-1e-yr6" id="7ft-am-d40"/>
                         <outlet property="apartmentPriceLabel" destination="zt5-QK-mZs" id="FuR-HP-QTI"/>
                         <outlet property="apartmentUnitLabel" destination="JqX-iQ-LHf" id="V5C-xL-iMh"/>
+                        <outlet property="googleMapsMainView" destination="HMI-gT-zOU" id="Cfn-pU-VLf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t1j-07-kol" userLabel="First Responder" sceneMemberID="firstResponder"/>

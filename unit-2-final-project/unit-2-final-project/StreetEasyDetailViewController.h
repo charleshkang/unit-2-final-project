@@ -11,7 +11,7 @@
 #import <GoogleMaps/GoogleMaps.h>
 #import <MapKit/MapKit.h>
 
-@interface StreetEasyDetailViewController : ViewController <MKMapViewDelegate>
+@interface StreetEasyDetailViewController : ViewController <GMSMapViewDelegate>
 
 
 @property (nonatomic) NSString *apartmentImage;

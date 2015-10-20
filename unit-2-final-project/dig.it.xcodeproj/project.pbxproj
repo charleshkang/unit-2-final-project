@@ -22,6 +22,7 @@
 		42B4665F1BD14C630029FBDA /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B4665E1BD14C630029FBDA /* StoreKit.framework */; };
 		42B466611BD14C7A0029FBDA /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B466601BD14C7A0029FBDA /* libsqlite3.tbd */; };
 		42C2F7491BD1CFB700C9D31F /* JournalEntryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C2F7481BD1CFB700C9D31F /* JournalEntryTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		42C949AA1BD6E30C009ED1DE /* GoogleMapsNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42C949A91BD6E30C009ED1DE /* GoogleMapsNib.xib */; settings = {ASSET_TAGS = (); }; };
 		42EFA6111BD5DB3E007110AC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EFA6101BD5DB3E007110AC /* MapKit.framework */; };
 		42FCE8E11BC99C47008627B6 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FCE8E01BC99C47008627B6 /* User.m */; settings = {ASSET_TAGS = (); }; };
 		42FCE8EA1BC99EC5008627B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FCE8E91BC99EC5008627B6 /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -75,6 +76,7 @@
 		42B466601BD14C7A0029FBDA /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		42C2F7471BD1CFB700C9D31F /* JournalEntryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JournalEntryTableViewController.h; sourceTree = "<group>"; };
 		42C2F7481BD1CFB700C9D31F /* JournalEntryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JournalEntryTableViewController.m; sourceTree = "<group>"; };
+		42C949A91BD6E30C009ED1DE /* GoogleMapsNib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoogleMapsNib.xib; sourceTree = "<group>"; };
 		42EFA6101BD5DB3E007110AC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		42FCE8DF1BC99C47008627B6 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		42FCE8E01BC99C47008627B6 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				42C2F7481BD1CFB700C9D31F /* JournalEntryTableViewController.m */,
 				45A71AF01BD4021C000A13B7 /* StreetEasyDetailViewController.h */,
 				45A71AF11BD4021C000A13B7 /* StreetEasyDetailViewController.m */,
+				42C949A91BD6E30C009ED1DE /* GoogleMapsNib.xib */,
 				42EFA60E1BD5BE5D007110AC /* StreetEasy */,
 				42EFA60F1BD5BF92007110AC /* Google Maps */,
 				450F0C011BD6BDB500BEC5D0 /* Notes */,
@@ -375,6 +378,7 @@
 				890AC0711BCAFE0200D61E01 /* Main.storyboard in Resources */,
 				4248D9B41BC95DA40031CA2D /* LaunchScreen.storyboard in Resources */,
 				4248D9B11BC95DA40031CA2D /* Assets.xcassets in Resources */,
+				42C949AA1BD6E30C009ED1DE /* GoogleMapsNib.xib in Resources */,
 				45A71AE91BD3FE22000A13B7 /* ApartmentListingCells.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -550,13 +554,14 @@
 			baseConfigurationReference = 099DBD6AD45FDC37F9CBE312 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "unit-2-final-project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.charleshkang.unit-2-final-project";
+				PRODUCT_BUNDLE_IDENTIFIER = com.charleshkang.digit;
 				PRODUCT_NAME = dig.it;
 			};
 			name = Debug;
@@ -566,13 +571,14 @@
 			baseConfigurationReference = B6A744D1F17F548EF8E4A7EB /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "unit-2-final-project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.charleshkang.unit-2-final-project";
+				PRODUCT_BUNDLE_IDENTIFIER = com.charleshkang.digit;
 				PRODUCT_NAME = dig.it;
 			};
 			name = Release;

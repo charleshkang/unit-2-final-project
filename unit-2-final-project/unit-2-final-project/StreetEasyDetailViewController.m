@@ -46,7 +46,7 @@
     // Create a GMSCameraPosition that tells the map to display the
     // coordinates 40.74, -73.93 at zoom level 5
     
-    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:40.74 longitude:-73.93 zoom:5];
+    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:40.74 longitude:-73.93 zoom:9];
     
     apartmentMap = [GMSMapView mapWithFrame:CGRectZero camera:camera];
     self.viewForMap  =apartmentMap;
@@ -59,8 +59,8 @@
     marker.title = @"C4Q HQ";
     marker.snippet = @"Long Island City";
     marker.map = apartmentMap;
-    
-    [self.viewForMap addSubview:apartmentMap];
+  
+   [self.viewForMap addSubview:apartmentMap];
     
     // solution 1 to get map the size we want
 //    self.view = apartmentMap;

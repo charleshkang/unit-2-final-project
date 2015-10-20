@@ -263,7 +263,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41c-B6-TIa">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41c-B6-TIa" customClass="GMSMapView">
                                 <rect key="frame" x="4" y="385" width="592" height="215"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.34433798317965381" green="1" blue="0.65989829404061939" alpha="1" colorSpace="calibratedRGB"/>

@@ -17,7 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *apartmentPriceLabel;
 @property (weak, nonatomic) IBOutlet GMSMapView *apartmentLocationMapImage;
 @property (weak, nonatomic) IBOutlet UILabel *apartmentUnitLabel;
-@property (weak, nonatomic) IBOutlet UILabel *apartmentDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UITextView *apartmentDescriptionTextView;
 
 @end
 
@@ -37,9 +37,8 @@
     self.apartmentAddressLabel.text = self.apartmentAddress;
     self.apartmentUnitLabel.text = self.apartmentUnit;
   //  self.apartmentPriceLabel.text = self.apartmentCost;
-    
-    //THIS WORKS DO NOT DELETE
-    //self.apartmentDescriptionLabel.text = self.apartmentDescription;
+  
+    self.apartmentDescriptionTextView.text = self.apartmentDescription;
     
 
 

@@ -263,8 +263,8 @@
                                     <constraint firstAttribute="height" constant="172" id="3sD-A6-Upt"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apartment Address: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TD-Lo-Xot">
-                                <rect key="frame" x="0.0" y="317" width="600" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apartment Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TD-Lo-Xot">
+                                <rect key="frame" x="0.0" y="287" width="600" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -277,8 +277,22 @@
                                     <constraint firstAttribute="height" constant="200" id="gYe-lb-LWq"/>
                                 </constraints>
                             </mapView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Apartment Price: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zt5-QK-mZs">
-                                <rect key="frame" x="0.0" y="335" width="600" height="43"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apartment Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zt5-QK-mZs">
+                                <rect key="frame" x="0.0" y="356" width="600" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Apartment Unit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JqX-iQ-LHf">
+                                <rect key="frame" x="0.0" y="309" width="600" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apartment Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKi-i9-UM7">
+                                <rect key="frame" x="0.0" y="399" width="600" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -289,11 +303,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="VQk-jc-2yd" firstAttribute="leading" secondItem="6nt-tc-1BT" secondAttribute="leadingMargin" constant="-20" id="2PW-a8-1G0"/>
+                            <constraint firstAttribute="trailing" secondItem="zt5-QK-mZs" secondAttribute="trailing" id="2nf-QV-JLo"/>
+                            <constraint firstItem="CKi-i9-UM7" firstAttribute="top" secondItem="zt5-QK-mZs" secondAttribute="bottom" constant="22" id="83g-4D-AKV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="VQk-jc-2yd" secondAttribute="trailing" constant="-20" id="CMa-EO-q9H"/>
                             <constraint firstItem="VQk-jc-2yd" firstAttribute="top" secondItem="uSt-em-ObJ" secondAttribute="bottom" id="NSa-80-Y6c"/>
+                            <constraint firstItem="zt5-QK-mZs" firstAttribute="leading" secondItem="6nt-tc-1BT" secondAttribute="leading" id="RH5-kc-VrL"/>
+                            <constraint firstAttribute="trailing" secondItem="CKi-i9-UM7" secondAttribute="trailing" id="VHh-PS-9yV"/>
+                            <constraint firstItem="CKi-i9-UM7" firstAttribute="leading" secondItem="6nt-tc-1BT" secondAttribute="leading" id="YR9-eI-bPv"/>
                             <constraint firstAttribute="trailing" secondItem="6TD-Lo-Xot" secondAttribute="trailing" id="ehG-OD-6Ff"/>
                             <constraint firstItem="6TD-Lo-Xot" firstAttribute="leading" secondItem="6nt-tc-1BT" secondAttribute="leading" id="fRr-2T-IIV"/>
-                            <constraint firstItem="6TD-Lo-Xot" firstAttribute="top" secondItem="VQk-jc-2yd" secondAttribute="bottom" constant="81" id="ke2-wr-xRI"/>
+                            <constraint firstItem="IMt-1e-yr6" firstAttribute="top" secondItem="CKi-i9-UM7" secondAttribute="bottom" constant="80" id="kQD-3O-whn"/>
+                            <constraint firstItem="6TD-Lo-Xot" firstAttribute="top" secondItem="VQk-jc-2yd" secondAttribute="bottom" constant="51" id="ke2-wr-xRI"/>
                             <constraint firstAttribute="trailing" secondItem="IMt-1e-yr6" secondAttribute="trailing" id="oRs-n2-mPI"/>
                             <constraint firstItem="xDL-QN-zch" firstAttribute="top" secondItem="IMt-1e-yr6" secondAttribute="bottom" id="oSI-Hb-P5V"/>
                             <constraint firstItem="IMt-1e-yr6" firstAttribute="leading" secondItem="6nt-tc-1BT" secondAttribute="leading" id="t3x-hs-MWB"/>
@@ -304,9 +324,11 @@
                     <size key="freeformSize" width="600" height="700"/>
                     <connections>
                         <outlet property="apartmentAddressLabel" destination="6TD-Lo-Xot" id="DFe-ZI-nZh"/>
+                        <outlet property="apartmentDescriptionLabel" destination="CKi-i9-UM7" id="dFl-jF-ILC"/>
                         <outlet property="apartmentImageView" destination="VQk-jc-2yd" id="HEB-No-lUE"/>
                         <outlet property="apartmentLocationMapImage" destination="IMt-1e-yr6" id="7ft-am-d40"/>
                         <outlet property="apartmentPriceLabel" destination="zt5-QK-mZs" id="FuR-HP-QTI"/>
+                        <outlet property="apartmentUnitLabel" destination="JqX-iQ-LHf" id="V5C-xL-iMh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t1j-07-kol" userLabel="First Responder" sceneMemberID="firstResponder"/>

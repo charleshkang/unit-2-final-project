@@ -14,6 +14,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *apartmentAddressLabel;
 @property (weak, nonatomic) IBOutlet UILabel *apartmentPriceLabel;
 @property (weak, nonatomic) IBOutlet GMSMapView *apartmentLocationMapImage;
+@property (weak, nonatomic) IBOutlet UILabel *apartmentUnitLabel;
+@property (weak, nonatomic) IBOutlet UILabel *apartmentDescriptionLabel;
 
 @end
 

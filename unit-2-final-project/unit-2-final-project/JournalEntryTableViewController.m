@@ -34,7 +34,7 @@ static NSString * const cellIdentifier = @"ApartmentCell";
 
 - (void) viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"Dig It";
+    self.navigationItem.title = @"dig.it";
     self.navigationController.navigationBar.hidden = NO;
     
     

@@ -27,7 +27,7 @@
     [super viewDidLoad];
     self.navigationController.navigationBar.hidden = NO;
     
-<<<<<<< HEAD
+
 
     NSURL *url = [NSURL URLWithString:self.apartmentImage];
     
@@ -39,7 +39,6 @@
 //    self.humidityLabel.text = [NSString stringWithFormat:@"%.0f%%", (100 * self.humidity)];
 
 
-=======
->>>>>>> e59de957ed40c0a549b54e6f13d05bfb4d2de9d8
+
 }
 @end

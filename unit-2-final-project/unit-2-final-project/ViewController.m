@@ -19,9 +19,9 @@
     [super viewDidLoad];
     
     PFUser *user = [[PFUser alloc] init];
-    user.username = @"tom";
-    user.password = @"puppy";
-    user.email = @"c4q@gmail.com";
+    user.username = @"charles";
+    user.password = @"ayylmao";
+    user.email = @"chris@gmail.com";
     
     [user signUpInBackground];
     [user saveInBackground];

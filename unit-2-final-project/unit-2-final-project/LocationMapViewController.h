@@ -1,5 +1,5 @@
 //
-//  CompanyMapViewController.h
+//  LocationMapViewController.h
 //  unit-2-final-project
 //
 //  Created by Lauren Caponong on 10/11/15.
@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import <GoogleMaps/GoogleMaps.h>
 
-@interface CompanyMapViewController : ViewController <GMSMapViewDelegate>
+@interface LocationMapViewController : ViewController <GMSMapViewDelegate>
 
 @property (weak, nonatomic) IBOutlet GMSMapView *mapView;
 

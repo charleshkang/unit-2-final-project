@@ -31,7 +31,7 @@
 		45A71AF21BD4021C000A13B7 /* StreetEasyDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A71AF11BD4021C000A13B7 /* StreetEasyDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
 		45A71AF51BD404BC000A13B7 /* Apartment.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A71AF41BD404BC000A13B7 /* Apartment.m */; settings = {ASSET_TAGS = (); }; };
 		862B72D77ED97BE1EEAAD7A6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75199BEAB21FAD7AFA7E126F /* libPods.a */; };
-		89009B911BCAE10300541A5A /* CompanyMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89009B901BCAE10300541A5A /* CompanyMapViewController.m */; settings = {ASSET_TAGS = (); }; };
+		89009B911BCAE10300541A5A /* LocationMapViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 89009B901BCAE10300541A5A /* LocationMapViewcontroller.m */; settings = {ASSET_TAGS = (); }; };
 		89009B931BCAE26700541A5A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89009B921BCAE26700541A5A /* AVFoundation.framework */; };
 		89009B951BCAE26F00541A5A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89009B941BCAE26F00541A5A /* CoreData.framework */; };
 		89009B971BCAE27500541A5A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89009B961BCAE27500541A5A /* CoreLocation.framework */; };
@@ -86,8 +86,8 @@
 		45A71AF31BD404BC000A13B7 /* Apartment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Apartment.h; sourceTree = "<group>"; };
 		45A71AF41BD404BC000A13B7 /* Apartment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Apartment.m; sourceTree = "<group>"; };
 		75199BEAB21FAD7AFA7E126F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		89009B8F1BCAE10300541A5A /* CompanyMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyMapViewController.h; sourceTree = "<group>"; };
-		89009B901BCAE10300541A5A /* CompanyMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyMapViewController.m; sourceTree = "<group>"; };
+		89009B8F1BCAE10300541A5A /* LocationMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationMapViewController.h; sourceTree = "<group>"; };
+		89009B901BCAE10300541A5A /* LocationMapViewcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationMapViewcontroller.m; sourceTree = "<group>"; };
 		89009B921BCAE26700541A5A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		89009B941BCAE26F00541A5A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		89009B961BCAE27500541A5A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -216,8 +216,8 @@
 		42EFA60F1BD5BF92007110AC /* Google Maps */ = {
 			isa = PBXGroup;
 			children = (
-				89009B8F1BCAE10300541A5A /* CompanyMapViewController.h */,
-				89009B901BCAE10300541A5A /* CompanyMapViewController.m */,
+				89009B8F1BCAE10300541A5A /* LocationMapViewController.h */,
+				89009B901BCAE10300541A5A /* LocationMapViewcontroller.m */,
 			);
 			name = "Google Maps";
 			sourceTree = "<group>";
@@ -401,7 +401,7 @@
 				45A71AF21BD4021C000A13B7 /* StreetEasyDetailViewController.m in Sources */,
 				89009BBC1BCAF06B00541A5A /* EntryCreationViewController.m in Sources */,
 				4248D9A31BC95DA30031CA2D /* main.m in Sources */,
-				89009B911BCAE10300541A5A /* CompanyMapViewController.m in Sources */,
+				89009B911BCAE10300541A5A /* LocationMapViewcontroller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,25 +1,40 @@
 //
-//  CompanyMapViewController.m
+//  LocationMapViewController.m
 //  unit-2-final-project
 //
 //  Created by Lauren Caponong on 10/11/15.
 //  Copyright © 2015 Charles Kang. All rights reserved.
 //
 
-#import "CompanyMapViewController.h"
+#import "LocationMapViewController.h"
+#import "AppDelegate.h"
 
 // google maps key : AIzaSyAl4iC_ci94VdrvK9GpqleO9WpwFmqNtJg
 
-@interface CompanyMapViewController ()
+@interface LocationMapViewController ()
 
+- (IBAction)backButton:(id)sender;
 
 @end
 
-@implementation CompanyMapViewController
+@implementation LocationMapViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.navigationBar.hidden = YES;
+    // c4q coordinates 40.742903, -73.935536
+    CLLocationCoordinate2D position = CLLocationCoordinate2DMake(40.742903, -73.935536);
+    GMSMarker *marker = [GMSMarker markerWithPosition:position];
+    marker.title = @"C4Q HQ";
+    marker.map = _mapView;
+    marker.appearAnimation = kGMSMarkerAnimationPop;
+    marker.icon = [GMSMarker markerImageWithColor:[UIColor blackColor]];
+    
+    
+    _mapView.myLocationEnabled = YES;
+    NSLog(@"User's location: %@", _mapView.myLocation);
+    
+    
 
     
     //Controls whether the My Location dot and accuracy circle is enabled.
@@ -61,4 +76,9 @@
 }
 */
 
+- (IBAction)backButton:(id)sender {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+
+}
 @end

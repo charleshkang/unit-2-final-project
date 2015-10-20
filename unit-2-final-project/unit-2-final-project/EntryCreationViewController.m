@@ -64,14 +64,10 @@
 //
 //}
 
-
-
 //hide status bar
 //-(BOOL)prefersStatusBarHidden{
 //return YES;
 //}
-
-
 
 - (IBAction)searchButtonTapped:(id)sender {
     
@@ -106,8 +102,5 @@
     }
      ];
 }
-
-
-
 
 @end

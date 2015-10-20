@@ -23,6 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
     
     // this line is probably incorrect
@@ -92,11 +93,13 @@
     apartment[@"apartmentPrice"] = apartmentPrice;
     
     [apartment saveInBackgroundWithBlock:^(BOOL succeeded,  NSError *error) {
-        if (succeeded == YES) {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Success" message:@"Your new entry has been saved" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
-            [alert show];
-        } else {
+        if (succeeded == NO) {
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error!" message:@"Your new entry has not been saved" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+            [alert show];
+        }
+        
+        if (self.locationTextfield && self.priceTextfield == nil) {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error!" message:@"Please enter a location and price!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
             [alert show];
         }
     }

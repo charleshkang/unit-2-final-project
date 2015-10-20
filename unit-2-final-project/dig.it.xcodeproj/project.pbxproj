@@ -145,11 +145,10 @@
 				894A116A1BC961360040C318 /* SignUpLoginViewController.m */,
 				89009BBA1BCAF06B00541A5A /* EntryCreationViewController.h */,
 				89009BBB1BCAF06B00541A5A /* EntryCreationViewController.m */,
-				42EFA60E1BD5BE5D007110AC /* Streeteasy */,
 				42C2F7471BD1CFB700C9D31F /* JournalEntryTableViewController.h */,
 				42C2F7481BD1CFB700C9D31F /* JournalEntryTableViewController.m */,
-				89009B8F1BCAE10300541A5A /* CompanyMapViewController.h */,
-				89009B901BCAE10300541A5A /* CompanyMapViewController.m */,
+				42EFA60E1BD5BE5D007110AC /* StreetEasy */,
+				42EFA60F1BD5BF92007110AC /* Google Maps */,
 			);
 			name = Journal;
 			sourceTree = "<group>";
@@ -198,7 +197,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		42EFA60E1BD5BE5D007110AC /* Streeteasy */ = {
+		42EFA60E1BD5BE5D007110AC /* StreetEasy */ = {
 			isa = PBXGroup;
 			children = (
 				45A71AE31BD3EF12000A13B7 /* StreetEasyViewController.h */,
@@ -211,7 +210,16 @@
 				45A71AEE1BD40009000A13B7 /* ApartmentListingsCell.m */,
 				45A71AE81BD3FE22000A13B7 /* ApartmentListingCells.xib */,
 			);
-			name = Streeteasy;
+			name = StreetEasy;
+			sourceTree = "<group>";
+		};
+		42EFA60F1BD5BF92007110AC /* Google Maps */ = {
+			isa = PBXGroup;
+			children = (
+				89009B8F1BCAE10300541A5A /* CompanyMapViewController.h */,
+				89009B901BCAE10300541A5A /* CompanyMapViewController.m */,
+			);
+			name = "Google Maps";
 			sourceTree = "<group>";
 		};
 		42FCE8DE1BC99C24008627B6 /* Parse */ = {

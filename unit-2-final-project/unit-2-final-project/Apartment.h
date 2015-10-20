@@ -19,5 +19,7 @@
 @property (nonatomic) NSString *address;
 @property (nonatomic) NSString *unit;
 @property (nonatomic) NSString *apartmentDescription;
+@property (nonatomic) CGFloat longitude;
+@property (nonatomic) CGFloat latitude; 
 
 @end

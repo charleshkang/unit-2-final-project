@@ -36,6 +36,7 @@
     [Parse
      setApplicationId:@"d4QBKnNptgpeFwOvuSOqPu6DKpd7mo9bmk2WvtYV"
      clientKey:@"aEplV1YL2sWEtlHKAjx8t4ERBubrXGWCYZGpkCuq"];
+    [PFUser enableRevocableSessionInBackground];
     
     // register classes with parse
     [User registerSubclass];

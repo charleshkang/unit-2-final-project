@@ -19,4 +19,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *apartmentUnitLabel;
 @property (weak, nonatomic) IBOutlet UILabel *apartmentDescriptionLabel;
 
+
 @end

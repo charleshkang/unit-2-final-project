@@ -26,6 +26,11 @@
 		42FCE8E11BC99C47008627B6 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FCE8E01BC99C47008627B6 /* User.m */; settings = {ASSET_TAGS = (); }; };
 		42FCE8EA1BC99EC5008627B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FCE8E91BC99EC5008627B6 /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
 		450D853C1BC9811E00C0D55F /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 450D853B1BC9811E00C0D55F /* APIManager.m */; settings = {ASSET_TAGS = (); }; };
+		450F0C041BD6BE0000BEC5D0 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 450F0C031BD6BE0000BEC5D0 /* Note.m */; settings = {ASSET_TAGS = (); }; };
+		450F0C071BD6BE6700BEC5D0 /* NoteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450F0C061BD6BE6700BEC5D0 /* NoteDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		450F0C0A1BD6BF0200BEC5D0 /* NoteListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 450F0C091BD6BF0200BEC5D0 /* NoteListItem.m */; settings = {ASSET_TAGS = (); }; };
+		450F0C0D1BD6BF7A00BEC5D0 /* NoteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450F0C0C1BD6BF7A00BEC5D0 /* NoteListViewController.m */; settings = {ASSET_TAGS = (); }; };
+		450F0C101BD6BFD700BEC5D0 /* NotesDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 450F0C0F1BD6BFD700BEC5D0 /* NotesDocument.m */; settings = {ASSET_TAGS = (); }; };
 		45A71AE91BD3FE22000A13B7 /* ApartmentListingCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45A71AE81BD3FE22000A13B7 /* ApartmentListingCells.xib */; settings = {ASSET_TAGS = (); }; };
 		45A71AEF1BD40009000A13B7 /* ApartmentListingsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A71AEE1BD40009000A13B7 /* ApartmentListingsCell.m */; settings = {ASSET_TAGS = (); }; };
 		45A71AF21BD4021C000A13B7 /* StreetEasyDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A71AF11BD4021C000A13B7 /* StreetEasyDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -77,6 +82,16 @@
 		42FCE8E91BC99EC5008627B6 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		450D853A1BC9811E00C0D55F /* APIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
 		450D853B1BC9811E00C0D55F /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
+		450F0C021BD6BE0000BEC5D0 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		450F0C031BD6BE0000BEC5D0 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
+		450F0C051BD6BE6700BEC5D0 /* NoteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteDetailViewController.h; sourceTree = "<group>"; };
+		450F0C061BD6BE6700BEC5D0 /* NoteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteDetailViewController.m; sourceTree = "<group>"; };
+		450F0C081BD6BF0200BEC5D0 /* NoteListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteListItem.h; sourceTree = "<group>"; };
+		450F0C091BD6BF0200BEC5D0 /* NoteListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteListItem.m; sourceTree = "<group>"; };
+		450F0C0B1BD6BF7A00BEC5D0 /* NoteListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteListViewController.h; sourceTree = "<group>"; };
+		450F0C0C1BD6BF7A00BEC5D0 /* NoteListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteListViewController.m; sourceTree = "<group>"; };
+		450F0C0E1BD6BFD700BEC5D0 /* NotesDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesDocument.h; sourceTree = "<group>"; };
+		450F0C0F1BD6BFD700BEC5D0 /* NotesDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesDocument.m; sourceTree = "<group>"; };
 		45A71AE81BD3FE22000A13B7 /* ApartmentListingCells.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApartmentListingCells.xib; sourceTree = "<group>"; };
 		45A71AED1BD40009000A13B7 /* ApartmentListingsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApartmentListingsCell.h; sourceTree = "<group>"; };
 		45A71AEE1BD40009000A13B7 /* ApartmentListingsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApartmentListingsCell.m; sourceTree = "<group>"; };
@@ -147,8 +162,11 @@
 				89009BBB1BCAF06B00541A5A /* EntryCreationViewController.m */,
 				42C2F7471BD1CFB700C9D31F /* JournalEntryTableViewController.h */,
 				42C2F7481BD1CFB700C9D31F /* JournalEntryTableViewController.m */,
+				45A71AF01BD4021C000A13B7 /* StreetEasyDetailViewController.h */,
+				45A71AF11BD4021C000A13B7 /* StreetEasyDetailViewController.m */,
 				42EFA60E1BD5BE5D007110AC /* StreetEasy */,
 				42EFA60F1BD5BF92007110AC /* Google Maps */,
+				450F0C011BD6BDB500BEC5D0 /* Notes */,
 			);
 			name = Journal;
 			sourceTree = "<group>";
@@ -200,8 +218,6 @@
 		42EFA60E1BD5BE5D007110AC /* StreetEasy */ = {
 			isa = PBXGroup;
 			children = (
-				45A71AF01BD4021C000A13B7 /* StreetEasyDetailViewController.h */,
-				45A71AF11BD4021C000A13B7 /* StreetEasyDetailViewController.m */,
 				45A71AF31BD404BC000A13B7 /* Apartment.h */,
 				45A71AF41BD404BC000A13B7 /* Apartment.m */,
 				45A71AED1BD40009000A13B7 /* ApartmentListingsCell.h */,
@@ -240,6 +256,23 @@
 				450D853B1BC9811E00C0D55F /* APIManager.m */,
 			);
 			name = "API Manager";
+			sourceTree = "<group>";
+		};
+		450F0C011BD6BDB500BEC5D0 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				450F0C021BD6BE0000BEC5D0 /* Note.h */,
+				450F0C031BD6BE0000BEC5D0 /* Note.m */,
+				450F0C051BD6BE6700BEC5D0 /* NoteDetailViewController.h */,
+				450F0C061BD6BE6700BEC5D0 /* NoteDetailViewController.m */,
+				450F0C081BD6BF0200BEC5D0 /* NoteListItem.h */,
+				450F0C091BD6BF0200BEC5D0 /* NoteListItem.m */,
+				450F0C0B1BD6BF7A00BEC5D0 /* NoteListViewController.h */,
+				450F0C0C1BD6BF7A00BEC5D0 /* NoteListViewController.m */,
+				450F0C0E1BD6BFD700BEC5D0 /* NotesDocument.h */,
+				450F0C0F1BD6BFD700BEC5D0 /* NotesDocument.m */,
+			);
+			name = Notes;
 			sourceTree = "<group>";
 		};
 		89009BAA1BCAE36900541A5A /* Frameworks */ = {
@@ -386,18 +419,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				450F0C041BD6BE0000BEC5D0 /* Note.m in Sources */,
 				42FCE8EA1BC99EC5008627B6 /* ViewController.m in Sources */,
 				42A3B12A1BCED8C100907D15 /* Entry.m in Sources */,
 				45A71AF51BD404BC000A13B7 /* Apartment.m in Sources */,
+				450F0C101BD6BFD700BEC5D0 /* NotesDocument.m in Sources */,
 				422705601BD15607007430E4 /* DontNeedThis.xcdatamodeld in Sources */,
+				450F0C0A1BD6BF0200BEC5D0 /* NoteListItem.m in Sources */,
 				42C2F7491BD1CFB700C9D31F /* JournalEntryTableViewController.m in Sources */,
 				45A71AEF1BD40009000A13B7 /* ApartmentListingsCell.m in Sources */,
 				894A116B1BC961360040C318 /* SignUpLoginViewController.m in Sources */,
 				42FCE8E11BC99C47008627B6 /* User.m in Sources */,
 				4248D9A61BC95DA30031CA2D /* AppDelegate.m in Sources */,
 				450D853C1BC9811E00C0D55F /* APIManager.m in Sources */,
+				450F0C0D1BD6BF7A00BEC5D0 /* NoteListViewController.m in Sources */,
 				45A71AF21BD4021C000A13B7 /* StreetEasyDetailViewController.m in Sources */,
 				89009BBC1BCAF06B00541A5A /* EntryCreationViewController.m in Sources */,
+				450F0C071BD6BE6700BEC5D0 /* NoteDetailViewController.m in Sources */,
 				4248D9A31BC95DA30031CA2D /* main.m in Sources */,
 				89009B911BCAE10300541A5A /* LocationMapViewcontroller.m in Sources */,
 			);

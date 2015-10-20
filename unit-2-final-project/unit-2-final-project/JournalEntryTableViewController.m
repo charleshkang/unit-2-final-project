@@ -154,6 +154,27 @@ static NSString * const cellIdentifier = @"ApartmentCell";
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString:detailSegue]) {
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        
+        StreetEasyDetailViewController*vc = [segue destinationViewController];
+        
+        
+        
+        
+        vc.apartmentImage = [self.apartments[indexPath.row] iconName];
+//        vc.apartmentAddress = [self.apartments[indexPath.row] ];
+//        vc.windSpeed = [self.days[indexPath.row] windSpeed];
+//        vc.summary = [self.days[indexPath.row] summary];
+        
+    } else if ([segue.identifier isEqualToString:locationSegue]) {
+        
+    }
+}
+
 @end
 
 

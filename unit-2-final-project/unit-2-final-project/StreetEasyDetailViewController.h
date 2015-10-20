@@ -11,11 +11,11 @@
 
 @interface StreetEasyDetailViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIImageView *apartmentImageView;
-@property (weak, nonatomic) IBOutlet UILabel *apartmentAddressLabel;
-@property (weak, nonatomic) IBOutlet UILabel *apartmentPriceLabel;
-@property (weak, nonatomic) IBOutlet GMSMapView *apartmentLocationMapImage;
-@property (weak, nonatomic) IBOutlet UILabel *apartmentUnitLabel;
-@property (weak, nonatomic) IBOutlet UILabel *apartmentDescriptionLabel;
+
+@property (nonatomic) NSString *apartmentImage;
+@property (nonatomic) NSString *apartmentAddress;
+@property (nonatomic) NSString *apartmentPrice;
+@property (nonatomic) NSString *apartmentUnit;
+@property (nonatomic) NSString *apartmentDescription;
 
 @end

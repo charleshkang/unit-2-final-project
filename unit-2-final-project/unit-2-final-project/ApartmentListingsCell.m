@@ -7,6 +7,7 @@
 //
 
 #import "ApartmentListingsCell.h"
+#import "StreetEasyDetailViewController.h"
 
 @implementation ApartmentListingsCell
 

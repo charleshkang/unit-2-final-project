@@ -27,12 +27,8 @@
     [super viewDidLoad];
     self.navigationController.navigationBar.hidden = NO;
     
-<<<<<<< HEAD
     self.apartmentImageView.image = [UIImage imageNamed:self.apartmentImage];
-//    self.summaryTextLabel.text = self.summary;
-//    self.windSpeedLabel.text = [NSString stringWithFormat:@"%.2f mph", self.windSpeed];
-//    self.humidityLabel.text = [NSString stringWithFormat:@"%.0f%%", (100 * self.humidity)];
-=======
+
 //    self.apartmentLocationMapImage.accessibilityElementsHidden = NO;
     
     CLLocationCoordinate2D position = CLLocationCoordinate2DMake(40.742903, -73.935536);
@@ -59,7 +55,10 @@
     
     self.apartmentLocationMapImage.delegate = self;
     
->>>>>>> 4c246e6a046f28b5ede586b3c0a6734f1f933691
+}
+
+- (void)removeOverlays:(NSArray<id<GMSMapViewDelegate>> * _Nonnull)overlays {
+
 }
 
 @end

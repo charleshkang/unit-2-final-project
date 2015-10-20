@@ -19,7 +19,7 @@
     [super viewDidLoad];
     
     PFUser *user = [[PFUser alloc] init];
-    user.username = @"charles";
+//    user.username = @"charles";
     user.password = @"ayylmao";
     user.email = @"chris@gmail.com";
     

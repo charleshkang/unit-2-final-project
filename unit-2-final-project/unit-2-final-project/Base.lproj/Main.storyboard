@@ -203,7 +203,7 @@
                         <viewControllerLayoutGuide type="bottom" id="xDL-QN-zch"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6nt-tc-1BT">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="700"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signup" translatesAutoresizingMaskIntoConstraints="NO" id="VQk-jc-2yd">
@@ -223,14 +223,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apartment Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zt5-QK-mZs">
-                                <rect key="frame" x="238" y="339" width="125" height="21"/>
+                                <rect key="frame" x="238" y="489" width="125" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apartment Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKi-i9-UM7">
-                                <rect key="frame" x="0.0" y="368" width="600" height="65"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apartment Description" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKi-i9-UM7">
+                                <rect key="frame" x="0.0" y="518" width="600" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -243,13 +243,41 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="IMt-1e-yr6">
-                                <rect key="frame" x="0.0" y="500" width="600" height="200"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JTh-Z0-b38" userLabel="Map is Here" customClass="GMSMapView">
+                                <rect key="frame" x="20" y="539" width="560" height="461"/>
+                                <subviews>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="IMt-1e-yr6">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="461"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="gYe-lb-LWq"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="gYe-lb-LWq"/>
+                                            </mask>
+                                        </variation>
+                                    </mapView>
+                                </subviews>
                                 <animations/>
+                                <color key="backgroundColor" red="0.15449416035353536" green="0.15449416035353536" blue="0.15449416035353536" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="gYe-lb-LWq"/>
+                                    <constraint firstItem="IMt-1e-yr6" firstAttribute="top" secondItem="JTh-Z0-b38" secondAttribute="top" id="9Bm-FE-RwW"/>
+                                    <constraint firstItem="IMt-1e-yr6" firstAttribute="leading" secondItem="JTh-Z0-b38" secondAttribute="leading" id="HEC-zj-lLq"/>
+                                    <constraint firstAttribute="trailing" secondItem="IMt-1e-yr6" secondAttribute="trailing" id="KMe-JH-vg6"/>
+                                    <constraint firstAttribute="bottom" secondItem="IMt-1e-yr6" secondAttribute="bottom" id="QWZ-AM-474"/>
+                                    <constraint firstAttribute="trailing" secondItem="IMt-1e-yr6" secondAttribute="trailing" id="j7r-xd-AQT"/>
+                                    <constraint firstItem="IMt-1e-yr6" firstAttribute="leading" secondItem="JTh-Z0-b38" secondAttribute="leading" id="nSM-ZD-lk5"/>
+                                    <constraint firstAttribute="height" constant="200" id="u22-gb-3vW"/>
                                 </constraints>
-                            </mapView>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="u22-gb-3vW"/>
+                                        <exclude reference="HEC-zj-lLq"/>
+                                        <exclude reference="j7r-xd-AQT"/>
+                                    </mask>
+                                </variation>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -258,11 +286,11 @@
                             <constraint firstAttribute="trailing" secondItem="zt5-QK-mZs" secondAttribute="trailing" id="2nf-QV-JLo"/>
                             <constraint firstItem="JqX-iQ-LHf" firstAttribute="leading" secondItem="6nt-tc-1BT" secondAttribute="leading" id="3MN-jg-lqj"/>
                             <constraint firstItem="zt5-QK-mZs" firstAttribute="centerX" secondItem="6nt-tc-1BT" secondAttribute="centerX" id="5p5-99-TqC"/>
-                            <constraint firstItem="IMt-1e-yr6" firstAttribute="top" secondItem="CKi-i9-UM7" secondAttribute="bottom" constant="96" id="73l-uU-Zto"/>
                             <constraint firstItem="CKi-i9-UM7" firstAttribute="top" secondItem="zt5-QK-mZs" secondAttribute="bottom" constant="22" id="83g-4D-AKV"/>
                             <constraint firstItem="CKi-i9-UM7" firstAttribute="leading" secondItem="6nt-tc-1BT" secondAttribute="leading" id="8LE-j8-V2y"/>
+                            <constraint firstItem="JTh-Z0-b38" firstAttribute="leading" secondItem="6nt-tc-1BT" secondAttribute="leadingMargin" id="8i3-ej-vWw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="VQk-jc-2yd" secondAttribute="trailing" constant="-20" id="CMa-EO-q9H"/>
-                            <constraint firstItem="IMt-1e-yr6" firstAttribute="top" secondItem="CKi-i9-UM7" secondAttribute="bottom" constant="67" id="JVc-aV-Ox0"/>
+                            <constraint firstItem="JTh-Z0-b38" firstAttribute="trailing" secondItem="6nt-tc-1BT" secondAttribute="trailingMargin" id="CMb-9q-rBF"/>
                             <constraint firstItem="VQk-jc-2yd" firstAttribute="top" secondItem="uSt-em-ObJ" secondAttribute="bottom" id="NSa-80-Y6c"/>
                             <constraint firstItem="6TD-Lo-Xot" firstAttribute="leading" secondItem="6nt-tc-1BT" secondAttribute="leading" id="Nm5-Nb-ngl"/>
                             <constraint firstAttribute="trailing" secondItem="6TD-Lo-Xot" secondAttribute="trailing" id="REM-FP-gbq"/>
@@ -279,12 +307,12 @@
                             <constraint firstItem="CKi-i9-UM7" firstAttribute="top" secondItem="zt5-QK-mZs" secondAttribute="bottom" constant="8" id="gLy-Yi-dFX"/>
                             <constraint firstItem="CKi-i9-UM7" firstAttribute="top" secondItem="zt5-QK-mZs" secondAttribute="bottom" constant="23" id="hSw-05-cjp"/>
                             <constraint firstAttribute="trailing" secondItem="JqX-iQ-LHf" secondAttribute="trailing" id="jn0-gQ-Rt0"/>
-                            <constraint firstItem="IMt-1e-yr6" firstAttribute="top" secondItem="CKi-i9-UM7" secondAttribute="bottom" constant="80" id="kQD-3O-whn"/>
                             <constraint firstItem="6TD-Lo-Xot" firstAttribute="top" secondItem="VQk-jc-2yd" secondAttribute="bottom" constant="51" id="ke2-wr-xRI"/>
-                            <constraint firstAttribute="trailing" secondItem="IMt-1e-yr6" secondAttribute="trailing" id="oRs-n2-mPI"/>
-                            <constraint firstItem="xDL-QN-zch" firstAttribute="top" secondItem="IMt-1e-yr6" secondAttribute="bottom" id="oSI-Hb-P5V"/>
+                            <constraint firstItem="JTh-Z0-b38" firstAttribute="top" secondItem="CKi-i9-UM7" secondAttribute="bottom" id="o4U-g6-5Dc"/>
                             <constraint firstItem="JqX-iQ-LHf" firstAttribute="top" secondItem="6TD-Lo-Xot" secondAttribute="bottom" constant="4" id="p7h-m4-tiS"/>
-                            <constraint firstItem="IMt-1e-yr6" firstAttribute="leading" secondItem="6nt-tc-1BT" secondAttribute="leading" id="t3x-hs-MWB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JTh-Z0-b38" secondAttribute="trailing" id="tSr-lM-LVW"/>
+                            <constraint firstItem="xDL-QN-zch" firstAttribute="top" secondItem="JTh-Z0-b38" secondAttribute="bottom" id="vAL-a4-Hk0"/>
+                            <constraint firstItem="JTh-Z0-b38" firstAttribute="leading" secondItem="6nt-tc-1BT" secondAttribute="leadingMargin" id="vgB-aY-tLM"/>
                             <constraint firstItem="zt5-QK-mZs" firstAttribute="centerY" secondItem="6nt-tc-1BT" secondAttribute="centerY" id="wNY-md-0iT"/>
                         </constraints>
                         <variation key="default">
@@ -298,17 +326,17 @@
                                 <exclude reference="YR9-eI-bPv"/>
                                 <exclude reference="bpn-VL-SgI"/>
                                 <exclude reference="hSw-05-cjp"/>
+                                <exclude reference="tSr-lM-LVW"/>
+                                <exclude reference="vgB-aY-tLM"/>
                                 <exclude reference="2nf-QV-JLo"/>
                                 <exclude reference="RH5-kc-VrL"/>
                                 <exclude reference="f7s-Th-Ik5"/>
-                                <exclude reference="73l-uU-Zto"/>
-                                <exclude reference="kQD-3O-whn"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="HVT-TQ-apy"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="600" height="700"/>
+                    <size key="freeformSize" width="600" height="1000"/>
                     <connections>
                         <outlet property="apartmentAddressLabel" destination="6TD-Lo-Xot" id="DFe-ZI-nZh"/>
                         <outlet property="apartmentDescriptionLabel" destination="CKi-i9-UM7" id="dFl-jF-ILC"/>

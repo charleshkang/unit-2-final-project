@@ -18,5 +18,6 @@
 @property (nonatomic) NSString *apartmentForRent;
 @property (nonatomic) NSString *address;
 @property (nonatomic) NSString *unit;
+@property (nonatomic) NSString *apartmentDescription;
 
 @end

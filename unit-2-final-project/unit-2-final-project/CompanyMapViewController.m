@@ -8,6 +8,8 @@
 
 #import "CompanyMapViewController.h"
 
+// google maps key : AIzaSyAl4iC_ci94VdrvK9GpqleO9WpwFmqNtJg
+
 @interface CompanyMapViewController ()
 
 
@@ -17,6 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationController.navigationBar.hidden = YES;
+
     
     //Controls whether the My Location dot and accuracy circle is enabled.
     

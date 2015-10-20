@@ -36,6 +36,8 @@ static NSString * const cellIdentifier = @"ApartmentCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.navigationController.navigationBar.hidden = YES;
+
     self.apartments = [[NSMutableArray alloc] init];
     
     [self setupSegueCell];

@@ -187,7 +187,11 @@
                                 <action selector="backButton:" destination="QOE-RR-hv2" id="js5-rR-6aY"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wIY-0E-aSA"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wIY-0E-aSA">
+                            <connections>
+                                <segue destination="wGW-3N-3kc" kind="show" id="k17-fd-ZK7"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Uq-OX-FzI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -244,12 +248,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="82n-xe-647" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2499" y="464"/>
+            <point key="canvasLocation" x="2545" y="425"/>
         </scene>
-        <!--View Controller-->
+        <!--Street Easy Detail View Controller-->
         <scene sceneID="13G-15-LNU">
             <objects>
-                <viewController id="wGW-3N-3kc" sceneMemberID="viewController">
+                <viewController id="wGW-3N-3kc" customClass="StreetEasyDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uSt-em-ObJ"/>
                         <viewControllerLayoutGuide type="bottom" id="xDL-QN-zch"/>
@@ -438,5 +442,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="deD-2O-Bwi"/>
+        <segue reference="3Uc-5x-IuO"/>
     </inferredMetricsTieBreakers>
 </document>

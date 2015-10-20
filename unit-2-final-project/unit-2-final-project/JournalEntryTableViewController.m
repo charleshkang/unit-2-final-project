@@ -162,12 +162,12 @@ static NSString * const cellIdentifier = @"ApartmentCell";
         StreetEasyDetailViewController*vc = [segue destinationViewController];
         
         
-       
+    
         
         
         
         vc.apartmentImage = [self.apartments[indexPath.row] iconName];
-   
+  
        // vc.apartmentAddress = [self.apartments[indexPath.row] ];
 //        vc.windSpeed = [self.days[indexPath.row] windSpeed];
 //        vc.summary = [self.days[indexPath.row] summary];

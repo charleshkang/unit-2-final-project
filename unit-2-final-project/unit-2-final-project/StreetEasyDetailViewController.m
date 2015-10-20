@@ -35,8 +35,12 @@
     self.apartmentImageView.image = [UIImage imageWithData:data];
     self.apartmentAddressLabel.text = self.apartmentAddress;
     self.apartmentUnitLabel.text = self.apartmentUnit;
-    //  self.apartmentPriceLabel.text = self.apartmentCost;
+    self.apartmentPriceLabel.text = [NSString stringWithFormat:@"%ld",(long)self.apartmentCost];
     self.apartmentDescriptionTextView.text = self.apartmentDescription;
+    
+    
+    
+    
     
     
     // Create a GMSCameraPosition that tells the map to display the

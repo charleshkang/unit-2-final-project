@@ -202,7 +202,7 @@
                         <viewControllerLayoutGuide type="top" id="uSt-em-ObJ"/>
                         <viewControllerLayoutGuide type="bottom" id="xDL-QN-zch"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="6nt-tc-1BT" customClass="GMSMapView">
+                    <view key="view" contentMode="scaleToFill" id="6nt-tc-1BT">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="700"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>

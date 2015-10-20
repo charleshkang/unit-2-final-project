@@ -27,7 +27,7 @@
     [super viewDidLoad];
     self.navigationController.navigationBar.hidden = NO;
     
-<<<<<<< HEAD
+
     NSURL *url = [NSURL URLWithString:self.apartmentImage];
     
     NSData *data = [NSData dataWithContentsOfURL:url];
@@ -37,12 +37,6 @@
 //    self.windSpeedLabel.text = [NSString stringWithFormat:@"%.2f mph", self.windSpeed];
 //    self.humidityLabel.text = [NSString stringWithFormat:@"%.0f%%", (100 * self.humidity)];
 
-=======
 
-    self.apartmentImageView.image = [UIImage imageNamed:self.apartmentImage];
-    
-    //    self.apartmentLocationMapImage.accessibilityElementsHidden = NO;
-    
->>>>>>> c894184d54b9631324315ba729049c174ea8d641
 }
 @end

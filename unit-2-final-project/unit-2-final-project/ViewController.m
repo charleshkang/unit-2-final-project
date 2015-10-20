@@ -18,13 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    PFUser *user = [[PFUser alloc] init];
-    user.username = @"charles";
-    user.password = @"ayylmao";
-    user.email = @"chris@gmail.com";
-    
-    [user signUpInBackground];
-    [user saveInBackground];
+//    PFUser *user = [[PFUser alloc] init];
+//    user.username = @"chris";
+//    user.password = @"deeznuts";
+//    user.email = @"chrisdavid@gmail.com";
+//    
+//    [user signUpInBackground];
+//    [user saveInBackground];
     
 
     

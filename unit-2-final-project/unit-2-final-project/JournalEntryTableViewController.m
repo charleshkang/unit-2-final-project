@@ -156,23 +156,23 @@ static NSString * const cellIdentifier = @"ApartmentCell";
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-    if ([segue.identifier isEqualToString:detailSegue]) {
         
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
         StreetEasyDetailViewController*vc = [segue destinationViewController];
         
         
-        Apartment *apartment = self.apartments[indexPath.row];
+       
         
         
         
-        vc.apartmentImage = [self.apartments[indexPath.row] data];
+        vc.apartmentImage = [self.apartments[indexPath.row] iconName];
+   
        // vc.apartmentAddress = [self.apartments[indexPath.row] ];
 //        vc.windSpeed = [self.days[indexPath.row] windSpeed];
 //        vc.summary = [self.days[indexPath.row] summary];
         
-    }
+    
 }
 
 @end

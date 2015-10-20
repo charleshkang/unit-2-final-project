@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "ViewController.h"
 #import <GoogleMaps/GoogleMaps.h>
+#import <MapKit/MapKit.h>
 
-@interface StreetEasyDetailViewController : ViewController <GMSMapViewDelegate>
+@interface StreetEasyDetailViewController : ViewController <MKMapViewDelegate>
 
 
 @property (nonatomic) NSString *apartmentImage;

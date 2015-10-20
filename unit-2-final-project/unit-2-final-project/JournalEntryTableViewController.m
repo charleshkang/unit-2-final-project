@@ -93,9 +93,6 @@ static NSString * const cellIdentifier = @"ApartmentCell";
             apartmentForRent.unit = [allApartmentData objectForKey:@"addr_unit"];
             apartmentForRent.iconName = [allApartmentData objectForKey:@"medium_image_uri"];
             apartmentForRent.apartmentPrice = [[allApartmentData objectForKey:@"price"] integerValue];
-            
-            
-           
 
             [self.apartments addObject:apartmentForRent];
          
@@ -149,6 +146,9 @@ static NSString * const cellIdentifier = @"ApartmentCell";
     
     return cell;
 }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self performSegueWithIdentifier:detailSegue sender:self];
+}
 
 - (IBAction)backButton:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -163,14 +163,14 @@ static NSString * const cellIdentifier = @"ApartmentCell";
         StreetEasyDetailViewController*vc = [segue destinationViewController];
         
         
+        Apartment *apartment = self.apartments[indexPath.row];
         
         
-        vc.apartmentImage = [self.apartments[indexPath.row] iconName];
-//        vc.apartmentAddress = [self.apartments[indexPath.row] ];
+        
+        vc.apartmentImage = [self.apartments[indexPath.row] data];
+       // vc.apartmentAddress = [self.apartments[indexPath.row] ];
 //        vc.windSpeed = [self.days[indexPath.row] windSpeed];
 //        vc.summary = [self.days[indexPath.row] summary];
-        
-    } else if ([segue.identifier isEqualToString:locationSegue]) {
         
     }
 }

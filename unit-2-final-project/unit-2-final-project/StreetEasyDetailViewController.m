@@ -25,6 +25,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.navigationBar.hidden = NO;
+    
+    self.apartmentImageView.image = [UIImage imageNamed:self.apartmentImage];
+//    self.summaryTextLabel.text = self.summary;
+//    self.windSpeedLabel.text = [NSString stringWithFormat:@"%.2f mph", self.windSpeed];
+//    self.humidityLabel.text = [NSString stringWithFormat:@"%.0f%%", (100 * self.humidity)];
 }
 
 - (void)didReceiveMemoryWarning {

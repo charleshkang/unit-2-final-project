@@ -22,6 +22,7 @@
 		42B4665F1BD14C630029FBDA /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B4665E1BD14C630029FBDA /* StoreKit.framework */; };
 		42B466611BD14C7A0029FBDA /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B466601BD14C7A0029FBDA /* libsqlite3.tbd */; };
 		42C2F7491BD1CFB700C9D31F /* JournalEntryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C2F7481BD1CFB700C9D31F /* JournalEntryTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		42EFA6111BD5DB3E007110AC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EFA6101BD5DB3E007110AC /* MapKit.framework */; };
 		42FCE8E11BC99C47008627B6 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FCE8E01BC99C47008627B6 /* User.m */; settings = {ASSET_TAGS = (); }; };
 		42FCE8EA1BC99EC5008627B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FCE8E91BC99EC5008627B6 /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
 		450D853C1BC9811E00C0D55F /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 450D853B1BC9811E00C0D55F /* APIManager.m */; settings = {ASSET_TAGS = (); }; };
@@ -69,6 +70,7 @@
 		42B466601BD14C7A0029FBDA /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		42C2F7471BD1CFB700C9D31F /* JournalEntryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JournalEntryTableViewController.h; sourceTree = "<group>"; };
 		42C2F7481BD1CFB700C9D31F /* JournalEntryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JournalEntryTableViewController.m; sourceTree = "<group>"; };
+		42EFA6101BD5DB3E007110AC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		42FCE8DF1BC99C47008627B6 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		42FCE8E01BC99C47008627B6 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		42FCE8E81BC99EC5008627B6 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42EFA6111BD5DB3E007110AC /* MapKit.framework in Frameworks */,
 				42B466611BD14C7A0029FBDA /* libsqlite3.tbd in Frameworks */,
 				42B4665F1BD14C630029FBDA /* StoreKit.framework in Frameworks */,
 				42B4665D1BD14C5C0029FBDA /* Security.framework in Frameworks */,
@@ -242,6 +245,7 @@
 		89009BAA1BCAE36900541A5A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				42EFA6101BD5DB3E007110AC /* MapKit.framework */,
 				42B466601BD14C7A0029FBDA /* libsqlite3.tbd */,
 				42B4665E1BD14C630029FBDA /* StoreKit.framework */,
 				42B4665C1BD14C5C0029FBDA /* Security.framework */,

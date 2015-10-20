@@ -256,34 +256,8 @@
                             </textView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HMI-gT-zOU" userLabel="Google Map View Main Header" customClass="GMSMapView">
                                 <rect key="frame" x="0.0" y="453" width="600" height="147"/>
-                                <subviews>
-                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="IMt-1e-yr6">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="147"/>
-                                        <animations/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="200" id="FWt-d6-NDS"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="226" id="Zcw-jX-dqU"/>
-                                            <constraint firstAttribute="height" constant="200" id="gYe-lb-LWq"/>
-                                            <constraint firstAttribute="height" constant="200" id="z4J-3E-N0u"/>
-                                        </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="FWt-d6-NDS"/>
-                                                <exclude reference="Zcw-jX-dqU"/>
-                                                <exclude reference="gYe-lb-LWq"/>
-                                                <exclude reference="z4J-3E-N0u"/>
-                                            </mask>
-                                        </variation>
-                                    </mapView>
-                                </subviews>
                                 <animations/>
                                 <color key="backgroundColor" red="0.51911994180928578" green="0.79548519172191323" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="IMt-1e-yr6" firstAttribute="top" secondItem="HMI-gT-zOU" secondAttribute="top" id="ObK-ZS-73l"/>
-                                    <constraint firstItem="IMt-1e-yr6" firstAttribute="leading" secondItem="HMI-gT-zOU" secondAttribute="leading" id="WY6-uF-egc"/>
-                                    <constraint firstAttribute="bottom" secondItem="IMt-1e-yr6" secondAttribute="bottom" id="nx1-74-9hc"/>
-                                    <constraint firstAttribute="trailing" secondItem="IMt-1e-yr6" secondAttribute="trailing" id="zB6-al-6uL"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <animations/>
@@ -336,7 +310,6 @@
                         <outlet property="apartmentAddressLabel" destination="6TD-Lo-Xot" id="DFe-ZI-nZh"/>
                         <outlet property="apartmentDescriptionTextView" destination="5LY-mh-imO" id="wVK-uh-AZf"/>
                         <outlet property="apartmentImageView" destination="VQk-jc-2yd" id="HEB-No-lUE"/>
-                        <outlet property="apartmentLocationMapImage" destination="IMt-1e-yr6" id="7ft-am-d40"/>
                         <outlet property="apartmentPriceLabel" destination="zt5-QK-mZs" id="FuR-HP-QTI"/>
                         <outlet property="apartmentUnitLabel" destination="JqX-iQ-LHf" id="V5C-xL-iMh"/>
                         <outlet property="googleMapsMainView" destination="HMI-gT-zOU" id="Cfn-pU-VLf"/>

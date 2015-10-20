@@ -107,11 +107,11 @@
     apartmentMap.myLocationEnabled = YES;
     
     // solution 1 to get map the size we want
-    self.view = apartmentMap;
+//    self.view = apartmentMap;
     
-    // solution 2 to get map the size we want
-    GMSMapView *mapView = [GMSMapView mapWithFrame:CGRectMake(0, 0, 100, 100) camera:camera];
-    [apartmentMap addSubview:mapView];
+    // solution 2 to get map the size we want SUBVIEWING NOT WORKING, CAUSES THERE TO BE 2 MAPS IN ONE VIEW!
+//    GMSMapView *mapView = [GMSMapView mapWithFrame:CGRectMake(0, 0, 500, 500) camera:camera];
+//    [apartmentMap addSubview:mapView];
     
     // creates a marker in the center of the map
     GMSMarker *marker = [[GMSMarker alloc] init];

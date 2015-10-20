@@ -13,5 +13,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *apartmentImage;
 @property (weak, nonatomic) IBOutlet UILabel *locationLabel;
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *apartmentNumber;
 
 @end

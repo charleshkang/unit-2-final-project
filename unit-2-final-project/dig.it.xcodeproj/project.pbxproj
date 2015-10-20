@@ -25,7 +25,6 @@
 		42FCE8E11BC99C47008627B6 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FCE8E01BC99C47008627B6 /* User.m */; settings = {ASSET_TAGS = (); }; };
 		42FCE8EA1BC99EC5008627B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FCE8E91BC99EC5008627B6 /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
 		450D853C1BC9811E00C0D55F /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 450D853B1BC9811E00C0D55F /* APIManager.m */; settings = {ASSET_TAGS = (); }; };
-		45A71AE51BD3EF12000A13B7 /* StreetEasyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A71AE41BD3EF12000A13B7 /* StreetEasyViewController.m */; settings = {ASSET_TAGS = (); }; };
 		45A71AE91BD3FE22000A13B7 /* ApartmentListingCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45A71AE81BD3FE22000A13B7 /* ApartmentListingCells.xib */; settings = {ASSET_TAGS = (); }; };
 		45A71AEF1BD40009000A13B7 /* ApartmentListingsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A71AEE1BD40009000A13B7 /* ApartmentListingsCell.m */; settings = {ASSET_TAGS = (); }; };
 		45A71AF21BD4021C000A13B7 /* StreetEasyDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A71AF11BD4021C000A13B7 /* StreetEasyDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -76,8 +75,6 @@
 		42FCE8E91BC99EC5008627B6 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		450D853A1BC9811E00C0D55F /* APIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
 		450D853B1BC9811E00C0D55F /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
-		45A71AE31BD3EF12000A13B7 /* StreetEasyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreetEasyViewController.h; sourceTree = "<group>"; };
-		45A71AE41BD3EF12000A13B7 /* StreetEasyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreetEasyViewController.m; sourceTree = "<group>"; };
 		45A71AE81BD3FE22000A13B7 /* ApartmentListingCells.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApartmentListingCells.xib; sourceTree = "<group>"; };
 		45A71AED1BD40009000A13B7 /* ApartmentListingsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApartmentListingsCell.h; sourceTree = "<group>"; };
 		45A71AEE1BD40009000A13B7 /* ApartmentListingsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApartmentListingsCell.m; sourceTree = "<group>"; };
@@ -200,8 +197,6 @@
 		42EFA60E1BD5BE5D007110AC /* StreetEasy */ = {
 			isa = PBXGroup;
 			children = (
-				45A71AE31BD3EF12000A13B7 /* StreetEasyViewController.h */,
-				45A71AE41BD3EF12000A13B7 /* StreetEasyViewController.m */,
 				45A71AF01BD4021C000A13B7 /* StreetEasyDetailViewController.h */,
 				45A71AF11BD4021C000A13B7 /* StreetEasyDetailViewController.m */,
 				45A71AF31BD404BC000A13B7 /* Apartment.h */,
@@ -396,7 +391,6 @@
 				894A116B1BC961360040C318 /* SignUpLoginViewController.m in Sources */,
 				42FCE8E11BC99C47008627B6 /* User.m in Sources */,
 				4248D9A61BC95DA30031CA2D /* AppDelegate.m in Sources */,
-				45A71AE51BD3EF12000A13B7 /* StreetEasyViewController.m in Sources */,
 				450D853C1BC9811E00C0D55F /* APIManager.m in Sources */,
 				45A71AF21BD4021C000A13B7 /* StreetEasyDetailViewController.m in Sources */,
 				89009BBC1BCAF06B00541A5A /* EntryCreationViewController.m in Sources */,

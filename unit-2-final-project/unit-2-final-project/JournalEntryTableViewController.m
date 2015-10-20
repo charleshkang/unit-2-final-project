@@ -36,6 +36,8 @@ static NSString * const cellIdentifier = @"ApartmentCell";
     [super viewDidLoad];
     self.navigationItem.title = @"Dig It";
     self.navigationController.navigationBar.hidden = NO;
+    
+    
 
     
     self.apartments = [[NSMutableArray alloc] init];
@@ -55,6 +57,10 @@ static NSString * const cellIdentifier = @"ApartmentCell";
 }
 
 - (void)setupSegueCell {
+    
+//    self.tableView.rowHeight = UITableViewAutomaticDimension;
+//    self.tableView.estimatedRowHeight = 44.0;
+    
     UINib *cellNib = [UINib nibWithNibName:@"ApartmentListingCells" bundle:nil];
     [self.tableView registerNib:cellNib forCellReuseIdentifier:cellIdentifier];
 }
@@ -112,7 +118,15 @@ static NSString * const cellIdentifier = @"ApartmentCell";
     return self.apartments.count;
 }
 
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 120;
+}
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     ApartmentListingsCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
     Apartment *apartment = self.apartments[indexPath.row];
@@ -126,7 +140,8 @@ static NSString * const cellIdentifier = @"ApartmentCell";
     
     cell.locationLabel.text = [NSString stringWithFormat:@"%@",
                                apartment.address];
-    cell.priceLabel.text = [NSString stringWithFormat:@"%ld", (long)apartment.apartmentPrice];
+    cell.apartmentNumber.text = [NSString stringWithFormat:@"Unit: %@",apartment.unit];
+    cell.priceLabel.text = [NSString stringWithFormat:@"Price: $%ld", (long)apartment.apartmentPrice];
     
     
     

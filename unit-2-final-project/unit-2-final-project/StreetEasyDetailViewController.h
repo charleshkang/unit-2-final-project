@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
 #import <GoogleMaps/GoogleMaps.h>
 
-@interface StreetEasyDetailViewController : UIViewController <GMSMapViewDelegate>
+@interface StreetEasyDetailViewController : ViewController <GMSMapViewDelegate>
 
 
 @property (nonatomic) NSString *apartmentImage;
@@ -17,5 +18,6 @@
 @property (nonatomic) NSString *apartmentPrice;
 @property (nonatomic) NSString *apartmentUnit;
 @property (nonatomic) NSString *apartmentDescription;
+
 
 @end

@@ -8,6 +8,7 @@
 
 #import "StreetEasyDetailViewController.h"
 #import <GoogleMaps/GoogleMaps.h>
+#import "AppDelegate.h"
 
 @interface StreetEasyDetailViewController ()
 
@@ -26,25 +27,39 @@
     [super viewDidLoad];
     self.navigationController.navigationBar.hidden = NO;
     
+<<<<<<< HEAD
     self.apartmentImageView.image = [UIImage imageNamed:self.apartmentImage];
 //    self.summaryTextLabel.text = self.summary;
 //    self.windSpeedLabel.text = [NSString stringWithFormat:@"%.2f mph", self.windSpeed];
 //    self.humidityLabel.text = [NSString stringWithFormat:@"%.0f%%", (100 * self.humidity)];
+=======
+//    self.apartmentLocationMapImage.accessibilityElementsHidden = NO;
+    
+    CLLocationCoordinate2D position = CLLocationCoordinate2DMake(40.742903, -73.935536);
+    
+    GMSMarker *marker = [GMSMarker markerWithPosition:position];
+    marker.title = @"C4Q HQ";
+    marker.map = _apartmentLocationMapImage;
+    marker.appearAnimation = kGMSMarkerAnimationPop;
+    marker.icon = [GMSMarker markerImageWithColor:[UIColor blackColor]];
+    
+    //Controls whether the My Location dot and accuracy circle is enabled.
+    
+    self.apartmentLocationMapImage.myLocationEnabled = YES;
+    
+    //Controls the type of map tiles that should be displayed.
+    
+    self.apartmentLocationMapImage.mapType = kGMSTypeNormal;
+    
+    //Shows the my location button on the map
+    
+    self.apartmentLocationMapImage.settings.myLocationButton = YES;
+    
+    //Sets the view controller to be the GMSMapView delegate
+    
+    self.apartmentLocationMapImage.delegate = self;
+    
+>>>>>>> 4c246e6a046f28b5ede586b3c0a6734f1f933691
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

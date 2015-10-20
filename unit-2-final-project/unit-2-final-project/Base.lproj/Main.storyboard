@@ -202,11 +202,11 @@
                         <viewControllerLayoutGuide type="top" id="uSt-em-ObJ"/>
                         <viewControllerLayoutGuide type="bottom" id="xDL-QN-zch"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="6nt-tc-1BT">
+                    <view key="view" contentMode="scaleToFill" id="6nt-tc-1BT" customClass="GMSMapView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="700"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signup" translatesAutoresizingMaskIntoConstraints="NO" id="VQk-jc-2yd">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signup" translatesAutoresizingMaskIntoConstraints="NO" id="VQk-jc-2yd">
                                 <rect key="frame" x="0.0" y="64" width="600" height="172"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.48241146125206397" green="0.29542526435845134" blue="0.72183818717277481" alpha="1" colorSpace="calibratedRGB"/>

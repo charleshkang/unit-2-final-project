@@ -10,7 +10,7 @@
 
 @implementation User
 
-@dynamic username;
+//@dynamic username;
 @dynamic password;
 @dynamic emailAddress;
 @dynamic phoneNumber;

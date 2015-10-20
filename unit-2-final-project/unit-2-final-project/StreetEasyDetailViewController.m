@@ -7,8 +7,13 @@
 //
 
 #import "StreetEasyDetailViewController.h"
+#import <GoogleMaps/GoogleMaps.h>
 
 @interface StreetEasyDetailViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *apartmentImageView;
+@property (weak, nonatomic) IBOutlet UILabel *apartmentAddressLabel;
+@property (weak, nonatomic) IBOutlet UILabel *apartmentPriceLabel;
+@property (weak, nonatomic) IBOutlet GMSMapView *apartmentLocationMapImage;
 
 @end
 

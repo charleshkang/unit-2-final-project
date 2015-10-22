@@ -7,6 +7,7 @@
 //
 
 #import "NoteDetailViewController.h"
+#import "NoteCreationViewController.h"
 #import "Note.h"
 
 @interface NoteDetailViewController () <UITextViewDelegate>
@@ -25,6 +26,17 @@
     [super viewDidLoad];
     
     self.textView.text = self.note.text;
+    
+    // get the stored data before the view loads
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    
+    NSString *noteTitle = [defaults objectForKey:@"noteTitle"];
+    NSString *noteDescription = [defaults objectForKey:@"noteDescription"];
+    
+
+    
+
 }
 
 - (void)viewDidAppear:(BOOL)animated

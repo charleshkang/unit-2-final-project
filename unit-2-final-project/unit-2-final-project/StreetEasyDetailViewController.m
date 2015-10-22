@@ -55,7 +55,7 @@
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:40.74 longitude:-73.93 zoom:9];
     
     apartmentMap = [GMSMapView mapWithFrame:CGRectZero camera:camera];
-  
+    
     
     
     // creates a marker in the center of the map
@@ -67,10 +67,12 @@
     marker.snippet = @"Long Island City";
     marker.map = apartmentMap;
     self.viewForMap = apartmentMap;
-   //[self.viewForMap addSubview:apartmentMap];
-   // [self.viewForMap addSubview:apartmentMap];
     
-
+    // uncommenting the below code will make the map full screen, will fix this later if there's time
+    //    self.view = self.viewForMap;
+    
+    
+    
 }
 @end
 

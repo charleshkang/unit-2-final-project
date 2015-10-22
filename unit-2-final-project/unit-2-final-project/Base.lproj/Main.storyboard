@@ -195,7 +195,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Uq-OX-FzI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1825" y="458"/>
+            <point key="canvasLocation" x="1142" y="-306"/>
         </scene>
         <!--Street Easy Detail View Controller-->
         <scene sceneID="13G-15-LNU">
@@ -225,22 +225,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="edL-xb-Ymi">
-                                <rect key="frame" x="10" y="254" width="580" height="200"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="euZ-bY-xAv"/>
-                                    <constraint firstAttribute="height" constant="200" id="tdr-Pw-oHT"/>
-                                </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="euZ-bY-xAv"/>
-                                    </mask>
-                                </variation>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mP3-MP-CIh">
                                 <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
                                 <animations/>
@@ -256,7 +240,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41c-B6-TIa" customClass="GMSMapView">
-                                <rect key="frame" x="4" y="464" width="592" height="136"/>
+                                <rect key="frame" x="4" y="496" width="592" height="104"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.34433798317965381" green="1" blue="0.65989829404061939" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -271,6 +255,22 @@
                                     <segue destination="f8P-Bd-u1Q" kind="presentation" id="Tjh-yW-EZN"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="edL-xb-Ymi">
+                                <rect key="frame" x="10" y="267" width="580" height="200"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="euZ-bY-xAv"/>
+                                    <constraint firstAttribute="height" constant="200" id="tdr-Pw-oHT"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="euZ-bY-xAv"/>
+                                    </mask>
+                                </variation>
+                            </textView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -278,7 +278,7 @@
                             <constraint firstItem="SuW-GM-FX8" firstAttribute="top" secondItem="uSt-em-ObJ" secondAttribute="bottom" constant="10" id="1yb-5U-gT0"/>
                             <constraint firstItem="edL-xb-Ymi" firstAttribute="leading" secondItem="6nt-tc-1BT" secondAttribute="leading" constant="10" id="GGC-YS-5rG"/>
                             <constraint firstAttribute="trailing" secondItem="SuW-GM-FX8" secondAttribute="trailing" constant="10" id="H56-Ie-Aee"/>
-                            <constraint firstItem="edL-xb-Ymi" firstAttribute="top" secondItem="VQk-jc-2yd" secondAttribute="bottom" constant="90" id="JkO-9U-dBG"/>
+                            <constraint firstItem="edL-xb-Ymi" firstAttribute="top" secondItem="VQk-jc-2yd" secondAttribute="bottom" constant="103" id="JkO-9U-dBG"/>
                             <constraint firstItem="41c-B6-TIa" firstAttribute="leading" secondItem="6nt-tc-1BT" secondAttribute="leadingMargin" constant="-16" id="Rca-Jl-cgC"/>
                             <constraint firstItem="6TD-Lo-Xot" firstAttribute="top" secondItem="uSt-em-ObJ" secondAttribute="bottom" constant="10" id="TqC-BR-OJF"/>
                             <constraint firstItem="zt5-QK-mZs" firstAttribute="top" secondItem="6TD-Lo-Xot" secondAttribute="bottom" constant="5" id="VJ3-T8-H2K"/>
@@ -286,7 +286,7 @@
                             <constraint firstAttribute="trailing" secondItem="edL-xb-Ymi" secondAttribute="trailing" constant="10" id="Yjf-6r-QAJ"/>
                             <constraint firstItem="6TD-Lo-Xot" firstAttribute="top" secondItem="VQk-jc-2yd" secondAttribute="bottom" constant="30" id="aJ4-Ng-MPv"/>
                             <constraint firstAttribute="trailing" secondItem="VQk-jc-2yd" secondAttribute="trailing" id="aKW-Ld-30H"/>
-                            <constraint firstItem="41c-B6-TIa" firstAttribute="top" secondItem="edL-xb-Ymi" secondAttribute="bottom" constant="10" id="cms-D8-gHq"/>
+                            <constraint firstItem="41c-B6-TIa" firstAttribute="top" secondItem="edL-xb-Ymi" secondAttribute="bottom" constant="29" id="cms-D8-gHq"/>
                             <constraint firstAttribute="trailing" secondItem="6TD-Lo-Xot" secondAttribute="trailing" id="ehG-OD-6Ff"/>
                             <constraint firstItem="6TD-Lo-Xot" firstAttribute="leading" secondItem="6nt-tc-1BT" secondAttribute="leading" id="fRr-2T-IIV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="41c-B6-TIa" secondAttribute="trailing" constant="-16" id="hla-Lm-vCa"/>
@@ -317,7 +317,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t1j-07-kol" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2563" y="373"/>
+            <point key="canvasLocation" x="1819" y="-306"/>
         </scene>
         <!--Note Creation View Controller-->
         <scene sceneID="PFK-NG-1YG">
@@ -340,7 +340,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write notes here..." textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r8Q-TH-lrL">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write notes here..." textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r8Q-TH-lrL">
                                 <rect key="frame" x="10" y="110" width="580" height="480"/>
                                 <animations/>
                                 <constraints>
@@ -362,18 +362,17 @@
                                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="0.0"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Title" id="k24-Cg-xDk">
+                                    <navigationItem title="Journal Creation" id="k24-Cg-xDk">
                                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="h86-9d-M7k">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
                                                 <action selector="cancelButtonTapped:" destination="f8P-Bd-u1Q" id="ih4-5g-tUA"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="qwM-Sq-yEE">
-                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Save" id="uU8-PC-cWK">
+                                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
-                                                <action selector="saveButtonTapped:" destination="f8P-Bd-u1Q" id="6rg-b1-adN"/>
-                                                <segue destination="Ca9-BD-jl2" kind="show" id="Mlx-GR-afW"/>
+                                                <action selector="saveButtonTapped:" destination="f8P-Bd-u1Q" id="sBs-NL-c5s"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -386,29 +385,30 @@
                             <constraint firstItem="r8Q-TH-lrL" firstAttribute="top" secondItem="NQJ-Op-eIP" secondAttribute="bottom" constant="10" id="8cL-AH-gwW"/>
                             <constraint firstAttribute="trailing" secondItem="EDe-tD-FAR" secondAttribute="trailing" id="FIZ-kW-m3z"/>
                             <constraint firstItem="EDe-tD-FAR" firstAttribute="leading" secondItem="bIt-Uk-BkP" secondAttribute="leading" id="Fuf-c3-FOq"/>
-                            <constraint firstItem="tgP-Mz-nmc" firstAttribute="top" secondItem="r8Q-TH-lrL" secondAttribute="bottom" constant="10" id="NOr-dE-KTa"/>
-                            <constraint firstItem="NQJ-Op-eIP" firstAttribute="top" secondItem="ieq-Sw-yXL" secondAttribute="bottom" constant="30" id="U2c-hL-ev6"/>
+                            <constraint firstItem="tgP-Mz-nmc" firstAttribute="top" secondItem="r8Q-TH-lrL" secondAttribute="bottom" constant="10" id="S30-de-jho"/>
                             <constraint firstAttribute="trailing" secondItem="r8Q-TH-lrL" secondAttribute="trailing" constant="10" id="XtH-to-GaK"/>
                             <constraint firstItem="r8Q-TH-lrL" firstAttribute="leading" secondItem="bIt-Uk-BkP" secondAttribute="leading" constant="10" id="k55-Bx-z7d"/>
+                            <constraint firstItem="NQJ-Op-eIP" firstAttribute="top" secondItem="ieq-Sw-yXL" secondAttribute="bottom" constant="30" id="l30-ap-KeZ"/>
                             <constraint firstItem="EDe-tD-FAR" firstAttribute="top" secondItem="bIt-Uk-BkP" secondAttribute="top" id="noT-w8-CVz"/>
                             <constraint firstAttribute="trailing" secondItem="NQJ-Op-eIP" secondAttribute="trailing" constant="10" id="rcw-lA-dQE"/>
                             <constraint firstItem="NQJ-Op-eIP" firstAttribute="leading" secondItem="bIt-Uk-BkP" secondAttribute="leading" constant="10" id="txy-0a-VGl"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="cancelButtonTapped" destination="h86-9d-M7k" id="zOD-iR-2JA"/>
                         <outlet property="noteDescriptionTextField" destination="r8Q-TH-lrL" id="d4E-vz-tbQ"/>
-                        <outlet property="saveButtonTapped" destination="qwM-Sq-yEE" id="xC3-b4-CQy"/>
                         <outlet property="titleNoteTextField" destination="NQJ-Op-eIP" id="9Ig-st-vxw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q9w-yn-ZtI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3243" y="373"/>
+            <point key="canvasLocation" x="1819" y="435"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="a1q-bL-nVk">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eDR-oj-zhn" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="Ca9-BD-jl2" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gNM-YW-gUm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -419,14 +419,13 @@
                         <segue destination="7tM-MD-bvt" kind="relationship" relationship="rootViewController" id="iz2-D6-qBK"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eDR-oj-zhn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3930" y="365"/>
+            <point key="canvasLocation" x="2498" y="-306"/>
         </scene>
-        <!--Apartment Journals-->
+        <!--Note List View Controller-->
         <scene sceneID="cVs-xE-Fbr">
             <objects>
-                <tableViewController id="7tM-MD-bvt" customClass="NoteListViewController" sceneMemberID="viewController">
+                <tableViewController id="7tM-MD-bvt" userLabel="Note List View Controller" customClass="NoteListViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Jhp-sp-YV5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -478,12 +477,18 @@
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
-                    <navigationItem key="navigationItem" title="Apartment Journals" id="a1t-VK-i6K"/>
+                    <navigationItem key="navigationItem" title="Apartment Journals" id="a1t-VK-i6K">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="XMT-Bi-vnv">
+                            <connections>
+                                <action selector="backButton:" destination="7tM-MD-bvt" id="KPn-UP-I4T"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KjT-nU-eeZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4681" y="333"/>
+            <point key="canvasLocation" x="2498" y="435"/>
         </scene>
         <!--Note Detail View Controller-->
         <scene sceneID="moE-XT-zNN">
@@ -517,7 +522,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JD2-gE-KUe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4681" y="1212"/>
+            <point key="canvasLocation" x="3197" y="435"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r9F-Gj-ltN">
@@ -534,7 +539,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4p7-YD-tru" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="458" y="464"/>
+            <point key="canvasLocation" x="458" y="424"/>
         </scene>
         <!--Entry Creation View Controller-->
         <scene sceneID="diF-Iv-yEc">
@@ -635,7 +640,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cOv-SJ-4vn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1150" y="464"/>
+            <point key="canvasLocation" x="1136" y="424"/>
         </scene>
     </scenes>
     <resources>
@@ -644,7 +649,7 @@
         <image name="signup" width="900" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Szf-vM-sYH"/>
         <segue reference="deD-2O-Bwi"/>
-        <segue reference="w3r-zb-vIr"/>
     </inferredMetricsTieBreakers>
 </document>

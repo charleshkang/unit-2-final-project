@@ -87,6 +87,9 @@ static NSString * const cellIdentifier = @"ApartmentCell";
             apartmentForRent.iconName = [allApartmentData objectForKey:@"medium_image_uri"];
             apartmentForRent.apartmentPrice = [[allApartmentData objectForKey:@"price"] integerValue];
             apartmentForRent.apartmentDescription = [allApartmentData objectForKey:@"description"];
+            
+            apartmentForRent.latitude = [allApartmentData objectForKey:@"addr_lat"];
+            apartmentForRent.longitude = [allApartmentData objectForKey:@"addr_lon"];
 
             [self.apartments addObject:apartmentForRent];
          
@@ -161,6 +164,10 @@ static NSString * const cellIdentifier = @"ApartmentCell";
         vc.apartmentUnit = apartment.unit;
         vc.apartmentCost = apartment.apartmentPrice;
         vc.apartmentDescription = apartment.apartmentDescription;
+    
+         vc.apartmentLongitude = apartment.longitude;
+         vc.apartmentLatitude = apartment.latitude; 
+    
     
 
         

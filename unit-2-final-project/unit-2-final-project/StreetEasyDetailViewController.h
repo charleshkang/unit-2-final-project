@@ -20,5 +20,10 @@
 @property (nonatomic) NSString *apartmentUnit;
 @property (nonatomic) NSString *apartmentDescription;
 
+@property (nonatomic) NSNumber *apartmentLatitude;
+@property (nonatomic) NSNumber *apartmentLongitude;
+
+
+
 
 @end

@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *addNoteButtonTapped;
 
 
+
 @end
 
 @implementation StreetEasyDetailViewController {
@@ -51,28 +52,40 @@
     
     
     
+    float lat = [self.apartmentLatitude floatValue];
+    float lon = [self.apartmentLongitude floatValue];
+    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:lat longitude:lon zoom:15];
     
-    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:40.74 longitude:-73.93 zoom:9];
-    
-    apartmentMap = [GMSMapView mapWithFrame:CGRectZero camera:camera];
-    
+    apartmentMap = [GMSMapView mapWithFrame:self.view.frame camera:camera];
+    apartmentMap.myLocationEnabled = YES;
+    //self.viewForMap = apartmentMap;
     
     
     // creates a marker in the center of the map
     GMSMarker *marker = [[GMSMarker alloc] init];
     
-    marker.position = camera.target;
+    marker.position = CLLocationCoordinate2DMake(lat, lon);
     
-    marker.title = @"C4Q HQ";
-    marker.snippet = @"Long Island City";
+    marker.title = self.apartmentAddress;
+    marker.snippet = @"New York City";
+    
     marker.map = apartmentMap;
-    self.viewForMap = apartmentMap;
     
-    // uncommenting the below code will make the map full screen, will fix this later if there's time
-    //    self.view = self.viewForMap;
+    GMSCameraUpdate *camUpdate = [GMSCameraUpdate setTarget:marker.position zoom:10.0];
+    [apartmentMap animateWithCameraUpdate:camUpdate];
+    [self.viewForMap addSubview:apartmentMap];
+    [apartmentMap animateToCameraPosition:camera];
+    [apartmentMap animateToLocation:camera.target];
     
     
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     
+    float lat2 = [self.apartmentLatitude floatValue];
+    float lon2 = [self.apartmentLongitude floatValue];
+    [apartmentMap animateToLocation:CLLocationCoordinate2DMake(lat2, lon2)];
 }
 @end
 

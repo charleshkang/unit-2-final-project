@@ -373,6 +373,7 @@
                                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
                                                 <action selector="doneButtonTapped:" destination="f8P-Bd-u1Q" id="C4r-VC-Dgb"/>
+                                                <segue destination="7tM-MD-bvt" kind="show" id="AwA-gj-iyo"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -650,6 +651,7 @@
         <image name="signup" width="900" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="AwA-gj-iyo"/>
         <segue reference="deD-2O-Bwi"/>
     </inferredMetricsTieBreakers>
 </document>

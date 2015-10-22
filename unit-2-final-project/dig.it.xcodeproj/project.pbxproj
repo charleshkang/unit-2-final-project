@@ -569,7 +569,7 @@
 				);
 				INFOPLIST_FILE = "unit-2-final-project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.charleshkang.digit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikekavouras.digit;
 				PRODUCT_NAME = dig.it;
 				PROVISIONING_PROFILE = "";
 			};
@@ -589,7 +589,7 @@
 				);
 				INFOPLIST_FILE = "unit-2-final-project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.charleshkang.digit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikekavouras.digit;
 				PRODUCT_NAME = dig.it;
 				PROVISIONING_PROFILE = "";
 			};

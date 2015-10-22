@@ -28,16 +28,13 @@
     
    }
 
-
-
-
 - (IBAction)doneButtonTapped:(id)sender {
     
     PFObject *entry = [PFObject objectWithClassName:@"Entry"];
     [entry setObject:self.titleTextField.text forKey:@"title"];
     [entry setObject:self.entryTextField.text forKey:@"entry"];
-//    
-//    NSLog(@"USER JOURNAL: %@, %@", self.titleNoteTextField.text, self.noteDescriptionTextField.text);
+ 
+    NSLog(@"USER JOURNAL: %@, %@", self.titleTextField.text, self.entryTextField.text);
     
     [self dismissViewControllerAnimated:YES completion:nil];
     
@@ -62,14 +59,7 @@
         }
         
     }];
-    
-    
-    
-    
 }
-
-
-
 
 //- (IBAction)saveButtonTapped:(id)sender {
 //    

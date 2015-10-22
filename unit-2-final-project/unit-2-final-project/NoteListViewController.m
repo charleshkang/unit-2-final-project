@@ -21,17 +21,10 @@
 
 @end
 
-
-
-
 @implementation NoteListViewController
 
 #pragma mark -
 #pragma mark View controller methods
-
-
-
-
 
 - (IBAction)refreshButtonTapped:(id)sender {
     

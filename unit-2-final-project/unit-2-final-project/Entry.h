@@ -16,6 +16,8 @@
 @property (nonatomic) NSDate *createdAt;
 @property (nonatomic) NSString *titleOfEntry;
 @property (nonatomic) NSString *descriptionOfEntry;
+@property (nonatomic) NSString *entry;
+@property (nonatomic) NSString *title;
 
 @end
 

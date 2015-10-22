@@ -162,7 +162,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="6FL-lu-Hop">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="6FL-lu-Hop">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6FL-lu-Hop" id="uWe-Oe-bGa">
@@ -372,8 +372,7 @@
                                         <barButtonItem key="rightBarButtonItem" title="Save" id="uU8-PC-cWK">
                                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
-                                                <action selector="doneButtonTapped:" destination="f8P-Bd-u1Q" id="MCD-oE-aXG"/>
-                                                <segue destination="Ca9-BD-jl2" kind="show" id="p3a-O5-EUm"/>
+                                                <action selector="doneButtonTapped:" destination="f8P-Bd-u1Q" id="C4r-VC-Dgb"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>

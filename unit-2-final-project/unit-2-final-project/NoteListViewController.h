@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 
-@class NoteStore;
+//@class NoteStore;
 
 @interface NoteListViewController : UITableViewController <UITableViewDelegate> {
     

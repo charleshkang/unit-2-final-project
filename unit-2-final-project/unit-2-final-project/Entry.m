@@ -13,6 +13,8 @@
 @dynamic createdAt;
 @dynamic descriptionOfEntry;
 @dynamic titleOfEntry;
+@dynamic title;
+@dynamic entry;
 
 + (NSString *) parseClassName {
     return @"Entry";
@@ -22,24 +24,7 @@
 
 
 
-//#import "Entry.h"
-//
-//@implementation Entry
-//
-//@dynamic createdAt;
-//@dynamic descriptionOfEntry;
-//@dynamic titleOfEntry;
-//@dynamic dateOfEntry;
-//@dynamic journalEntries;
-//@dynamic apartmentLocation;
-//@dynamic apartmentPrice;
-//
-//
-//+ (NSString *) parseClassName {
-//    return @"Entry";
-//}
-//
-//
+
 //+(void)fetchAll:(void (^)(NSArray *, NSError *))completion{
 //    
 //    //create query

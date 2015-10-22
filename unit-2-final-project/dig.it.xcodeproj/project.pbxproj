@@ -52,6 +52,7 @@
 		89009BBC1BCAF06B00541A5A /* EntryCreationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89009BBB1BCAF06B00541A5A /* EntryCreationViewController.m */; settings = {ASSET_TAGS = (); }; };
 		890AC0711BCAFE0200D61E01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890AC06F1BCAFE0200D61E01 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
 		894A116B1BC961360040C318 /* SignUpLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 894A116A1BC961360040C318 /* SignUpLoginViewController.m */; settings = {ASSET_TAGS = (); }; };
+		899A00F71BD937F000F65FEB /* NoteCreationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 899A00F61BD937F000F65FEB /* NoteCreationViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -120,6 +121,8 @@
 		890AC0701BCAFE0200D61E01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "unit-2-final-project/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		894A11691BC961360040C318 /* SignUpLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpLoginViewController.h; sourceTree = "<group>"; };
 		894A116A1BC961360040C318 /* SignUpLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpLoginViewController.m; sourceTree = "<group>"; };
+		899A00F51BD937F000F65FEB /* NoteCreationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteCreationViewController.h; sourceTree = "<group>"; };
+		899A00F61BD937F000F65FEB /* NoteCreationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteCreationViewController.m; sourceTree = "<group>"; };
 		B6A744D1F17F548EF8E4A7EB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -246,8 +249,6 @@
 				42FCE8E91BC99EC5008627B6 /* ViewController.m */,
 				42FCE8DF1BC99C47008627B6 /* User.h */,
 				42FCE8E01BC99C47008627B6 /* User.m */,
-				42A3B12B1BCED8DA00907D15 /* Entry.h */,
-				42A3B1291BCED8C100907D15 /* Entry.m */,
 			);
 			name = Parse;
 			sourceTree = "<group>";
@@ -266,12 +267,16 @@
 			children = (
 				450F0C021BD6BE0000BEC5D0 /* Note.h */,
 				450F0C031BD6BE0000BEC5D0 /* Note.m */,
+				42A3B12B1BCED8DA00907D15 /* Entry.h */,
+				42A3B1291BCED8C100907D15 /* Entry.m */,
+				899A00F51BD937F000F65FEB /* NoteCreationViewController.h */,
+				899A00F61BD937F000F65FEB /* NoteCreationViewController.m */,
+				450F0C0B1BD6BF7A00BEC5D0 /* NoteListViewController.h */,
+				450F0C0C1BD6BF7A00BEC5D0 /* NoteListViewController.m */,
 				450F0C051BD6BE6700BEC5D0 /* NoteDetailViewController.h */,
 				450F0C061BD6BE6700BEC5D0 /* NoteDetailViewController.m */,
 				450F0C081BD6BF0200BEC5D0 /* NoteListItem.h */,
 				450F0C091BD6BF0200BEC5D0 /* NoteListItem.m */,
-				450F0C0B1BD6BF7A00BEC5D0 /* NoteListViewController.h */,
-				450F0C0C1BD6BF7A00BEC5D0 /* NoteListViewController.m */,
 				450F0C0E1BD6BFD700BEC5D0 /* NotesDocument.h */,
 				450F0C0F1BD6BFD700BEC5D0 /* NotesDocument.m */,
 			);
@@ -440,6 +445,7 @@
 				45A71AF21BD4021C000A13B7 /* StreetEasyDetailViewController.m in Sources */,
 				89009BBC1BCAF06B00541A5A /* EntryCreationViewController.m in Sources */,
 				450F0C071BD6BE6700BEC5D0 /* NoteDetailViewController.m in Sources */,
+				899A00F71BD937F000F65FEB /* NoteCreationViewController.m in Sources */,
 				4248D9A31BC95DA30031CA2D /* main.m in Sources */,
 				89009B911BCAE10300541A5A /* LocationMapViewcontroller.m in Sources */,
 			);

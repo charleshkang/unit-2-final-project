@@ -10,11 +10,6 @@
 
 @interface NoteCreationViewController ()
 
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *saveButtonTapped;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *cancelButtonTapped;
-@property (weak, nonatomic) IBOutlet UITextField *titleNoteTextField;
-@property (weak, nonatomic) IBOutlet UITextField *noteDescriptionTextField;
-
 
 @end
 
@@ -26,23 +21,35 @@
     //change title of navigation bar
     self.navigationItem.title = @"add note";
     
-    
-}
+   }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)saveButtonTapped:(id)sender {
+    
+    // hide the keyboard
+    [self.titleNoteTextField resignFirstResponder];
+    [self.noteDescriptionTextField resignFirstResponder];
+    
+    // create strings to store text info
+    NSString *noteTitle = [self.titleNoteTextField text];
+    NSString *noteDescription = [self.noteDescriptionTextField text];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    // store the data
+    [defaults setObject:noteTitle forKey:@"title"];
+    [defaults setObject:noteDescription forKey:@"description"];
+    
+    [defaults synchronize];
+    
+    NSLog(@"entry saved, title: %@, description: %@", noteTitle, noteDescription);
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    
+    
 }
 
 - (IBAction)cancelButtonTapped:(id)sender {
-    
-    //dismiss modal popup if cancel is clicked
-    [self dismissModalViewControllerAnimated:YES];
-    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
-
-
-- (IBAction)saveButtonTapped:(id)sender {
-}
-
 @end

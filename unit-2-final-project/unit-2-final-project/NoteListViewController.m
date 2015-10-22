@@ -28,7 +28,7 @@
 {
     [super viewDidLoad];
     
-    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+//    self.navigationItem.rightBarButtonItem = self.editButtonItem;
     self.tableView.rowHeight = 56;
     
     NSURL *fileURL = [self documentFileURL];
@@ -196,6 +196,9 @@
             NSLog(@"Error saving notes: %@", error);
         }
     }];
+}
+- (IBAction)backButton:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

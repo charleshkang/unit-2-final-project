@@ -34,11 +34,10 @@ static NSString * const cellIdentifier = @"ApartmentCell";
 
 - (void) viewDidLoad {
     [super viewDidLoad];
+    
+    
     self.navigationItem.title = @"dig.it";
     self.navigationController.navigationBar.hidden = NO;
-    
-    
-
     
     self.apartments = [[NSMutableArray alloc] init];
     [self setupSegueCell];
@@ -57,10 +56,6 @@ static NSString * const cellIdentifier = @"ApartmentCell";
 }
 
 - (void)setupSegueCell {
-    
-//    self.tableView.rowHeight = UITableViewAutomaticDimension;
-//    self.tableView.estimatedRowHeight = 44.0;
-    
     UINib *cellNib = [UINib nibWithNibName:@"ApartmentListingCells" bundle:nil];
     [self.tableView registerNib:cellNib forCellReuseIdentifier:cellIdentifier];
 }
@@ -68,8 +63,6 @@ static NSString * const cellIdentifier = @"ApartmentCell";
 
 
 #pragma Mark - API Stuff
-
-
 
 - (void)fetchData {
     
@@ -132,24 +125,23 @@ static NSString * const cellIdentifier = @"ApartmentCell";
     NSURL *url = [NSURL URLWithString:apartment.iconName];
     
     NSData *data = [NSData dataWithContentsOfURL:url];
+    
     cell.apartmentImage.image = [UIImage imageWithData:data];
     
-   
     
     cell.locationLabel.text = [NSString stringWithFormat:@"%@",
                                apartment.address];
     cell.apartmentNumber.text = [NSString stringWithFormat:@"Unit: %@",apartment.unit];
     cell.priceLabel.text = [NSString stringWithFormat:@"Price: $%ld", (long)apartment.apartmentPrice];
-    
-    
-    
-    
+
     
     return cell;
 }
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self performSegueWithIdentifier:detailSegue sender:self];
 }
+
 
 - (IBAction)backButton:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -161,22 +153,16 @@ static NSString * const cellIdentifier = @"ApartmentCell";
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
         StreetEasyDetailViewController*vc = [segue destinationViewController];
-        
-        
     
-    Apartment *apartment = self.apartments[indexPath.row];
-        
-        
-        
+        Apartment *apartment = self.apartments[indexPath.row];
+    
         vc.apartmentImage = apartment.iconName;
-  
         vc.apartmentAddress = apartment.address;
         vc.apartmentUnit = apartment.unit;
-       vc.apartmentCost = apartment.apartmentPrice;
-     vc.apartmentDescription = apartment.apartmentDescription;
+        vc.apartmentCost = apartment.apartmentPrice;
+        vc.apartmentDescription = apartment.apartmentDescription;
     
-//        vc.windSpeed = [self.days[indexPath.row] windSpeed];
-//        vc.summary = [self.days[indexPath.row] summary];
+
         
     
 }

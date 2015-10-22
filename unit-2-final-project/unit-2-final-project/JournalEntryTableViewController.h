@@ -13,6 +13,4 @@
 
 @interface JournalEntryTableViewController : UITableViewController
 
-
-
 @end

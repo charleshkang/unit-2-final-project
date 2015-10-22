@@ -19,10 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.navigationController.navigationBar.hidden = YES;
-    
-    
-    
     
     [[self.signUpButtonTapped layer] setBorderWidth:2.0f];
     [[self.signUpButtonTapped layer] setBorderColor:[UIColor whiteColor].CGColor];
@@ -35,7 +33,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 

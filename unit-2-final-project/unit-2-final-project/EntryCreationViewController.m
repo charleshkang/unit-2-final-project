@@ -52,23 +52,8 @@
     //hide navigation bar
     self.navigationController.navigationBar.hidden = YES;
     
-    //    //set appearance of status bar
-    //    [self setNeedsStatusBarAppearanceUpdate];
-    
     
 }
-
-//
-//- (UIStatusBarStyle)preferredStatusBarStyle
-//{
-//    return UIStatusBarStyleLightContent;
-//
-//}
-
-//hide status bar
-//-(BOOL)prefersStatusBarHidden{
-//return YES;
-//}
 
 - (IBAction)searchButtonTapped:(id)sender {
     

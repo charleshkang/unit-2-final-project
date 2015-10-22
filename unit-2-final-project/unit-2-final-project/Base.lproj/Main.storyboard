@@ -373,6 +373,7 @@
                                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
                                                 <action selector="saveButtonTapped:" destination="f8P-Bd-u1Q" id="sBs-NL-c5s"/>
+                                                <segue destination="Ca9-BD-jl2" kind="show" id="p3a-O5-EUm"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -470,7 +471,6 @@
                         </connections>
                     </tableView>
                     <toolbarItems>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="fnt-ed-8vL"/>
                         <barButtonItem systemItem="add" id="gIN-QR-beH">
                             <connections>
                                 <segue destination="TBL-fS-LLc" kind="show" identifier="CreateNote" id="Szf-vM-sYH"/>
@@ -649,7 +649,7 @@
         <image name="signup" width="900" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Szf-vM-sYH"/>
         <segue reference="deD-2O-Bwi"/>
+        <segue reference="w3r-zb-vIr"/>
     </inferredMetricsTieBreakers>
 </document>

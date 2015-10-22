@@ -28,7 +28,7 @@
 {
     [super viewDidLoad];
     
-    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+//    self.navigationItem.rightBarButtonItem = self.editButtonItem;
     self.tableView.rowHeight = 56;
     
     NSURL *fileURL = [self documentFileURL];

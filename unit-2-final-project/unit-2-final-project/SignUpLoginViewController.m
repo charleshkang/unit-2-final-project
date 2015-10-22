@@ -29,6 +29,7 @@
     
     [[self.loginButtonTapped layer] setBorderWidth:2.0f];
     [[self.loginButtonTapped layer] setBorderColor:[UIColor whiteColor].CGColor];
+    [self.view endEditing:YES];
     
 }
 

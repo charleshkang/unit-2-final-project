@@ -372,7 +372,7 @@
                                         <barButtonItem key="rightBarButtonItem" title="Save" id="uU8-PC-cWK">
                                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
-                                                <action selector="saveButtonTapped:" destination="f8P-Bd-u1Q" id="sBs-NL-c5s"/>
+                                                <action selector="doneButtonTapped:" destination="f8P-Bd-u1Q" id="MCD-oE-aXG"/>
                                                 <segue destination="Ca9-BD-jl2" kind="show" id="p3a-O5-EUm"/>
                                             </connections>
                                         </barButtonItem>
@@ -398,8 +398,8 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="noteDescriptionTextField" destination="r8Q-TH-lrL" id="d4E-vz-tbQ"/>
-                        <outlet property="titleNoteTextField" destination="NQJ-Op-eIP" id="9Ig-st-vxw"/>
+                        <outlet property="entryTextField" destination="r8Q-TH-lrL" id="7lY-jh-vdS"/>
+                        <outlet property="titleTextField" destination="NQJ-Op-eIP" id="hdB-zL-00O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q9w-yn-ZtI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -409,7 +409,6 @@
         <!--Navigation Controller-->
         <scene sceneID="a1q-bL-nVk">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eDR-oj-zhn" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="Ca9-BD-jl2" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gNM-YW-gUm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -420,6 +419,7 @@
                         <segue destination="7tM-MD-bvt" kind="relationship" relationship="rootViewController" id="iz2-D6-qBK"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eDR-oj-zhn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2498" y="-306"/>
         </scene>
@@ -428,13 +428,13 @@
             <objects>
                 <tableViewController id="7tM-MD-bvt" userLabel="Note List View Controller" customClass="NoteListViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Jhp-sp-YV5">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoteCell" textLabel="iGA-2X-Hxn" detailTextLabel="en9-3Z-OZu" style="IBUITableViewCellStyleSubtitle" id="QEv-Ho-x4M">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="iGA-2X-Hxn" detailTextLabel="en9-3Z-OZu" style="IBUITableViewCellStyleSubtitle" id="QEv-Ho-x4M">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QEv-Ho-x4M" id="NpT-EK-3kq">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -470,20 +470,22 @@
                             <outlet property="delegate" destination="7tM-MD-bvt" id="NLm-jw-QcC"/>
                         </connections>
                     </tableView>
-                    <toolbarItems>
-                        <barButtonItem systemItem="add" id="gIN-QR-beH">
-                            <connections>
-                                <segue destination="TBL-fS-LLc" kind="show" identifier="CreateNote" id="Szf-vM-sYH"/>
-                            </connections>
-                        </barButtonItem>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" title="Apartment Journals" id="a1t-VK-i6K">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="XMT-Bi-vnv">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="backButton:" destination="7tM-MD-bvt" id="KPn-UP-I4T"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="zRS-f9-naw">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="refreshButtonTapped:" destination="7tM-MD-bvt" id="5Pa-0Z-i5G"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KjT-nU-eeZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -499,11 +501,11 @@
                         <viewControllerLayoutGuide type="bottom" id="BaY-qE-bVO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="m93-qk-whA">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XGF-JP-9ho">
-                                <rect key="frame" x="10" y="10" width="580" height="580"/>
+                                <rect key="frame" x="10" y="10" width="580" height="516"/>
                                 <animations/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
@@ -650,6 +652,5 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="deD-2O-Bwi"/>
-        <segue reference="w3r-zb-vIr"/>
     </inferredMetricsTieBreakers>
 </document>

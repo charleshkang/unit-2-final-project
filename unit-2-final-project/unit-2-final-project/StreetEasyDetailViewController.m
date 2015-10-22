@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *apartmentUnitLabel;
 @property (weak, nonatomic) IBOutlet UITextView *apartmentDescriptionTextView;
 @property (weak, nonatomic) IBOutlet UIView *viewForMap;
+@property (weak, nonatomic) IBOutlet UIButton *addNoteButtonTapped;
 
 
 @end
@@ -29,6 +30,10 @@
     [super viewDidLoad];
     self.navigationController.navigationBar.hidden = NO;
     
+    //start apartment text view description at the top
+    [self.apartmentDescriptionTextView scrollRangeToVisible:NSMakeRange(0, 0)];
+    
+    
     NSURL *url = [NSURL URLWithString:self.apartmentImage];
     NSData *data = [NSData dataWithContentsOfURL:url];
     
@@ -40,6 +45,9 @@
     
     self.apartmentDescriptionTextView.text = self.apartmentDescription;
     
+    //add border to add note button
+    [[self.addNoteButtonTapped layer] setBorderWidth:2.0f];
+    [[self.addNoteButtonTapped layer] setBorderColor:[UIColor whiteColor].CGColor];
     
     
     

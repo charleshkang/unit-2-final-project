@@ -7,12 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @class NoteStore;
 
-@interface NoteListViewController : UITableViewController
+@interface NoteListViewController : UITableViewController <UITableViewDelegate> {
+    
+    NSArray *entriesArray;
+}
 
-@property (nonatomic) NoteStore *store;
+
+//@property (nonatomic) NoteStore *store;
 
 @end
 

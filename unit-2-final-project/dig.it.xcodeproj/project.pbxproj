@@ -249,8 +249,6 @@
 				42FCE8E91BC99EC5008627B6 /* ViewController.m */,
 				42FCE8DF1BC99C47008627B6 /* User.h */,
 				42FCE8E01BC99C47008627B6 /* User.m */,
-				42A3B12B1BCED8DA00907D15 /* Entry.h */,
-				42A3B1291BCED8C100907D15 /* Entry.m */,
 			);
 			name = Parse;
 			sourceTree = "<group>";
@@ -269,6 +267,8 @@
 			children = (
 				450F0C021BD6BE0000BEC5D0 /* Note.h */,
 				450F0C031BD6BE0000BEC5D0 /* Note.m */,
+				42A3B12B1BCED8DA00907D15 /* Entry.h */,
+				42A3B1291BCED8C100907D15 /* Entry.m */,
 				899A00F51BD937F000F65FEB /* NoteCreationViewController.h */,
 				899A00F61BD937F000F65FEB /* NoteCreationViewController.m */,
 				450F0C0B1BD6BF7A00BEC5D0 /* NoteListViewController.h */,

@@ -16,3 +16,16 @@
 @property (nonatomic, readonly, getter=isEmpty) BOOL empty;
 
 @end
+
+
+//
+//#import "PFObject.h"
+//#import <Parse/Parse.h>
+//
+//@interface Entry : PFObject <PFSubclassing>
+//
+//@property (nonatomic) NSDate *createdAt;
+//@property (nonatomic) NSString *titleOfEntry;
+//@property (nonatomic) NSString *descriptionOfEntry;
+//
+//@end

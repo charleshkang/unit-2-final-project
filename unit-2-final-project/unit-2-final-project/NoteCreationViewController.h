@@ -10,7 +10,4 @@
 
 @interface NoteCreationViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UITextField *titleNoteTextField;
-@property (weak, nonatomic) IBOutlet UITextField *noteDescriptionTextField;
-
 @end
